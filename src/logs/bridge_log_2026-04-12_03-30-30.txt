@@ -1,0 +1,5 @@
+[2026-04-12 03:30:30.381] [ERROR] Unexpected error: 'XaiRealtimeClient' object has no attribute 'connect'
+[2026-04-12 03:30:30.381] [SUMMARY] === END OF TRANSMISSION ===
+[2026-04-12 03:30:30.381] [SUMMARY] Output saved to: audio_out_2026-04-12_03-30-30.wav
+[2026-04-12 03:30:30.381] [SUMMARY] Total packets received: 0
+[2026-04-12 03:30:30.381] [SUMMARY] Total packets lost: 0 (0.00%)

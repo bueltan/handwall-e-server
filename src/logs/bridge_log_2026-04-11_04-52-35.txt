@@ -1,0 +1,96 @@
+[2026-04-11 04:52:36.600] [START] Connected to xAI realtime | input_rate=16000 | output_rate=16000
+[2026-04-11 04:52:36.601] [INFO] Output WAV file: audio_out_2026-04-11_04-52-35.wav
+[2026-04-11 04:52:36.601] [INFO] Log file: bridge_log_2026-04-11_04-52-35.txt
+[2026-04-11 04:52:36.601] [CONFIG] Bridge config | input_rate=16000 | output_rate=16000 | samples_per_packet=160 | packet_audio_size=320
+[2026-04-11 04:52:36.601] [START] UDP server started
+[2026-04-11 04:52:36.602] [INFO] UDP port: 9999
+[2026-04-11 04:52:36.602] [INFO] Jitter buffer: 25 packets (~250 ms)
+[2026-04-11 04:52:36.634] [DEBUG] Unhandled xAI event: type=conversation.created keys=['type', 'event_id', 'conversation', 'previous_item_id']
+[2026-04-11 04:52:37.518] [XAI] Session updated
+[2026-04-11 04:52:49.833] [INIT] First packet received -> seq=2216
+[2026-04-11 04:52:49.887] [LOSS] [LOSS] seq 2289 lost -> filled with silence
+[2026-04-11 04:52:49.889] [LOSS] [LOSS] seq 2290 lost -> filled with silence
+[2026-04-11 04:52:49.891] [LOSS] [LOSS] seq 2291 lost -> filled with silence
+[2026-04-11 04:52:49.892] [LOSS] [LOSS] seq 2292 lost -> filled with silence
+[2026-04-11 04:52:49.895] [LOSS] [LOSS] seq 2293 lost -> filled with silence
+[2026-04-11 04:52:49.897] [LOSS] [LOSS] seq 2294 lost -> filled with silence
+[2026-04-11 04:52:49.899] [LOSS] [LOSS] seq 2295 lost -> filled with silence
+[2026-04-11 04:52:49.900] [LOSS] [LOSS] seq 2296 lost -> filled with silence
+[2026-04-11 04:52:49.902] [LOSS] [LOSS] seq 2297 lost -> filled with silence
+[2026-04-11 04:52:49.904] [LOSS] [LOSS] seq 2298 lost -> filled with silence
+[2026-04-11 04:52:49.906] [LOSS] [LOSS] seq 2299 lost -> filled with silence
+[2026-04-11 04:52:49.908] [LOSS] [LOSS] seq 2300 lost -> filled with silence
+[2026-04-11 04:52:49.910] [LOSS] [LOSS] seq 2301 lost -> filled with silence
+[2026-04-11 04:52:49.912] [LOSS] [LOSS] seq 2302 lost -> filled with silence
+[2026-04-11 04:52:49.913] [LOSS] [LOSS] seq 2303 lost -> filled with silence
+[2026-04-11 04:52:49.916] [LOSS] [LOSS] seq 2304 lost -> filled with silence
+[2026-04-11 04:52:49.917] [LOSS] [LOSS] seq 2305 lost -> filled with silence
+[2026-04-11 04:52:49.919] [LOSS] [LOSS] seq 2306 lost -> filled with silence
+[2026-04-11 04:52:49.920] [LOSS] [LOSS] seq 2307 lost -> filled with silence
+[2026-04-11 04:52:49.930] [LOSS] [LOSS] seq 2308 lost -> filled with silence
+[2026-04-11 04:52:49.965] [LOSS] [LOSS] seq 2309 lost -> filled with silence
+[2026-04-11 04:52:50.020] [LOSS] [LOSS] seq 2310 lost -> filled with silence
+[2026-04-11 04:52:50.070] [LOSS] [LOSS] seq 2311 lost -> filled with silence
+[2026-04-11 04:52:50.146] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:52:50.147] [LOSS] [LOSS] seq 2312 lost -> filled with silence
+[2026-04-11 04:52:50.168] [LOSS] [LOSS] seq 2313 lost -> filled with silence
+[2026-04-11 04:52:51.865] [LOSS] [LOSS] seq 2314 lost -> filled with silence
+[2026-04-11 04:52:51.868] [LOSS] [LOSS] seq 2315 lost -> filled with silence
+[2026-04-11 04:52:51.871] [LOSS] [LOSS] seq 2316 lost -> filled with silence
+[2026-04-11 04:52:51.873] [LOSS] [LOSS] seq 2317 lost -> filled with silence
+[2026-04-11 04:52:51.921] [STAT] [STAT] seq=2543 | buf=2 | rec=300 | lost=29 (9.67%)
+[2026-04-11 04:52:51.923] [LOSS] [LOSS] seq 2543 lost -> filled with silence
+[2026-04-11 04:52:51.926] [LOSS] [LOSS] seq 2544 lost -> filled with silence
+[2026-04-11 04:52:51.930] [LOSS] [LOSS] seq 2545 lost -> filled with silence
+[2026-04-11 04:52:51.933] [LOSS] [LOSS] seq 2546 lost -> filled with silence
+[2026-04-11 04:52:51.935] [LOSS] [LOSS] seq 2547 lost -> filled with silence
+[2026-04-11 04:52:51.937] [LOSS] [LOSS] seq 2548 lost -> filled with silence
+[2026-04-11 04:52:51.941] [LOSS] [LOSS] seq 2549 lost -> filled with silence
+[2026-04-11 04:52:51.943] [LOSS] [LOSS] seq 2550 lost -> filled with silence
+[2026-04-11 04:52:51.946] [LOSS] [LOSS] seq 2551 lost -> filled with silence
+[2026-04-11 04:52:53.794] [LOSS] [LOSS] seq 2638 lost -> filled with silence
+[2026-04-11 04:52:53.833] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:52:53.914] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 04:52:53.915] [TURN] COMMIT sent to xAI
+[2026-04-11 04:52:55.011] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:52:55.011] [XAI] xAI confirmed commit
+[2026-04-11 04:52:55.264] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:52:55.264] [USER] User transcription: Cuéntame quién es Nikola Tesla y su mayor invento.
+[2026-04-11 04:52:55.264] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 04:52:58.122] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:52:58.151] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:52:58.151] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 04:52:58.294] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:52:58.801] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:52:59.219] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:52:59.735] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:53:01.812] [AUDIO] Output audio chunk #3 | bytes=16000 | samples=8000 | ~500.00 ms
+[2026-04-11 04:53:01.956] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 04:53:02.050] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 04:53:02.295] [UDP] UDP audio paced send: 14 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:53:03.184] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:53:04.443] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:53:05.871] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:53:06.458] [ASSISTANT] Assistant transcript done: Nikola Tesla fue un inventor e ingeniero serbio-estadounidense, nacido en 1856 en lo que hoy es Croacia y fallecido en 1943 en Nueva York. Revolucionó el mundo con más de 280 patentes, especialmente por desarrollar el sistema de corriente alterna (CA) y el motor de inducción. Su mayor invento es considerado el sistema polifásico de corriente alterna, que permite transmitir electricidad a largas distancias y es la base de la red eléctrica moderna.
+[2026-04-11 04:53:06.460] [ASSISTANT] Response audio completed | chunks=21 | bytes=1022400 | samples=511200 | ~31950.00 ms
+[2026-04-11 04:53:06.460] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:53:06.461] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:53:06.461] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-11 04:53:06.461] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-11 04:53:06.461] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:53:06.461] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:53:06.461] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-11 04:53:06.461] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-11 04:53:06.461] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:53:06.461] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:53:06.461] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-11 04:53:06.462] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-11 04:53:06.462] [XAI] Response completed | tokens=1974
+[2026-04-11 04:53:06.462] [INFO] Assistant response: Nikola Tesla fue un inventor e ingeniero serbio-estadounidense, nacido en 1856 en lo que hoy es Croacia y fallecido en 1943 en Nueva York. Revolucionó el mundo con más de 280 patentes, especialmente por desarrollar el sistema de corriente alterna (CA) y el motor de inducción. Su mayor invento es considerado el sistema polifásico de corriente alterna, que permite transmitir electricidad a largas distancias y es la base de la red eléctrica moderna.
+[2026-04-11 04:53:06.462] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 04:53:06.462] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "Nikola Tesla fue un inventor e ingeniero serbio-estadounidense, nacido en 1856 en lo que hoy es Croacia y fallecido en 1943 en Nueva York. Revolucionó el mundo con más de 280 patentes, especialmente por desarrollar el sistema de corriente alterna (CA) y el motor de inducción. Su mayor invento es considerado el sistema polifásico de corriente alterna, que permite transmitir electricidad a largas distancias y es la base de la red eléctrica moderna.", "final": true, "timestamp": "2026-04-11T04:53:06"}
+[2026-04-11 04:53:07.467] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:53:09.266] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:53:11.065] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:53:12.864] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:53:14.663] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9

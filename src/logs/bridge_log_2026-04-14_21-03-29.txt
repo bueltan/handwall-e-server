@@ -1,0 +1,14 @@
+[2026-04-14 21:03:29.929] [INFO] Output WAV file: audio_out_2026-04-14_21-03-29.wav
+[2026-04-14 21:03:29.930] [INFO] Log file: bridge_log_2026-04-14_21-03-29.txt
+[2026-04-14 21:03:29.930] [CONFIG] Bridge config | input_rate=16000 | output_rate=16000 | samples_per_packet=160 | packet_audio_size=320
+[2026-04-14 21:03:30.998] [START] Connected to xAI realtime | input_rate=16000 | output_rate=16000
+[2026-04-14 21:03:31.001] [START] UDP server started
+[2026-04-14 21:03:31.002] [INFO] UDP port: 9999
+[2026-04-14 21:03:31.004] [INFO] Jitter buffer: 25 packets (~250 ms)
+[2026-04-14 21:03:31.267] [DEBUG] Unhandled xAI event: type=conversation.created keys=['type', 'event_id', 'conversation', 'previous_item_id']
+[2026-04-14 21:03:31.314] [XAI] Session updated
+[2026-04-14 21:03:33.381] [STOP] Bridge tasks cancelled
+[2026-04-14 21:03:34.675] [SUMMARY] === END OF TRANSMISSION ===
+[2026-04-14 21:03:34.675] [SUMMARY] Output saved to: audio_out_2026-04-14_21-03-29.wav
+[2026-04-14 21:03:34.676] [SUMMARY] Total packets received: 0
+[2026-04-14 21:03:34.677] [SUMMARY] Total packets lost: 0 (0.00%)

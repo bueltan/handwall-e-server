@@ -1,0 +1,10 @@
+[2026-04-12 01:50:19.775] [START] Connected to xAI realtime | input_rate=16000 | output_rate=16000
+[2026-04-12 01:50:19.776] [INFO] Output WAV file: audio_out_2026-04-12_01-50-18.wav
+[2026-04-12 01:50:19.776] [INFO] Log file: bridge_log_2026-04-12_01-50-18.txt
+[2026-04-12 01:50:19.776] [CONFIG] Bridge config | input_rate=16000 | output_rate=16000 | samples_per_packet=160 | packet_audio_size=320
+[2026-04-12 01:50:19.777] [START] UDP server started
+[2026-04-12 01:50:19.777] [INFO] UDP port: 9999
+[2026-04-12 01:50:19.777] [INFO] Jitter buffer: 25 packets (~250 ms)
+[2026-04-12 01:50:19.943] [DEBUG] Unhandled xAI event: type=conversation.created keys=['type', 'event_id', 'conversation', 'previous_item_id']
+[2026-04-12 01:50:20.302] [XAI] Session updated
+[2026-04-12 01:52:51.639] [ERROR] websocket receiver error: no close frame received or sent

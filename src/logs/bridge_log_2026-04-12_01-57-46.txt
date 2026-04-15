@@ -1,0 +1,827 @@
+[2026-04-12 01:57:49.839] [START] Connected to xAI realtime | input_rate=16000 | output_rate=16000
+[2026-04-12 01:57:49.840] [INFO] Output WAV file: audio_out_2026-04-12_01-57-46.wav
+[2026-04-12 01:57:49.840] [INFO] Log file: bridge_log_2026-04-12_01-57-46.txt
+[2026-04-12 01:57:49.840] [CONFIG] Bridge config | input_rate=16000 | output_rate=16000 | samples_per_packet=160 | packet_audio_size=320
+[2026-04-12 01:57:49.841] [START] UDP server started
+[2026-04-12 01:57:49.841] [INFO] UDP port: 9999
+[2026-04-12 01:57:49.841] [INFO] Jitter buffer: 25 packets (~250 ms)
+[2026-04-12 01:57:50.259] [DEBUG] Unhandled xAI event: type=conversation.created keys=['type', 'event_id', 'conversation', 'previous_item_id']
+[2026-04-12 01:57:50.260] [XAI] Session updated
+[2026-04-12 01:58:00.494] [INIT] First packet received -> seq=0
+[2026-04-12 01:58:01.340] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-12 01:58:01.341] [LOSS] [LOSS] seq 60 lost -> filled with silence
+[2026-04-12 01:58:03.165] [STAT] [STAT] seq=301 | buf=0 | rec=300 | lost=1 (0.33%)
+[2026-04-12 01:58:06.240] [TURN] UDP COMMIT signal received from ('10.196.118.137', 9999)
+[2026-04-12 01:58:06.321] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-12 01:58:06.322] [TURN] COMMIT sent to xAI
+[2026-04-12 01:58:07.206] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-12 01:58:07.206] [XAI] xAI confirmed commit
+[2026-04-12 01:58:07.206] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 01:58:07.206] [USER] User transcription: Hola hola, buenas tardes.
+[2026-04-12 01:58:07.207] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-12 01:58:07.722] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 01:58:07.722] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 01:58:07.723] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-12 01:58:08.364] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 01:58:08.813] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 01:58:08.872] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:58:08.966] [AUDIO] Output audio chunk #3 | bytes=15360 | samples=7680 | ~480.00 ms
+[2026-04-12 01:58:09.379] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:58:09.417] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-12 01:58:09.819] [UDP] UDP audio paced send: 13 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:58:10.132] [AUDIO] Output audio chunk #5 | bytes=59840 | samples=29920 | ~1870.00 ms
+[2026-04-12 01:58:10.132] [ASSISTANT] Assistant transcript done: ¡Hola hola! Buenas tardes para ti también. ¿En qué puedo ayudarte hoy?
+[2026-04-12 01:58:10.132] [ASSISTANT] Response audio completed | chunks=6 | bytes=143040 | samples=71520 | ~4470.00 ms
+[2026-04-12 01:58:10.132] [XAI] Response completed | tokens=555
+[2026-04-12 01:58:10.133] [INFO] Assistant response: ¡Hola hola! Buenas tardes para ti también. ¿En qué puedo ayudarte hoy?
+[2026-04-12 01:58:10.133] [UDP] UDP target addr: ('10.196.118.137', 9999)
+[2026-04-12 01:58:10.133] [UDP] UDP JSON sent to ('10.196.118.137', 9999): {"type": "assistant_response", "value": "¡Hola hola! Buenas tardes para ti también. ¿En qué puedo ayudarte hoy?", "final": true, "timestamp": "2026-04-12T01:58:10"}
+[2026-04-12 01:58:10.707] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:58:12.395] [UDP] UDP audio paced send: 50 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:58:12.464] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:58:27.378] [TURN] New audio turn #1 -> initial seq=595
+[2026-04-12 01:58:27.382] [STAT] [STAT] seq=602 | buf=0 | rec=600 | lost=1 (0.17%)
+[2026-04-12 01:58:27.892] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-12 01:58:28.789] [TURN] UDP COMMIT signal received from ('10.196.118.137', 9999)
+[2026-04-12 01:58:28.879] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-12 01:58:28.880] [TURN] COMMIT sent to xAI
+[2026-04-12 01:58:29.253] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-12 01:58:29.263] [XAI] xAI confirmed commit
+[2026-04-12 01:58:29.560] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 01:58:29.570] [USER] User transcription: ¿Me escuchas?
+[2026-04-12 01:58:29.570] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-12 01:58:29.969] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 01:58:29.975] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 01:58:29.975] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-12 01:58:31.198] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 01:58:31.208] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 01:58:31.373] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-12 01:58:31.715] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:58:31.726] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-12 01:58:32.001] [AUDIO] Output audio chunk #5 | bytes=45120 | samples=22560 | ~1410.00 ms
+[2026-04-12 01:58:32.001] [ASSISTANT] Assistant transcript done: ¡Sí, te escucho perfectamente! ¿Qué tal, en qué te ayudo?
+[2026-04-12 01:58:32.002] [ASSISTANT] Response audio completed | chunks=6 | bytes=137280 | samples=68640 | ~4290.00 ms
+[2026-04-12 01:58:32.002] [XAI] Response completed | tokens=300
+[2026-04-12 01:58:32.002] [INFO] Assistant response: ¡Sí, te escucho perfectamente! ¿Qué tal, en qué te ayudo?
+[2026-04-12 01:58:32.002] [UDP] UDP target addr: ('10.196.118.137', 9999)
+[2026-04-12 01:58:32.003] [UDP] UDP JSON sent to ('10.196.118.137', 9999): {"type": "assistant_response", "value": "¡Sí, te escucho perfectamente! ¿Qué tal, en qué te ayudo?", "final": true, "timestamp": "2026-04-12T01:58:32"}
+[2026-04-12 01:58:32.231] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:58:32.951] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:58:33.839] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:58:35.131] [UDP] UDP audio paced send: 38 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:58:35.209] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:58:39.410] [TURN] New audio turn #2 -> initial seq=753
+[2026-04-12 01:58:39.957] [LOSS] [LOSS] seq 774 lost -> filled with silence
+[2026-04-12 01:58:40.359] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-12 01:58:40.819] [STAT] [STAT] seq=904 | buf=0 | rec=900 | lost=2 (0.22%)
+[2026-04-12 01:58:43.744] [STAT] [STAT] seq=1204 | buf=0 | rec=1200 | lost=2 (0.17%)
+[2026-04-12 01:58:46.038] [TURN] UDP COMMIT signal received from ('10.196.118.137', 9999)
+[2026-04-12 01:58:46.128] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-12 01:58:46.128] [TURN] COMMIT sent to xAI
+[2026-04-12 01:58:47.778] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-12 01:58:47.788] [XAI] xAI confirmed commit
+[2026-04-12 01:58:47.788] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 01:58:47.788] [USER] User transcription: Actualmente estoy testeando la conexión, así que si me hablas mientras estaría bueno.
+[2026-04-12 01:58:47.788] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-12 01:58:47.789] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 01:58:47.789] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 01:58:47.789] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-12 01:58:49.877] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 01:58:49.887] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 01:58:49.888] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-12 01:58:49.984] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-12 01:58:50.394] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-12 01:58:50.404] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:58:50.911] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:58:51.628] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:58:52.424] [ASSISTANT] Assistant transcript done: ¡Perfecto, conexión genial por aquí! Habla cuando quieras, te respondo al instante. ¿Todo bien en tu lado?
+[2026-04-12 01:58:52.434] [ASSISTANT] Response audio completed | chunks=8 | bytes=247360 | samples=123680 | ~7730.00 ms
+[2026-04-12 01:58:52.434] [XAI] Response completed | tokens=742
+[2026-04-12 01:58:52.434] [INFO] Assistant response: ¡Perfecto, conexión genial por aquí! Habla cuando quieras, te respondo al instante. ¿Todo bien en tu lado?
+[2026-04-12 01:58:52.434] [UDP] UDP target addr: ('10.196.118.137', 9999)
+[2026-04-12 01:58:52.435] [UDP] UDP JSON sent to ('10.196.118.137', 9999): {"type": "assistant_response", "value": "¡Perfecto, conexión genial por aquí! Habla cuando quieras, te respondo al instante. ¿Todo bien en tu lado?", "final": true, "timestamp": "2026-04-12T01:58:52"}
+[2026-04-12 01:58:52.516] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:58:53.765] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:58:55.194] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:58:56.960] [UDP] UDP audio paced send: 52 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:58:57.037] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:59:02.107] [TURN] New audio turn #3 -> initial seq=1433
+[2026-04-12 01:59:02.609] [STAT] [STAT] seq=1505 | buf=0 | rec=1500 | lost=2 (0.13%)
+[2026-04-12 01:59:02.777] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-12 01:59:05.691] [STAT] [STAT] seq=1805 | buf=0 | rec=1800 | lost=2 (0.11%)
+[2026-04-12 01:59:09.115] [STAT] [STAT] seq=2105 | buf=0 | rec=2100 | lost=2 (0.10%)
+[2026-04-12 01:59:11.833] [STAT] [STAT] seq=2405 | buf=0 | rec=2400 | lost=2 (0.08%)
+[2026-04-12 01:59:13.094] [TURN] UDP COMMIT signal received from ('10.196.118.137', 9999)
+[2026-04-12 01:59:13.185] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-12 01:59:13.186] [TURN] COMMIT sent to xAI
+[2026-04-12 01:59:13.834] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-12 01:59:13.844] [XAI] xAI confirmed commit
+[2026-04-12 01:59:14.250] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 01:59:14.260] [USER] User transcription: Parece que el ESP32 es sensible a un case eh construido en ABS, lo cual me llama la atención.
+[2026-04-12 01:59:14.261] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-12 01:59:14.261] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 01:59:14.261] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 01:59:14.262] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-12 01:59:15.520] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 01:59:15.692] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 01:59:15.782] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-12 01:59:15.957] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-12 01:59:16.038] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:59:16.278] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-12 01:59:16.545] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:59:17.265] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:59:18.153] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:59:18.825] [ASSISTANT] Assistant transcript done: ¡Vaya, interesante lo del ESP32 y el case de ABS! Sí, el ABS puede generar interferencias o estática por fricción electromagnética, sobre todo si es impreso en 3D. ¿Quieres que busque tips para blindarlo o materiales mejores?
+[2026-04-12 01:59:18.835] [ASSISTANT] Response audio completed | chunks=12 | bytes=512960 | samples=256480 | ~16030.00 ms
+[2026-04-12 01:59:18.835] [XAI] Response completed | tokens=1425
+[2026-04-12 01:59:18.836] [INFO] Assistant response: ¡Vaya, interesante lo del ESP32 y el case de ABS! Sí, el ABS puede generar interferencias o estática por fricción electromagnética, sobre todo si es impreso en 3D. ¿Quieres que busque tips para blindarlo o materiales mejores?
+[2026-04-12 01:59:18.836] [UDP] UDP target addr: ('10.196.118.137', 9999)
+[2026-04-12 01:59:18.836] [UDP] UDP JSON sent to ('10.196.118.137', 9999): {"type": "assistant_response", "value": "¡Vaya, interesante lo del ESP32 y el case de ABS! Sí, el ABS puede generar interferencias o estática por fricción electromagnética, sobre todo si es impreso en 3D. ¿Quieres que busque tips para blindarlo o materiales mejores?", "final": true, "timestamp": "2026-04-12T01:59:18"}
+[2026-04-12 01:59:19.412] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:59:20.833] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:59:22.429] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:59:24.229] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:59:26.028] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:59:27.828] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:59:30.201] [UDP] UDP audio paced send: 70 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:59:30.278] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:59:37.438] [TURN] New audio turn #4 -> initial seq=2529
+[2026-04-12 01:59:37.755] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-12 01:59:38.674] [STAT] [STAT] seq=2706 | buf=0 | rec=2700 | lost=2 (0.07%)
+[2026-04-12 01:59:39.207] [LOSS] [LOSS] seq 2711 lost -> filled with silence
+[2026-04-12 01:59:41.776] [STAT] [STAT] seq=3007 | buf=0 | rec=3000 | lost=3 (0.10%)
+[2026-04-12 01:59:43.972] [LOSS] [LOSS] seq 3228 lost -> filled with silence
+[2026-04-12 01:59:43.983] [LOSS] [LOSS] seq 3229 lost -> filled with silence
+[2026-04-12 01:59:43.990] [LOSS] [LOSS] seq 3230 lost -> filled with silence
+[2026-04-12 01:59:44.040] [LOSS] [LOSS] seq 3231 lost -> filled with silence
+[2026-04-12 01:59:44.098] [LOSS] [LOSS] seq 3239 lost -> filled with silence
+[2026-04-12 01:59:44.148] [LOSS] [LOSS] seq 3240 lost -> filled with silence
+[2026-04-12 01:59:44.693] [STAT] [STAT] seq=3313 | buf=0 | rec=3300 | lost=9 (0.27%)
+[2026-04-12 01:59:47.636] [STAT] [STAT] seq=3613 | buf=0 | rec=3600 | lost=9 (0.25%)
+[2026-04-12 01:59:48.095] [TURN] UDP COMMIT signal received from ('10.196.118.137', 9999)
+[2026-04-12 01:59:48.185] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-12 01:59:48.186] [TURN] COMMIT sent to xAI
+[2026-04-12 01:59:48.837] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-12 01:59:48.846] [XAI] xAI confirmed commit
+[2026-04-12 01:59:48.940] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 01:59:48.940] [USER] User transcription: Sí, ¿qué me recomiendas, eh, justamente para evitar el bloqueo de la señal wifi?
+[2026-04-12 01:59:48.940] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-12 01:59:51.939] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 01:59:51.949] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 01:59:51.949] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-12 01:59:51.952] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 01:59:51.957] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 01:59:52.127] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-12 01:59:52.460] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:59:52.580] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-12 01:59:52.725] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-12 01:59:52.975] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:59:53.694] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:59:54.582] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:59:55.841] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:59:57.269] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 01:59:58.014] [ASSISTANT] Assistant transcript done: ¡Claro! Para evitar que el case de ABS bloquee la señal WiFi del ESP32, prueba estas recomendaciones rápidas: usa un material más delgado como PLA o PETG en lugar de ABS grueso, haz un corte o ventana cerca de la antena, o cambia a un módulo ESP32 con antena externa. Si persiste, agrega potencia en tu config como output_power: 8.5dB. ¡Prueba y cuéntame cómo va!
+[2026-04-12 01:59:58.023] [ASSISTANT] Response audio completed | chunks=19 | bytes=954560 | samples=477280 | ~29830.00 ms
+[2026-04-12 01:59:58.023] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 01:59:58.023] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 01:59:58.023] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-12 01:59:58.024] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-12 01:59:58.024] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 01:59:58.024] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 01:59:58.025] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-12 01:59:58.025] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-12 01:59:58.025] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 01:59:58.025] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 01:59:58.025] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-12 01:59:58.025] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-12 01:59:58.025] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 01:59:58.026] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 01:59:58.026] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-12 01:59:58.026] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-12 01:59:58.026] [XAI] Response completed | tokens=2187
+[2026-04-12 01:59:58.026] [INFO] Assistant response: ¡Claro! Para evitar que el case de ABS bloquee la señal WiFi del ESP32, prueba estas recomendaciones rápidas: usa un material más delgado como PLA o PETG en lugar de ABS grueso, haz un corte o ventana cerca de la antena, o cambia a un módulo ESP32 con antena externa. Si persiste, agrega potencia en tu config como output_power: 8.5dB. ¡Prueba y cuéntame cómo va!
+[2026-04-12 01:59:58.026] [UDP] UDP target addr: ('10.196.118.137', 9999)
+[2026-04-12 01:59:58.026] [UDP] UDP JSON sent to ('10.196.118.137', 9999): {"type": "assistant_response", "value": "¡Claro! Para evitar que el case de ABS bloquee la señal WiFi del ESP32, prueba estas recomendaciones rápidas: usa un material más delgado como PLA o PETG en lugar de ABS grueso, haz un corte o ventana cerca de la antena, o cambia a un módulo ESP32 con antena externa. Si persiste, agrega potencia en tu config como output_power: 8.5dB. ¡Prueba y cuéntame cómo va!", "final": true, "timestamp": "2026-04-12T01:59:58"}
+[2026-04-12 01:59:58.866] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:00:00.664] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:00:02.464] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:00:04.263] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:00:06.063] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:00:07.862] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:00:09.661] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:00:11.460] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:00:13.259] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:00:15.059] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:00:16.859] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:00:19.300] [UDP] UDP audio paced send: 72 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:00:19.379] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:00:46.355] [TURN] New audio turn #5 -> initial seq=3663
+[2026-04-12 02:00:47.050] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-12 02:00:49.129] [STAT] [STAT] seq=3914 | buf=0 | rec=3900 | lost=9 (0.23%)
+[2026-04-12 02:00:51.638] [STAT] [STAT] seq=4214 | buf=0 | rec=4200 | lost=9 (0.21%)
+[2026-04-12 02:00:52.870] [LOSS] [LOSS] seq 4341 lost -> filled with silence
+[2026-04-12 02:00:52.874] [LOSS] [LOSS] seq 4342 lost -> filled with silence
+[2026-04-12 02:00:52.876] [LOSS] [LOSS] seq 4343 lost -> filled with silence
+[2026-04-12 02:00:53.026] [LOSS] [LOSS] seq 4344 lost -> filled with silence
+[2026-04-12 02:00:53.030] [LOSS] [LOSS] seq 4345 lost -> filled with silence
+[2026-04-12 02:00:53.032] [LOSS] [LOSS] seq 4346 lost -> filled with silence
+[2026-04-12 02:00:54.538] [STAT] [STAT] seq=4520 | buf=0 | rec=4500 | lost=15 (0.33%)
+[2026-04-12 02:00:54.967] [LOSS] [LOSS] seq 4548 lost -> filled with silence
+[2026-04-12 02:00:57.459] [STAT] [STAT] seq=4821 | buf=0 | rec=4800 | lost=16 (0.33%)
+[2026-04-12 02:01:00.421] [TURN] UDP COMMIT signal received from ('10.196.118.137', 9999)
+[2026-04-12 02:01:00.511] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-12 02:01:00.511] [TURN] COMMIT sent to xAI
+[2026-04-12 02:01:01.114] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-12 02:01:01.124] [XAI] xAI confirmed commit
+[2026-04-12 02:01:01.124] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:01:01.124] [USER] User transcription: Bueno, cuéntame una pequeña historia.
+[2026-04-12 02:01:01.124] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-12 02:01:02.956] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 02:01:02.966] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:01:02.966] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-12 02:01:02.966] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:01:02.967] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:01:02.968] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-12 02:01:03.055] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-12 02:01:03.474] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:03.509] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-12 02:01:03.991] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:04.711] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:05.598] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:06.857] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:08.285] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:09.408] [ASSISTANT] Assistant transcript done: ¡Vale! Érase una vez un ESP32 valiente, encerrado en un case de ABS travieso que bloqueaba sus ondas WiFi. Pero con una antena externa y un poco de PLA delgado, escapó volando señales libres por todo el mundo. ¡Y vivieron conectados felices para siempre! ¿Te gustó?
+[2026-04-12 02:01:09.418] [ASSISTANT] Response audio completed | chunks=14 | bytes=637760 | samples=318880 | ~19930.00 ms
+[2026-04-12 02:01:09.418] [XAI] Response completed | tokens=1781
+[2026-04-12 02:01:09.418] [INFO] Assistant response: ¡Vale! Érase una vez un ESP32 valiente, encerrado en un case de ABS travieso que bloqueaba sus ondas WiFi. Pero con una antena externa y un poco de PLA delgado, escapó volando señales libres por todo el mundo. ¡Y vivieron conectados felices para siempre! ¿Te gustó?
+[2026-04-12 02:01:09.419] [UDP] UDP target addr: ('10.196.118.137', 9999)
+[2026-04-12 02:01:09.419] [UDP] UDP JSON sent to ('10.196.118.137', 9999): {"type": "assistant_response", "value": "¡Vale! Érase una vez un ESP32 valiente, encerrado en un case de ABS travieso que bloqueaba sus ondas WiFi. Pero con una antena externa y un poco de PLA delgado, escapó volando señales libres por todo el mundo. ¡Y vivieron conectados felices para siempre! ¿Te gustó?", "final": true, "timestamp": "2026-04-12T02:01:09"}
+[2026-04-12 02:01:09.881] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:11.680] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:13.479] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:15.279] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:17.078] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:18.877] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:21.217] [UDP] UDP audio paced send: 69 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:21.295] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:23.942] [TURN] New audio turn #6 -> initial seq=5117
+[2026-04-12 02:01:24.074] [STAT] [STAT] seq=5122 | buf=0 | rec=5100 | lost=16 (0.31%)
+[2026-04-12 02:01:24.766] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-12 02:01:24.777] [LOSS] [LOSS] seq 5158 lost -> filled with silence
+[2026-04-12 02:01:27.125] [STAT] [STAT] seq=5423 | buf=0 | rec=5400 | lost=17 (0.31%)
+[2026-04-12 02:01:28.937] [LOSS] [LOSS] seq 5520 lost -> filled with silence
+[2026-04-12 02:01:29.889] [STAT] [STAT] seq=5724 | buf=0 | rec=5700 | lost=18 (0.32%)
+[2026-04-12 02:01:30.061] [TURN] UDP COMMIT signal received from ('10.196.118.137', 9999)
+[2026-04-12 02:01:30.142] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-12 02:01:30.143] [TURN] COMMIT sent to xAI
+[2026-04-12 02:01:35.140] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-12 02:01:35.150] [XAI] xAI confirmed commit
+[2026-04-12 02:01:35.150] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:01:35.150] [USER] User transcription: ¿Crees que es un problema conocido el tema de que bloqueo de señal por ABS?
+[2026-04-12 02:01:35.151] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-12 02:01:35.151] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 02:01:35.151] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:01:35.151] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-12 02:01:35.151] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:01:35.152] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:01:35.153] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-12 02:01:35.153] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-12 02:01:35.154] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-12 02:01:35.662] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:36.177] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:36.897] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:37.785] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:39.044] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:40.472] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:41.522] [ASSISTANT] Assistant transcript done: Sí, es un problema conocido, aunque no supercomún. En foros como Reddit y Home Assistant, muchos reportan que cases de ABS o PLA gruesos en 3D debilitan la WiFi del ESP32, creando una mini jaula de Faraday. La solución usual: adelgazar paredes, usar PETG o antena externa. ¡No estás solo!
+[2026-04-12 02:01:41.532] [ASSISTANT] Response audio completed | chunks=16 | bytes=739520 | samples=369760 | ~23110.00 ms
+[2026-04-12 02:01:41.532] [XAI] Response completed | tokens=1568
+[2026-04-12 02:01:41.532] [INFO] Assistant response: Sí, es un problema conocido, aunque no supercomún. En foros como Reddit y Home Assistant, muchos reportan que cases de ABS o PLA gruesos en 3D debilitan la WiFi del ESP32, creando una mini jaula de Faraday. La solución usual: adelgazar paredes, usar PETG o antena externa. ¡No estás solo!
+[2026-04-12 02:01:41.533] [UDP] UDP target addr: ('10.196.118.137', 9999)
+[2026-04-12 02:01:41.533] [UDP] UDP JSON sent to ('10.196.118.137', 9999): {"type": "assistant_response", "value": "Sí, es un problema conocido, aunque no supercomún. En foros como Reddit y Home Assistant, muchos reportan que cases de ABS o PLA gruesos en 3D debilitan la WiFi del ESP32, creando una mini jaula de Faraday. La solución usual: adelgazar paredes, usar PETG o antena externa. ¡No estás solo!", "final": true, "timestamp": "2026-04-12T02:01:41"}
+[2026-04-12 02:01:42.069] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:43.859] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:45.658] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:47.457] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:49.256] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:51.055] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:52.854] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:54.653] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:56.317] [UDP] UDP audio paced send: 49 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:01:56.388] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:02:46.531] [TURN] New audio turn #7 -> initial seq=5741
+[2026-04-12 02:02:46.942] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-12 02:02:48.776] [STAT] [STAT] seq=6025 | buf=0 | rec=6000 | lost=18 (0.30%)
+[2026-04-12 02:02:51.793] [STAT] [STAT] seq=6325 | buf=0 | rec=6300 | lost=18 (0.29%)
+[2026-04-12 02:02:52.216] [LOSS] [LOSS] seq 6344 lost -> filled with silence
+[2026-04-12 02:02:53.507] [TURN] UDP COMMIT signal received from ('10.196.118.137', 9999)
+[2026-04-12 02:02:53.597] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-12 02:02:53.597] [TURN] COMMIT sent to xAI
+[2026-04-12 02:02:54.263] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-12 02:02:54.273] [XAI] xAI confirmed commit
+[2026-04-12 02:02:54.274] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:02:54.274] [USER] User transcription: ¿Cómo puedo, yo uso plataforma, ¿cómo puedo aumentar el voltaje para la señal WiFi?
+[2026-04-12 02:02:54.275] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-12 02:02:55.758] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 02:02:55.768] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:02:55.768] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-12 02:02:55.813] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:02:55.893] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:02:56.051] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-12 02:02:56.304] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-12 02:02:56.320] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:02:56.826] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-12 02:02:56.827] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:02:57.537] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:02:58.425] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:02:59.685] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:01.113] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:02.327] [ASSISTANT] Assistant transcript done: ¡Buena pregunta! En ESPHome o Arduino para ESP32, agrega esto en tu config WiFi: output_power: 20.5dBm como máximo legal, o prueba 8.5dB para boost inicial. En código Arduino, usa WiFi.setTxPower(20). Prueba con 5V directo en el pin en vez de USB para más estabilidad. ¡Actualiza firmware y mide la señal! ¿Qué plataforma usas exactamente?
+[2026-04-12 02:03:02.336] [ASSISTANT] Response audio completed | chunks=21 | bytes=1045440 | samples=522720 | ~32670.00 ms
+[2026-04-12 02:03:02.337] [XAI] Response completed | tokens=2129
+[2026-04-12 02:03:02.337] [INFO] Assistant response: ¡Buena pregunta! En ESPHome o Arduino para ESP32, agrega esto en tu config WiFi: output_power: 20.5dBm como máximo legal, o prueba 8.5dB para boost inicial. En código Arduino, usa WiFi.setTxPower(20). Prueba con 5V directo en el pin en vez de USB para más estabilidad. ¡Actualiza firmware y mide la señal! ¿Qué plataforma usas exactamente?
+[2026-04-12 02:03:02.337] [UDP] UDP target addr: ('10.196.118.137', 9999)
+[2026-04-12 02:03:02.337] [UDP] UDP JSON sent to ('10.196.118.137', 9999): {"type": "assistant_response", "value": "¡Buena pregunta! En ESPHome o Arduino para ESP32, agrega esto en tu config WiFi: output_power: 20.5dBm como máximo legal, o prueba 8.5dB para boost inicial. En código Arduino, usa WiFi.setTxPower(20). Prueba con 5V directo en el pin en vez de USB para más estabilidad. ¡Actualiza firmware y mide la señal! ¿Qué plataforma usas exactamente?", "final": true, "timestamp": "2026-04-12T02:03:02"}
+[2026-04-12 02:03:02.709] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:04.501] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:06.300] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:08.099] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:09.899] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:11.698] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:13.498] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:15.297] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:17.095] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:18.894] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:20.694] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:22.493] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:24.292] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:25.754] [UDP] UDP audio paced send: 43 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:25.833] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:32.642] [TURN] New audio turn #8 -> initial seq=6491
+[2026-04-12 02:03:32.968] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-12 02:03:33.534] [STAT] [STAT] seq=6627 | buf=0 | rec=6600 | lost=19 (0.29%)
+[2026-04-12 02:03:36.629] [STAT] [STAT] seq=6927 | buf=0 | rec=6900 | lost=19 (0.28%)
+[2026-04-12 02:03:37.207] [LOSS] [LOSS] seq 6971 lost -> filled with silence
+[2026-04-12 02:03:38.439] [LOSS] [LOSS] seq 7080 lost -> filled with silence
+[2026-04-12 02:03:39.562] [STAT] [STAT] seq=7229 | buf=0 | rec=7200 | lost=21 (0.29%)
+[2026-04-12 02:03:42.562] [STAT] [STAT] seq=7529 | buf=0 | rec=7500 | lost=21 (0.28%)
+[2026-04-12 02:03:44.523] [TURN] UDP COMMIT signal received from ('10.196.118.137', 9999)
+[2026-04-12 02:03:44.613] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-12 02:03:44.613] [TURN] COMMIT sent to xAI
+[2026-04-12 02:03:45.549] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-12 02:03:45.559] [XAI] xAI confirmed commit
+[2026-04-12 02:03:45.559] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:03:45.560] [USER] User transcription: No, eh, estoy seguro, yo uso plataforma y no sé qué configuración de WiFi tiene, ni qué versión del firmware uso.
+[2026-04-12 02:03:45.560] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-12 02:03:46.922] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 02:03:46.931] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:03:46.931] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-12 02:03:46.932] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:03:46.933] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:03:47.255] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-12 02:03:47.422] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-12 02:03:47.440] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:47.947] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:48.034] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-12 02:03:48.667] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:49.556] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:50.815] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:52.243] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:53.840] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:55.638] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:55.941] [ASSISTANT] Assistant transcript done: ¡Entendido, sin detalles de plataforma es tricky! Primero, chequea la versión de firmware en el menú de settings o app de tu dispositivo. Para boost WiFi genérico en ESP32: alimenta con 5V estable en el pin 5V (no USB), y si es ESPHome, edita yaml con output_power: 20. Si es Tasmota u otra, busca txpower en docs. ¿Me das el nombre exacto de la plataforma para buscar? ¡Vamos paso a paso!
+[2026-04-12 02:03:55.943] [ASSISTANT] Response audio completed | chunks=21 | bytes=1049920 | samples=524960 | ~32810.00 ms
+[2026-04-12 02:03:55.944] [XAI] Response completed | tokens=2394
+[2026-04-12 02:03:55.944] [INFO] Assistant response: ¡Entendido, sin detalles de plataforma es tricky! Primero, chequea la versión de firmware en el menú de settings o app de tu dispositivo. Para boost WiFi genérico en ESP32: alimenta con 5V estable en el pin 5V (no USB), y si es ESPHome, edita yaml con output_power: 20. Si es Tasmota u otra, busca txpower en docs. ¿Me das el nombre exacto de la plataforma para buscar? ¡Vamos paso a paso!
+[2026-04-12 02:03:55.944] [UDP] UDP target addr: ('10.196.118.137', 9999)
+[2026-04-12 02:03:55.944] [UDP] UDP JSON sent to ('10.196.118.137', 9999): {"type": "assistant_response", "value": "¡Entendido, sin detalles de plataforma es tricky! Primero, chequea la versión de firmware en el menú de settings o app de tu dispositivo. Para boost WiFi genérico en ESP32: alimenta con 5V estable en el pin 5V (no USB), y si es ESPHome, edita yaml con output_power: 20. Si es Tasmota u otra, busca txpower en docs. ¿Me das el nombre exacto de la plataforma para buscar? ¡Vamos paso a paso!", "final": true, "timestamp": "2026-04-12T02:03:55"}
+[2026-04-12 02:03:57.436] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:03:59.235] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:01.035] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:02.833] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:04.632] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:06.431] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:08.230] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:10.029] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:11.829] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:13.629] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:15.428] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:17.025] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:17.103] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:27.612] [TURN] New audio turn #9 -> initial seq=7725
+[2026-04-12 02:04:27.905] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-12 02:04:28.484] [STAT] [STAT] seq=7830 | buf=0 | rec=7800 | lost=21 (0.27%)
+[2026-04-12 02:04:30.690] [TURN] UDP COMMIT signal received from ('10.196.118.137', 9999)
+[2026-04-12 02:04:30.779] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-12 02:04:30.780] [TURN] COMMIT sent to xAI
+[2026-04-12 02:04:31.492] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-12 02:04:31.502] [XAI] xAI confirmed commit
+[2026-04-12 02:04:31.502] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:04:31.502] [USER] User transcription: Eh, no sé, pero cuéntame un poco más sobre
+[2026-04-12 02:04:31.503] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-12 02:04:32.327] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 02:04:32.337] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:04:32.337] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-12 02:04:32.670] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:04:32.673] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:04:32.865] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-12 02:04:33.110] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-12 02:04:33.180] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:33.465] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-12 02:04:33.689] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:34.401] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:35.289] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:36.549] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:37.976] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:39.573] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:40.689] [ASSISTANT] Assistant transcript done: ¡Claro, sigamos con lo del WiFi! Básicamente, el ESP32 tiene un parámetro de txpower que sube hasta 20dBm para más alcance, pero sin pasarte de voltaje o calienta. Prueba alimentarlo con 5V externo, verifica antena libre de metal, y actualiza firmware a lo último. Si me das más pistas de tu setup, te guío preciso. ¿Qué más quieres saber?
+[2026-04-12 02:04:40.699] [ASSISTANT] Response audio completed | chunks=17 | bytes=781760 | samples=390880 | ~24430.00 ms
+[2026-04-12 02:04:40.699] [XAI] Response completed | tokens=1504
+[2026-04-12 02:04:40.699] [INFO] Assistant response: ¡Claro, sigamos con lo del WiFi! Básicamente, el ESP32 tiene un parámetro de txpower que sube hasta 20dBm para más alcance, pero sin pasarte de voltaje o calienta. Prueba alimentarlo con 5V externo, verifica antena libre de metal, y actualiza firmware a lo último. Si me das más pistas de tu setup, te guío preciso. ¿Qué más quieres saber?
+[2026-04-12 02:04:40.699] [UDP] UDP target addr: ('10.196.118.137', 9999)
+[2026-04-12 02:04:40.699] [UDP] UDP JSON sent to ('10.196.118.137', 9999): {"type": "assistant_response", "value": "¡Claro, sigamos con lo del WiFi! Básicamente, el ESP32 tiene un parámetro de txpower que sube hasta 20dBm para más alcance, pero sin pasarte de voltaje o calienta. Prueba alimentarlo con 5V externo, verifica antena libre de metal, y actualiza firmware a lo último. Si me das más pistas de tu setup, te guío preciso. ¿Qué más quieres saber?", "final": true, "timestamp": "2026-04-12T02:04:40"}
+[2026-04-12 02:04:41.372] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:43.171] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:44.971] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:46.770] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:48.569] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:50.369] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:52.168] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:53.967] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:55.058] [UDP] UDP audio paced send: 32 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:04:55.137] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:05:00.904] [TURN] New audio turn #10 -> initial seq=8064
+[2026-04-12 02:05:00.981] [STAT] [STAT] seq=8131 | buf=0 | rec=8100 | lost=21 (0.26%)
+[2026-04-12 02:05:01.178] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-12 02:05:03.981] [STAT] [STAT] seq=8431 | buf=0 | rec=8400 | lost=21 (0.25%)
+[2026-04-12 02:05:07.319] [STAT] [STAT] seq=8731 | buf=0 | rec=8700 | lost=21 (0.24%)
+[2026-04-12 02:05:10.047] [LOSS] [LOSS] seq 8976 lost -> filled with silence
+[2026-04-12 02:05:10.104] [STAT] [STAT] seq=9032 | buf=0 | rec=9000 | lost=22 (0.24%)
+[2026-04-12 02:05:10.806] [TURN] UDP COMMIT signal received from ('10.196.118.137', 9999)
+[2026-04-12 02:05:10.896] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-12 02:05:10.897] [TURN] COMMIT sent to xAI
+[2026-04-12 02:05:11.231] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-12 02:05:11.240] [XAI] xAI confirmed commit
+[2026-04-12 02:05:11.511] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:05:11.521] [USER] User transcription: ¿Cuánta potencia ocupa el WiFi máximo, eh máximo, voltaje y potencia máxima?
+[2026-04-12 02:05:11.521] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-12 02:05:14.613] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 02:05:14.623] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:05:14.623] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-12 02:05:14.623] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:05:14.624] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:05:14.724] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-12 02:05:15.131] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:05:15.144] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-12 02:05:15.592] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-12 02:05:15.648] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:05:16.359] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:05:17.248] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:05:18.507] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:05:19.934] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:05:20.250] [ASSISTANT] Assistant transcript done: ¡Claro! El ESP32 a máxima potencia WiFi (20.5 dBm TX) consume hasta 240-260 mA pico en picos cortos de TX, con 3.3V nominal (rango 2.7-3.6V). Usa fuente de 500 mA mínimo para estabilidad, ¡evita USB débil! ¿Algo más?
+[2026-04-12 02:05:20.252] [ASSISTANT] Response audio completed | chunks=18 | bytes=844480 | samples=422240 | ~26390.00 ms
+[2026-04-12 02:05:20.253] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 02:05:20.253] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:05:20.253] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-12 02:05:20.253] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-12 02:05:20.253] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 02:05:20.254] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:05:20.254] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-12 02:05:20.254] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-12 02:05:20.255] [XAI] Response completed | tokens=1946
+[2026-04-12 02:05:20.255] [INFO] Assistant response: ¡Claro! El ESP32 a máxima potencia WiFi (20.5 dBm TX) consume hasta 240-260 mA pico en picos cortos de TX, con 3.3V nominal (rango 2.7-3.6V). Usa fuente de 500 mA mínimo para estabilidad, ¡evita USB débil! ¿Algo más?
+[2026-04-12 02:05:20.255] [UDP] UDP target addr: ('10.196.118.137', 9999)
+[2026-04-12 02:05:20.255] [UDP] UDP JSON sent to ('10.196.118.137', 9999): {"type": "assistant_response", "value": "¡Claro! El ESP32 a máxima potencia WiFi (20.5 dBm TX) consume hasta 240-260 mA pico en picos cortos de TX, con 3.3V nominal (rango 2.7-3.6V). Usa fuente de 500 mA mínimo para estabilidad, ¡evita USB débil! ¿Algo más?", "final": true, "timestamp": "2026-04-12T02:05:20"}
+[2026-04-12 02:05:21.531] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:05:23.331] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:05:25.130] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:05:26.930] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:05:28.729] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:05:30.527] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:05:32.328] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:05:34.118] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:05:35.917] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:05:37.708] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:05:38.797] [UDP] UDP audio paced send: 32 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:05:38.876] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:15:00.379] [TURN] New audio turn #11 -> initial seq=0
+[2026-04-12 02:15:00.801] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-12 02:15:02.438] [STAT] [STAT] seq=230 | buf=0 | rec=9300 | lost=22 (0.24%)
+[2026-04-12 02:15:02.632] [TURN] UDP COMMIT signal received from ('10.196.118.137', 9999)
+[2026-04-12 02:15:02.713] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-12 02:15:02.714] [TURN] COMMIT sent to xAI
+[2026-04-12 02:15:04.274] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-12 02:15:04.284] [XAI] xAI confirmed commit
+[2026-04-12 02:15:04.284] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:15:04.284] [USER] User transcription: Hola hola, ¿me escuchás?
+[2026-04-12 02:15:04.284] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-12 02:15:04.285] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 02:15:04.285] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:15:04.285] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-12 02:15:05.118] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:15:05.634] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:15:05.644] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:15:05.933] [AUDIO] Output audio chunk #3 | bytes=13440 | samples=6720 | ~420.00 ms
+[2026-04-12 02:15:06.152] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:15:06.558] [UDP] UDP audio paced send: 12 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:15:06.850] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-12 02:15:07.345] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-12 02:15:07.729] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:15:08.868] [ASSISTANT] Assistant transcript done: ¡Hola hola! Te escucho clarito. ¿Seguimos con el ESP32 o qué tal todo?
+[2026-04-12 02:15:08.878] [ASSISTANT] Response audio completed | chunks=7 | bytes=196800 | samples=98400 | ~6150.00 ms
+[2026-04-12 02:15:08.878] [XAI] Response completed | tokens=470
+[2026-04-12 02:15:08.878] [INFO] Assistant response: ¡Hola hola! Te escucho clarito. ¿Seguimos con el ESP32 o qué tal todo?
+[2026-04-12 02:15:08.878] [UDP] UDP target addr: ('10.196.118.137', 9999)
+[2026-04-12 02:15:08.879] [UDP] UDP JSON sent to ('10.196.118.137', 9999): {"type": "assistant_response", "value": "¡Hola hola! Te escucho clarito. ¿Seguimos con el ESP32 o qué tal todo?", "final": true, "timestamp": "2026-04-12T02:15:08"}
+[2026-04-12 02:15:08.981] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:15:11.007] [UDP] UDP audio paced send: 60 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:15:11.085] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:15:29.892] [TURN] New audio turn #12 -> initial seq=0
+[2026-04-12 02:15:30.214] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-12 02:15:32.378] [STAT] [STAT] seq=282 | buf=0 | rec=9600 | lost=22 (0.23%)
+[2026-04-12 02:15:35.249] [STAT] [STAT] seq=582 | buf=0 | rec=9900 | lost=22 (0.22%)
+[2026-04-12 02:15:38.250] [STAT] [STAT] seq=882 | buf=0 | rec=10200 | lost=22 (0.22%)
+[2026-04-12 02:15:38.951] [LOSS] [LOSS] seq 901 lost -> filled with silence
+[2026-04-12 02:15:38.967] [TURN] UDP COMMIT signal received from ('10.196.118.137', 9999)
+[2026-04-12 02:15:39.048] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-12 02:15:39.049] [TURN] COMMIT sent to xAI
+[2026-04-12 02:15:39.445] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-12 02:15:39.455] [XAI] xAI confirmed commit
+[2026-04-12 02:15:39.755] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:15:39.756] [USER] User transcription: Eh, sí, cuéntame las diferentes versiones de ESP32 que, que existen.
+[2026-04-12 02:15:39.757] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-12 02:15:42.799] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 02:15:42.828] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:15:42.828] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-12 02:15:43.916] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:15:43.984] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:15:44.344] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-12 02:15:44.432] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:15:44.644] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-12 02:15:44.940] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:15:45.303] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-12 02:15:45.659] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:15:46.540] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:15:47.799] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:15:49.226] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:15:50.815] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:15:52.614] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:15:54.414] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:15:55.052] [AUDIO] Output audio chunk #25 | bytes=1280 | samples=640 | ~40.00 ms
+[2026-04-12 02:15:55.054] [ASSISTANT] Assistant transcript done: ¡Hola! Hay varias familias de ESP32 de Espressif: el original ESP32 (dual-core Xtensa, WiFi + BT Classic/BLE), S2 (single-core, WiFi solo, USB), S3 (dual-core potente con AI), C3 (RISC-V low-power, WiFi/BLE), C6 (WiFi 6 + Zigbee/Thread), H2 (Zigbee/Thread sin WiFi), y más nuevas como C2, P4 o E22. ¡Cada una para usos específicos, como IoT o Matter! ¿Cuál te interesa?
+[2026-04-12 02:15:55.055] [ASSISTANT] Response audio completed | chunks=25 | bytes=1328320 | samples=664160 | ~41510.00 ms
+[2026-04-12 02:15:55.055] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 02:15:55.055] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:15:55.055] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-12 02:15:55.055] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-12 02:15:55.055] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 02:15:55.055] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:15:55.056] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-12 02:15:55.056] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-12 02:15:55.056] [XAI] Response completed | tokens=2682
+[2026-04-12 02:15:55.056] [INFO] Assistant response: ¡Hola! Hay varias familias de ESP32 de Espressif: el original ESP32 (dual-core Xtensa, WiFi + BT Classic/BLE), S2 (single-core, WiFi solo, USB), S3 (dual-core potente con AI), C3 (RISC-V low-power, WiFi/BLE), C6 (WiFi 6 + Zigbee/Thread), H2 (Zigbee/Thread sin WiFi), y más nuevas como C2, P4 o E22. ¡Cada una para usos específicos, como IoT o Matter! ¿Cuál te interesa?
+[2026-04-12 02:15:55.056] [UDP] UDP target addr: ('10.196.118.137', 9999)
+[2026-04-12 02:15:55.056] [UDP] UDP JSON sent to ('10.196.118.137', 9999): {"type": "assistant_response", "value": "¡Hola! Hay varias familias de ESP32 de Espressif: el original ESP32 (dual-core Xtensa, WiFi + BT Classic/BLE), S2 (single-core, WiFi solo, USB), S3 (dual-core potente con AI), C3 (RISC-V low-power, WiFi/BLE), C6 (WiFi 6 + Zigbee/Thread), H2 (Zigbee/Thread sin WiFi), y más nuevas como C2, P4 o E22. ¡Cada una para usos específicos, como IoT o Matter! ¿Cuál te interesa?", "final": true, "timestamp": "2026-04-12T02:15:55"}
+[2026-04-12 02:15:56.213] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:15:58.012] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:15:59.811] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:01.610] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:03.409] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:05.208] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:07.007] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:08.797] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:10.596] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:12.395] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:14.193] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:15.993] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:17.792] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:19.592] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:21.964] [UDP] UDP audio paced send: 70 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:22.043] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:27.943] [TURN] New audio turn #13 -> initial seq=919
+[2026-04-12 02:16:28.022] [LOSS] [LOSS] seq 983 lost -> filled with silence
+[2026-04-12 02:16:28.050] [LOSS] [LOSS] seq 984 lost -> filled with silence
+[2026-04-12 02:16:28.100] [LOSS] [LOSS] seq 985 lost -> filled with silence
+[2026-04-12 02:16:28.151] [LOSS] [LOSS] seq 986 lost -> filled with silence
+[2026-04-12 02:16:28.202] [LOSS] [LOSS] seq 987 lost -> filled with silence
+[2026-04-12 02:16:28.274] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-12 02:16:28.277] [LOSS] [LOSS] seq 988 lost -> filled with silence
+[2026-04-12 02:16:28.869] [LOSS] [LOSS] seq 989 lost -> filled with silence
+[2026-04-12 02:16:28.873] [LOSS] [LOSS] seq 990 lost -> filled with silence
+[2026-04-12 02:16:28.874] [LOSS] [LOSS] seq 991 lost -> filled with silence
+[2026-04-12 02:16:28.876] [LOSS] [LOSS] seq 992 lost -> filled with silence
+[2026-04-12 02:16:28.878] [LOSS] [LOSS] seq 993 lost -> filled with silence
+[2026-04-12 02:16:28.880] [LOSS] [LOSS] seq 994 lost -> filled with silence
+[2026-04-12 02:16:28.882] [LOSS] [LOSS] seq 995 lost -> filled with silence
+[2026-04-12 02:16:28.884] [LOSS] [LOSS] seq 996 lost -> filled with silence
+[2026-04-12 02:16:28.886] [LOSS] [LOSS] seq 997 lost -> filled with silence
+[2026-04-12 02:16:28.889] [LOSS] [LOSS] seq 998 lost -> filled with silence
+[2026-04-12 02:16:28.891] [LOSS] [LOSS] seq 999 lost -> filled with silence
+[2026-04-12 02:16:28.893] [LOSS] [LOSS] seq 1000 lost -> filled with silence
+[2026-04-12 02:16:29.037] [LOSS] [LOSS] seq 1001 lost -> filled with silence
+[2026-04-12 02:16:29.039] [LOSS] [LOSS] seq 1002 lost -> filled with silence
+[2026-04-12 02:16:29.041] [LOSS] [LOSS] seq 1003 lost -> filled with silence
+[2026-04-12 02:16:29.054] [LOSS] [LOSS] seq 1004 lost -> filled with silence
+[2026-04-12 02:16:29.104] [LOSS] [LOSS] seq 1005 lost -> filled with silence
+[2026-04-12 02:16:29.154] [LOSS] [LOSS] seq 1006 lost -> filled with silence
+[2026-04-12 02:16:29.206] [LOSS] [LOSS] seq 1007 lost -> filled with silence
+[2026-04-12 02:16:29.256] [LOSS] [LOSS] seq 1008 lost -> filled with silence
+[2026-04-12 02:16:29.306] [LOSS] [LOSS] seq 1009 lost -> filled with silence
+[2026-04-12 02:16:29.353] [LOSS] [LOSS] seq 1010 lost -> filled with silence
+[2026-04-12 02:16:29.403] [LOSS] [LOSS] seq 1011 lost -> filled with silence
+[2026-04-12 02:16:29.454] [LOSS] [LOSS] seq 1012 lost -> filled with silence
+[2026-04-12 02:16:29.499] [LOSS] [LOSS] seq 1013 lost -> filled with silence
+[2026-04-12 02:16:29.552] [LOSS] [LOSS] seq 1014 lost -> filled with silence
+[2026-04-12 02:16:29.603] [LOSS] [LOSS] seq 1015 lost -> filled with silence
+[2026-04-12 02:16:29.654] [LOSS] [LOSS] seq 1016 lost -> filled with silence
+[2026-04-12 02:16:29.928] [LOSS] [LOSS] seq 1017 lost -> filled with silence
+[2026-04-12 02:16:29.940] [LOSS] [LOSS] seq 1018 lost -> filled with silence
+[2026-04-12 02:16:30.213] [LOSS] [LOSS] seq 1019 lost -> filled with silence
+[2026-04-12 02:16:30.224] [LOSS] [LOSS] seq 1020 lost -> filled with silence
+[2026-04-12 02:16:30.226] [LOSS] [LOSS] seq 1021 lost -> filled with silence
+[2026-04-12 02:16:30.228] [LOSS] [LOSS] seq 1022 lost -> filled with silence
+[2026-04-12 02:16:30.229] [STAT] [STAT] seq=1073 | buf=151 | rec=10500 | lost=63 (0.60%)
+[2026-04-12 02:16:32.963] [STAT] [STAT] seq=1524 | buf=0 | rec=10800 | lost=63 (0.58%)
+[2026-04-12 02:16:36.001] [STAT] [STAT] seq=1824 | buf=0 | rec=11100 | lost=63 (0.57%)
+[2026-04-12 02:16:36.398] [TURN] UDP COMMIT signal received from ('10.196.118.137', 9999)
+[2026-04-12 02:16:36.481] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-12 02:16:36.481] [TURN] COMMIT sent to xAI
+[2026-04-12 02:16:37.152] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-12 02:16:37.155] [XAI] xAI confirmed commit
+[2026-04-12 02:16:37.155] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:16:37.155] [USER] User transcription: ¿Qué tipo de chip utilizan los llamados eh, eh, chip yellow display? ¿Son originales?
+[2026-04-12 02:16:37.156] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-12 02:16:43.022] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 02:16:43.032] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:16:43.032] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-12 02:16:43.039] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:16:43.060] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:16:43.475] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-12 02:16:43.516] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-12 02:16:43.547] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:43.748] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-12 02:16:44.054] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:44.773] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:45.662] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:46.922] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:48.350] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:49.352] [ASSISTANT] Assistant transcript done: ¡Sí! Los Cheap Yellow Display o CYD (como ESP32-2432S028R) usan el chip original ESP32-WROOM-32 de Espressif, que es 100% auténtico y común. No son falsos, solo boards chinas económicas con pantalla TFT 2.8, touch, SD y más. ¡Super populares y confiables para proyectos GUI!
+[2026-04-12 02:16:49.362] [ASSISTANT] Response audio completed | chunks=20 | bytes=1017920 | samples=508960 | ~31810.00 ms
+[2026-04-12 02:16:49.362] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 02:16:49.362] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:16:49.363] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-12 02:16:49.363] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-12 02:16:49.363] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 02:16:49.363] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:16:49.363] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-12 02:16:49.363] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-12 02:16:49.363] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 02:16:49.364] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:16:49.364] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-12 02:16:49.364] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-12 02:16:49.364] [XAI] Response completed | tokens=2181
+[2026-04-12 02:16:49.364] [INFO] Assistant response: ¡Sí! Los Cheap Yellow Display o CYD (como ESP32-2432S028R) usan el chip original ESP32-WROOM-32 de Espressif, que es 100% auténtico y común. No son falsos, solo boards chinas económicas con pantalla TFT 2.8, touch, SD y más. ¡Super populares y confiables para proyectos GUI!
+[2026-04-12 02:16:49.364] [UDP] UDP target addr: ('10.196.118.137', 9999)
+[2026-04-12 02:16:49.364] [UDP] UDP JSON sent to ('10.196.118.137', 9999): {"type": "assistant_response", "value": "¡Sí! Los Cheap Yellow Display o CYD (como ESP32-2432S028R) usan el chip original ESP32-WROOM-32 de Espressif, que es 100% auténtico y común. No son falsos, solo boards chinas económicas con pantalla TFT 2.8, touch, SD y más. ¡Super populares y confiables para proyectos GUI!", "final": true, "timestamp": "2026-04-12T02:16:49"}
+[2026-04-12 02:16:49.946] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:51.738] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:53.536] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:55.335] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:57.134] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:16:58.934] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:00.732] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:02.531] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:04.330] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:06.129] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:07.921] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:09.720] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:12.160] [UDP] UDP audio paced send: 72 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:12.238] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:15.533] [TURN] New audio turn #14 -> initial seq=1864
+[2026-04-12 02:17:15.973] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-12 02:17:16.799] [LOSS] [LOSS] seq 2007 lost -> filled with silence
+[2026-04-12 02:17:17.667] [STAT] [STAT] seq=2128 | buf=0 | rec=11400 | lost=64 (0.56%)
+[2026-04-12 02:17:20.671] [STAT] [STAT] seq=2428 | buf=0 | rec=11700 | lost=64 (0.55%)
+[2026-04-12 02:17:23.783] [LOSS] [LOSS] seq 2686 lost -> filled with silence
+[2026-04-12 02:17:23.851] [STAT] [STAT] seq=2729 | buf=0 | rec=12000 | lost=65 (0.54%)
+[2026-04-12 02:17:24.906] [LOSS] [LOSS] seq 2810 lost -> filled with silence
+[2026-04-12 02:17:24.923] [LOSS] [LOSS] seq 2823 lost -> filled with silence
+[2026-04-12 02:17:26.169] [LOSS] [LOSS] seq 2950 lost -> filled with silence
+[2026-04-12 02:17:26.696] [TURN] UDP COMMIT signal received from ('10.196.118.137', 9999)
+[2026-04-12 02:17:26.787] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-12 02:17:26.787] [TURN] COMMIT sent to xAI
+[2026-04-12 02:17:27.087] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-12 02:17:27.089] [XAI] xAI confirmed commit
+[2026-04-12 02:17:27.905] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:17:27.914] [USER] User transcription: Sí, pero, ¿y qué tal el, esta versión de, de el ESP32, WROOM?
+[2026-04-12 02:17:27.914] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-12 02:17:28.315] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 02:17:28.324] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:17:28.325] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-12 02:17:28.728] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:17:28.828] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:17:28.847] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-12 02:17:29.113] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-12 02:17:29.236] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:29.651] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-12 02:17:29.743] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:30.453] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:31.341] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:32.600] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:34.028] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:35.625] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:37.424] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:38.108] [AUDIO] Output audio chunk #25 | bytes=62720 | samples=31360 | ~1960.00 ms
+[2026-04-12 02:17:39.222] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:39.752] [ASSISTANT] Assistant transcript done: ¡El ESP32-WROOM-32 es genial! Es el módulo clásico de Espressif con chip ESP32-D0WD (dual-core Xtensa LX6 a 240 MHz), 520 KB SRAM, WiFi 802.11 b/g/n, Bluetooth Classic + BLE 4.2, hasta 20.5 dBm TX power, y opciones de 4/8/16 MB flash. Perfecto para IoT, bajo consumo (hasta 240 mA pico WiFi), y soporta Arduino/ESP-IDF. ¡Fiable y el corazón de miles de proyectos como tu CYD! ¿Qué más quieres saber?
+[2026-04-12 02:17:39.762] [ASSISTANT] Response audio completed | chunks=31 | bytes=1656640 | samples=828320 | ~51770.00 ms
+[2026-04-12 02:17:39.762] [XAI] Response completed | tokens=3346
+[2026-04-12 02:17:39.763] [INFO] Assistant response: ¡El ESP32-WROOM-32 es genial! Es el módulo clásico de Espressif con chip ESP32-D0WD (dual-core Xtensa LX6 a 240 MHz), 520 KB SRAM, WiFi 802.11 b/g/n, Bluetooth Classic + BLE 4.2, hasta 20.5 dBm TX power, y opciones de 4/8/16 MB flash. Perfecto para IoT, bajo consumo (hasta 240 mA pico WiFi), y soporta Arduino/ESP-IDF. ¡Fiable y el corazón de miles de proyectos como tu CYD! ¿Qué más quieres saber?
+[2026-04-12 02:17:39.763] [UDP] UDP target addr: ('10.196.118.137', 9999)
+[2026-04-12 02:17:39.763] [UDP] UDP JSON sent to ('10.196.118.137', 9999): {"type": "assistant_response", "value": "¡El ESP32-WROOM-32 es genial! Es el módulo clásico de Espressif con chip ESP32-D0WD (dual-core Xtensa LX6 a 240 MHz), 520 KB SRAM, WiFi 802.11 b/g/n, Bluetooth Classic + BLE 4.2, hasta 20.5 dBm TX power, y opciones de 4/8/16 MB flash. Perfecto para IoT, bajo consumo (hasta 240 mA pico WiFi), y soporta Arduino/ESP-IDF. ¡Fiable y el corazón de miles de proyectos como tu CYD! ¿Qué más quieres saber?", "final": true, "timestamp": "2026-04-12T02:17:39"}
+[2026-04-12 02:17:41.021] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:42.820] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:44.619] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:46.418] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:48.218] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:50.016] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:51.807] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:53.606] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:55.405] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:57.205] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:17:59.004] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:00.803] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:02.601] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:04.401] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:06.201] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:07.999] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:09.799] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:11.599] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:13.398] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:15.197] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:16.220] [UDP] UDP audio paced send: 30 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:16.298] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:19.455] [TURN] New audio turn #15 -> initial seq=3031
+[2026-04-12 02:18:19.487] [STAT] [STAT] seq=3032 | buf=0 | rec=12300 | lost=68 (0.55%)
+[2026-04-12 02:18:19.979] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-12 02:18:20.101] [LOSS] [LOSS] seq 3096 lost -> filled with silence
+[2026-04-12 02:18:21.472] [LOSS] [LOSS] seq 3214 lost -> filled with silence
+[2026-04-12 02:18:21.485] [LOSS] [LOSS] seq 3218 lost -> filled with silence
+[2026-04-12 02:18:21.935] [LOSS] [LOSS] seq 3289 lost -> filled with silence
+[2026-04-12 02:18:22.110] [LOSS] [LOSS] seq 3304 lost -> filled with silence
+[2026-04-12 02:18:22.263] [LOSS] [LOSS] seq 3322 lost -> filled with silence
+[2026-04-12 02:18:22.726] [STAT] [STAT] seq=3337 | buf=1 | rec=12600 | lost=74 (0.59%)
+[2026-04-12 02:18:22.737] [LOSS] [LOSS] seq 3337 lost -> filled with silence
+[2026-04-12 02:18:24.335] [TURN] UDP COMMIT signal received from ('10.196.118.137', 9999)
+[2026-04-12 02:18:24.425] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-12 02:18:24.425] [TURN] COMMIT sent to xAI
+[2026-04-12 02:18:24.764] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-12 02:18:24.773] [XAI] xAI confirmed commit
+[2026-04-12 02:18:25.146] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:18:25.155] [USER] User transcription: Cuéntame algo, alguna otra información que
+[2026-04-12 02:18:25.156] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-12 02:18:26.788] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-12 02:18:26.798] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-12 02:18:26.798] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-12 02:18:27.009] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:18:27.079] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-12 02:18:27.324] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-12 02:18:27.517] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:27.738] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-12 02:18:27.904] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-12 02:18:28.034] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:28.744] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:29.633] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:30.885] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:32.312] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:33.909] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:34.486] [ASSISTANT] Assistant transcript done: ¡Claro! El WROOM-32 viene en variantes como WROOM-32D (estándar), WROOM-32U (con conector antena externa para mejor señal), y U4 para ultra-low power. En tu CYD, suele ser el D0WD-V3, con PCB antenna integrada. Consejo: para WiFi fuerte, usa WiFi.setTxPower(20) en código y antena externa si bloquea. ¡Ideal para dashboards o clocks! ¿Qué info más?
+[2026-04-12 02:18:34.486] [ASSISTANT] Response audio completed | chunks=23 | bytes=1159360 | samples=579680 | ~36230.00 ms
+[2026-04-12 02:18:34.486] [XAI] Response completed | tokens=2191
+[2026-04-12 02:18:34.486] [INFO] Assistant response: ¡Claro! El WROOM-32 viene en variantes como WROOM-32D (estándar), WROOM-32U (con conector antena externa para mejor señal), y U4 para ultra-low power. En tu CYD, suele ser el D0WD-V3, con PCB antenna integrada. Consejo: para WiFi fuerte, usa WiFi.setTxPower(20) en código y antena externa si bloquea. ¡Ideal para dashboards o clocks! ¿Qué info más?
+[2026-04-12 02:18:34.486] [UDP] UDP target addr: ('10.196.118.137', 9999)
+[2026-04-12 02:18:34.487] [UDP] UDP JSON sent to ('10.196.118.137', 9999): {"type": "assistant_response", "value": "¡Claro! El WROOM-32 viene en variantes como WROOM-32D (estándar), WROOM-32U (con conector antena externa para mejor señal), y U4 para ultra-low power. En tu CYD, suele ser el D0WD-V3, con PCB antenna integrada. Consejo: para WiFi fuerte, usa WiFi.setTxPower(20) en código y antena externa si bloquea. ¡Ideal para dashboards o clocks! ¿Qué info más?", "final": true, "timestamp": "2026-04-12T02:18:34"}
+[2026-04-12 02:18:35.708] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:37.507] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:39.305] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:41.104] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:42.904] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:44.703] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:46.502] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:48.301] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:50.100] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:51.891] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:53.690] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:55.489] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:57.288] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:18:59.086] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:19:00.210] [UDP] UDP audio paced send: 33 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:19:00.288] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-12 02:32:40.333] [ERROR] websocket receiver error: sent 1011 (internal error) keepalive ping timeout; no close frame received
+[2026-04-12 03:22:55.750] [TURN] New audio turn #16 -> initial seq=1
+[2026-04-12 03:22:55.761] [ERROR] Unexpected error: sent 1011 (internal error) keepalive ping timeout; no close frame received
+[2026-04-12 03:22:55.762] [SUMMARY] === END OF TRANSMISSION ===
+[2026-04-12 03:22:55.762] [SUMMARY] Output saved to: audio_out_2026-04-12_01-57-46.wav
+[2026-04-12 03:22:55.762] [SUMMARY] Total packets received: 12808
+[2026-04-12 03:22:55.763] [SUMMARY] Total packets lost: 75 (0.59%)

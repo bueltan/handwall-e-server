@@ -1,0 +1,10 @@
+[2026-04-12 01:25:47.434] [START] Connected to xAI realtime | input_rate=16000 | output_rate=16000
+[2026-04-12 01:25:47.434] [INFO] Output WAV file: audio_out_2026-04-12_01-25-45.wav
+[2026-04-12 01:25:47.434] [INFO] Log file: bridge_log_2026-04-12_01-25-45.txt
+[2026-04-12 01:25:47.434] [CONFIG] Bridge config | input_rate=16000 | output_rate=16000 | samples_per_packet=160 | packet_audio_size=320
+[2026-04-12 01:25:47.435] [START] UDP server started
+[2026-04-12 01:25:47.435] [INFO] UDP port: 9999
+[2026-04-12 01:25:47.436] [INFO] Jitter buffer: 25 packets (~250 ms)
+[2026-04-12 01:25:47.684] [DEBUG] Unhandled xAI event: type=conversation.created keys=['type', 'event_id', 'conversation', 'previous_item_id']
+[2026-04-12 01:25:47.713] [XAI] Session updated
+[2026-04-12 01:32:27.704] [ERROR] websocket receiver error: sent 1011 (internal error) keepalive ping timeout; no close frame received

@@ -1,0 +1,40 @@
+[2026-04-11 00:01:14.107] [START] Connected to xAI realtime | input_rate=16000 | output_rate=16000
+[2026-04-11 00:01:14.107] [INFO] Output WAV file: audio_out_2026-04-11_00-01-12.wav
+[2026-04-11 00:01:14.107] [INFO] Log file: bridge_log_2026-04-11_00-01-12.txt
+[2026-04-11 00:01:14.108] [CONFIG] Bridge config | input_rate=16000 | output_rate=16000 | samples_per_packet=160 | packet_audio_size=320
+[2026-04-11 00:01:14.108] [START] UDP server started
+[2026-04-11 00:01:14.108] [INFO] UDP port: 9999
+[2026-04-11 00:01:14.108] [INFO] Jitter buffer: 25 packets (~250 ms)
+[2026-04-11 00:01:14.479] [DEBUG] Unhandled xAI event: type=conversation.created keys=['type', 'event_id', 'conversation', 'previous_item_id']
+[2026-04-11 00:01:14.479] [XAI] Session updated
+[2026-04-11 00:01:27.010] [INIT] First packet received -> seq=0
+[2026-04-11 00:01:27.421] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 00:01:29.893] [STAT] [STAT] seq=300 | buf=0 | rec=300 | lost=0 (0.00%)
+[2026-04-11 00:01:30.137] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 00:01:30.218] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 00:01:30.219] [TURN] COMMIT sent to xAI
+[2026-04-11 00:01:31.311] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 00:01:31.321] [XAI] xAI confirmed commit
+[2026-04-11 00:01:31.322] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 00:01:31.322] [USER] User transcription: Hola hola, ¿me escuchas?
+[2026-04-11 00:01:31.322] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 00:01:31.516] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 00:01:31.516] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 00:01:31.516] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 00:01:31.931] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 00:01:31.935] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 00:01:31.935] [AUDIO] Output audio chunk #3 | bytes=19840 | samples=9920 | ~620.00 ms
+[2026-04-11 00:01:32.131] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 00:01:32.472] [UDP] UDP audio paced send: 12 chunks of 1600 bytes | packet_ms=45.00 | pacing_factor=0.9
+[2026-04-11 00:01:32.539] [AUDIO] Output audio chunk #5 | bytes=61760 | samples=30880 | ~1930.00 ms
+[2026-04-11 00:01:32.540] [ASSISTANT] Assistant transcript done: ¡Hola hola! Sí, te escucho perfectamente. ¿En qué puedo ayudarte hoy?
+[2026-04-11 00:01:32.540] [ASSISTANT] Response audio completed | chunks=6 | bytes=149440 | samples=74720 | ~4670.00 ms
+[2026-04-11 00:01:32.540] [XAI] Response completed | tokens=429
+[2026-04-11 00:01:32.540] [INFO] Assistant response: ¡Hola hola! Sí, te escucho perfectamente. ¿En qué puedo ayudarte hoy?
+[2026-04-11 00:01:32.540] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 00:01:32.540] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Hola hola! Sí, te escucho perfectamente. ¿En qué puedo ayudarte hoy?", "final": true, "timestamp": "2026-04-11T00:01:32"}
+[2026-04-11 00:01:33.013] [UDP] UDP audio paced send: 12 chunks of 1600 bytes | packet_ms=45.00 | pacing_factor=0.9
+[2026-04-11 00:01:33.599] [UDP] UDP audio paced send: 13 chunks of 1600 bytes | packet_ms=45.00 | pacing_factor=0.9
+[2026-04-11 00:01:34.500] [UDP] UDP audio paced send: 20 chunks of 1600 bytes | packet_ms=45.00 | pacing_factor=0.9
+[2026-04-11 00:01:36.256] [UDP] UDP audio paced send: 39 chunks of 1600 bytes | packet_ms=45.00 | pacing_factor=0.9
+[2026-04-11 00:01:36.302] [UDP] UDP audio paced send: 1 chunks of 1600 bytes | packet_ms=45.00 | pacing_factor=0.9

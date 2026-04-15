@@ -1,0 +1,10 @@
+[2026-04-11 12:38:32.519] [START] Connected to xAI realtime | input_rate=16000 | output_rate=16000
+[2026-04-11 12:38:32.520] [INFO] Output WAV file: audio_out_2026-04-11_12-38-30.wav
+[2026-04-11 12:38:32.520] [INFO] Log file: bridge_log_2026-04-11_12-38-30.txt
+[2026-04-11 12:38:32.520] [CONFIG] Bridge config | input_rate=16000 | output_rate=16000 | samples_per_packet=160 | packet_audio_size=320
+[2026-04-11 12:38:32.521] [START] UDP server started
+[2026-04-11 12:38:32.521] [INFO] UDP port: 9999
+[2026-04-11 12:38:32.521] [INFO] Jitter buffer: 25 packets (~250 ms)
+[2026-04-11 12:38:32.708] [DEBUG] Unhandled xAI event: type=conversation.created keys=['type', 'event_id', 'conversation', 'previous_item_id']
+[2026-04-11 12:38:32.824] [XAI] Session updated
+[2026-04-11 12:53:33.880] [ERROR] xAI error: {"type": "error", "event_id": "443b52dd-38ee-4d46-875d-e158645cf189", "error": {"message": "Conversation timed out after 900.0 seconds due to inactivity", "type": "server_error", "code": "timeout", "event_id": "443b52dd-38ee-4d46-875d-e158645cf189"}, "previous_item_id": null}

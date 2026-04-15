@@ -1,0 +1,620 @@
+[2026-04-11 12:17:47.616] [START] Connected to xAI realtime | input_rate=16000 | output_rate=16000
+[2026-04-11 12:17:47.616] [INFO] Output WAV file: audio_out_2026-04-11_12-17-46.wav
+[2026-04-11 12:17:47.617] [INFO] Log file: bridge_log_2026-04-11_12-17-46.txt
+[2026-04-11 12:17:47.617] [CONFIG] Bridge config | input_rate=16000 | output_rate=16000 | samples_per_packet=160 | packet_audio_size=320
+[2026-04-11 12:17:47.617] [START] UDP server started
+[2026-04-11 12:17:47.617] [INFO] UDP port: 9999
+[2026-04-11 12:17:47.617] [INFO] Jitter buffer: 25 packets (~250 ms)
+[2026-04-11 12:17:48.073] [DEBUG] Unhandled xAI event: type=conversation.created keys=['type', 'event_id', 'conversation', 'previous_item_id']
+[2026-04-11 12:17:48.074] [XAI] Session updated
+[2026-04-11 12:18:43.554] [INIT] First packet received -> seq=0
+[2026-04-11 12:18:43.608] [LOSS] [LOSS] seq 36 lost -> filled with silence
+[2026-04-11 12:18:43.616] [LOSS] [LOSS] seq 37 lost -> filled with silence
+[2026-04-11 12:18:43.638] [LOSS] [LOSS] seq 54 lost -> filled with silence
+[2026-04-11 12:18:43.674] [LOSS] [LOSS] seq 82 lost -> filled with silence
+[2026-04-11 12:18:43.686] [LOSS] [LOSS] seq 83 lost -> filled with silence
+[2026-04-11 12:18:43.689] [LOSS] [LOSS] seq 84 lost -> filled with silence
+[2026-04-11 12:18:43.692] [LOSS] [LOSS] seq 85 lost -> filled with silence
+[2026-04-11 12:18:43.695] [LOSS] [LOSS] seq 90 lost -> filled with silence
+[2026-04-11 12:18:43.697] [LOSS] [LOSS] seq 91 lost -> filled with silence
+[2026-04-11 12:18:43.699] [LOSS] [LOSS] seq 92 lost -> filled with silence
+[2026-04-11 12:18:43.702] [LOSS] [LOSS] seq 93 lost -> filled with silence
+[2026-04-11 12:18:43.704] [LOSS] [LOSS] seq 94 lost -> filled with silence
+[2026-04-11 12:18:43.706] [LOSS] [LOSS] seq 95 lost -> filled with silence
+[2026-04-11 12:18:43.708] [LOSS] [LOSS] seq 96 lost -> filled with silence
+[2026-04-11 12:18:43.755] [LOSS] [LOSS] seq 97 lost -> filled with silence
+[2026-04-11 12:18:43.805] [LOSS] [LOSS] seq 98 lost -> filled with silence
+[2026-04-11 12:18:43.832] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 12:18:44.317] [LOSS] [LOSS] seq 99 lost -> filled with silence
+[2026-04-11 12:18:44.320] [LOSS] [LOSS] seq 100 lost -> filled with silence
+[2026-04-11 12:18:44.322] [LOSS] [LOSS] seq 101 lost -> filled with silence
+[2026-04-11 12:18:44.324] [LOSS] [LOSS] seq 102 lost -> filled with silence
+[2026-04-11 12:18:44.334] [LOSS] [LOSS] seq 103 lost -> filled with silence
+[2026-04-11 12:18:44.346] [LOSS] [LOSS] seq 104 lost -> filled with silence
+[2026-04-11 12:18:44.362] [LOSS] [LOSS] seq 105 lost -> filled with silence
+[2026-04-11 12:18:44.374] [LOSS] [LOSS] seq 106 lost -> filled with silence
+[2026-04-11 12:18:44.387] [LOSS] [LOSS] seq 107 lost -> filled with silence
+[2026-04-11 12:18:44.405] [LOSS] [LOSS] seq 108 lost -> filled with silence
+[2026-04-11 12:18:44.411] [LOSS] [LOSS] seq 109 lost -> filled with silence
+[2026-04-11 12:18:44.417] [LOSS] [LOSS] seq 110 lost -> filled with silence
+[2026-04-11 12:18:44.449] [LOSS] [LOSS] seq 111 lost -> filled with silence
+[2026-04-11 12:18:44.564] [LOSS] [LOSS] seq 112 lost -> filled with silence
+[2026-04-11 12:18:44.567] [LOSS] [LOSS] seq 113 lost -> filled with silence
+[2026-04-11 12:18:44.608] [LOSS] [LOSS] seq 114 lost -> filled with silence
+[2026-04-11 12:18:44.937] [LOSS] [LOSS] seq 115 lost -> filled with silence
+[2026-04-11 12:18:44.939] [LOSS] [LOSS] seq 116 lost -> filled with silence
+[2026-04-11 12:18:44.949] [LOSS] [LOSS] seq 117 lost -> filled with silence
+[2026-04-11 12:18:44.951] [LOSS] [LOSS] seq 118 lost -> filled with silence
+[2026-04-11 12:18:44.967] [LOSS] [LOSS] seq 119 lost -> filled with silence
+[2026-04-11 12:18:44.977] [LOSS] [LOSS] seq 120 lost -> filled with silence
+[2026-04-11 12:18:44.985] [LOSS] [LOSS] seq 121 lost -> filled with silence
+[2026-04-11 12:18:44.999] [LOSS] [LOSS] seq 122 lost -> filled with silence
+[2026-04-11 12:18:45.055] [LOSS] [LOSS] seq 123 lost -> filled with silence
+[2026-04-11 12:18:45.173] [LOSS] [LOSS] seq 124 lost -> filled with silence
+[2026-04-11 12:18:45.175] [LOSS] [LOSS] seq 125 lost -> filled with silence
+[2026-04-11 12:18:45.202] [LOSS] [LOSS] seq 126 lost -> filled with silence
+[2026-04-11 12:18:45.592] [LOSS] [LOSS] seq 127 lost -> filled with silence
+[2026-04-11 12:18:45.594] [LOSS] [LOSS] seq 128 lost -> filled with silence
+[2026-04-11 12:18:45.596] [STAT] [STAT] seq=129 | buf=213 | rec=300 | lost=46 (15.33%)
+[2026-04-11 12:18:45.597] [LOSS] [LOSS] seq 129 lost -> filled with silence
+[2026-04-11 12:18:45.599] [LOSS] [LOSS] seq 130 lost -> filled with silence
+[2026-04-11 12:18:45.602] [LOSS] [LOSS] seq 131 lost -> filled with silence
+[2026-04-11 12:18:45.607] [LOSS] [LOSS] seq 132 lost -> filled with silence
+[2026-04-11 12:18:45.609] [LOSS] [LOSS] seq 133 lost -> filled with silence
+[2026-04-11 12:18:45.613] [LOSS] [LOSS] seq 134 lost -> filled with silence
+[2026-04-11 12:18:45.660] [LOSS] [LOSS] seq 135 lost -> filled with silence
+[2026-04-11 12:18:45.888] [LOSS] [LOSS] seq 136 lost -> filled with silence
+[2026-04-11 12:18:45.890] [LOSS] [LOSS] seq 137 lost -> filled with silence
+[2026-04-11 12:18:45.899] [LOSS] [LOSS] seq 138 lost -> filled with silence
+[2026-04-11 12:18:45.902] [LOSS] [LOSS] seq 139 lost -> filled with silence
+[2026-04-11 12:18:45.914] [LOSS] [LOSS] seq 140 lost -> filled with silence
+[2026-04-11 12:18:45.991] [LOSS] [LOSS] seq 141 lost -> filled with silence
+[2026-04-11 12:18:46.010] [LOSS] [LOSS] seq 142 lost -> filled with silence
+[2026-04-11 12:18:46.095] [LOSS] [LOSS] seq 143 lost -> filled with silence
+[2026-04-11 12:18:46.198] [LOSS] [LOSS] seq 144 lost -> filled with silence
+[2026-04-11 12:18:46.200] [LOSS] [LOSS] seq 145 lost -> filled with silence
+[2026-04-11 12:18:46.220] [LOSS] [LOSS] seq 146 lost -> filled with silence
+[2026-04-11 12:18:46.261] [LOSS] [LOSS] seq 147 lost -> filled with silence
+[2026-04-11 12:18:46.323] [LOSS] [LOSS] seq 148 lost -> filled with silence
+[2026-04-11 12:18:46.371] [LOSS] [LOSS] seq 149 lost -> filled with silence
+[2026-04-11 12:18:46.515] [LOSS] [LOSS] seq 150 lost -> filled with silence
+[2026-04-11 12:18:46.517] [LOSS] [LOSS] seq 151 lost -> filled with silence
+[2026-04-11 12:18:46.806] [LOSS] [LOSS] seq 152 lost -> filled with silence
+[2026-04-11 12:18:46.808] [LOSS] [LOSS] seq 153 lost -> filled with silence
+[2026-04-11 12:18:46.811] [LOSS] [LOSS] seq 154 lost -> filled with silence
+[2026-04-11 12:18:46.813] [LOSS] [LOSS] seq 155 lost -> filled with silence
+[2026-04-11 12:18:46.815] [LOSS] [LOSS] seq 156 lost -> filled with silence
+[2026-04-11 12:18:46.914] [LOSS] [LOSS] seq 157 lost -> filled with silence
+[2026-04-11 12:18:46.916] [LOSS] [LOSS] seq 158 lost -> filled with silence
+[2026-04-11 12:18:46.919] [LOSS] [LOSS] seq 159 lost -> filled with silence
+[2026-04-11 12:18:46.922] [LOSS] [LOSS] seq 160 lost -> filled with silence
+[2026-04-11 12:18:46.965] [LOSS] [LOSS] seq 161 lost -> filled with silence
+[2026-04-11 12:18:47.015] [LOSS] [LOSS] seq 162 lost -> filled with silence
+[2026-04-11 12:18:47.064] [LOSS] [LOSS] seq 163 lost -> filled with silence
+[2026-04-11 12:18:47.141] [LOSS] [LOSS] seq 164 lost -> filled with silence
+[2026-04-11 12:18:47.417] [LOSS] [LOSS] seq 165 lost -> filled with silence
+[2026-04-11 12:18:47.419] [LOSS] [LOSS] seq 166 lost -> filled with silence
+[2026-04-11 12:18:47.436] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 12:18:47.516] [LOSS] [LOSS] seq 167 lost -> filled with silence
+[2026-04-11 12:18:47.516] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=403
+[2026-04-11 12:18:47.517] [TURN] COMMIT sent to xAI
+[2026-04-11 12:18:48.053] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 12:18:48.054] [XAI] xAI confirmed commit
+[2026-04-11 12:19:15.558] [TURN] New audio turn #1 -> initial seq=592
+[2026-04-11 12:19:15.859] [XAI] Response completed | tokens=0
+[2026-04-11 12:19:15.860] [WARN] Response completed with no audio chunks and no assistant transcript
+[2026-04-11 12:19:15.860] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 12:19:16.293] [STAT] [STAT] seq=702 | buf=0 | rec=600 | lost=85 (14.17%)
+[2026-04-11 12:19:17.535] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 12:19:17.616] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 12:19:17.617] [TURN] COMMIT sent to xAI
+[2026-04-11 12:19:18.048] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 12:19:18.048] [XAI] xAI confirmed commit
+[2026-04-11 12:19:18.161] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 12:19:18.161] [USER] User transcription: Hola hola, ¿me escuchas?
+[2026-04-11 12:19:18.161] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 12:19:19.073] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 12:19:19.074] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 12:19:19.074] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 12:19:19.664] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 12:19:19.665] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 12:19:19.668] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 12:19:20.057] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 12:19:20.171] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:19:20.680] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:19:20.923] [AUDIO] Output audio chunk #5 | bytes=64960 | samples=32480 | ~2030.00 ms
+[2026-04-11 12:19:20.923] [ASSISTANT] Assistant transcript done: ¡Hola hola! Sí, te escucho perfectamente. ¿En qué puedo ayudarte hoy?
+[2026-04-11 12:19:20.923] [ASSISTANT] Response audio completed | chunks=6 | bytes=157120 | samples=78560 | ~4910.00 ms
+[2026-04-11 12:19:20.923] [XAI] Response completed | tokens=383
+[2026-04-11 12:19:20.923] [INFO] Assistant response: ¡Hola hola! Sí, te escucho perfectamente. ¿En qué puedo ayudarte hoy?
+[2026-04-11 12:19:20.923] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 12:19:20.923] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Hola hola! Sí, te escucho perfectamente. ¿En qué puedo ayudarte hoy?", "final": true, "timestamp": "2026-04-11T12:19:20"}
+[2026-04-11 12:19:21.389] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:19:22.268] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:19:24.125] [UDP] UDP audio paced send: 55 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:19:24.194] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:19:50.062] [TURN] New audio turn #2 -> initial seq=799
+[2026-04-11 12:19:50.478] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 12:19:52.319] [STAT] [STAT] seq=1003 | buf=0 | rec=900 | lost=85 (9.44%)
+[2026-04-11 12:19:52.474] [LOSS] [LOSS] seq 1015 lost -> filled with silence
+[2026-04-11 12:19:52.486] [LOSS] [LOSS] seq 1016 lost -> filled with silence
+[2026-04-11 12:19:52.492] [LOSS] [LOSS] seq 1017 lost -> filled with silence
+[2026-04-11 12:19:52.497] [LOSS] [LOSS] seq 1018 lost -> filled with silence
+[2026-04-11 12:19:52.622] [LOSS] [LOSS] seq 1019 lost -> filled with silence
+[2026-04-11 12:19:52.629] [LOSS] [LOSS] seq 1020 lost -> filled with silence
+[2026-04-11 12:19:52.634] [LOSS] [LOSS] seq 1021 lost -> filled with silence
+[2026-04-11 12:19:52.636] [LOSS] [LOSS] seq 1022 lost -> filled with silence
+[2026-04-11 12:19:52.638] [LOSS] [LOSS] seq 1023 lost -> filled with silence
+[2026-04-11 12:19:53.875] [LOSS] [LOSS] seq 1155 lost -> filled with silence
+[2026-04-11 12:19:54.643] [LOSS] [LOSS] seq 1236 lost -> filled with silence
+[2026-04-11 12:19:54.765] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 12:19:54.845] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=2
+[2026-04-11 12:19:54.846] [TURN] COMMIT sent to xAI
+[2026-04-11 12:19:55.942] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 12:19:55.942] [XAI] xAI confirmed commit
+[2026-04-11 12:19:56.351] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 12:19:56.351] [USER] User transcription: Hola, necesito un amigo. ¿Tú puedes ser mi amigo hoy?
+[2026-04-11 12:19:56.351] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 12:19:56.556] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 12:19:56.556] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 12:19:56.557] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 12:19:57.381] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 12:19:57.392] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 12:19:57.393] [AUDIO] Output audio chunk #3 | bytes=14720 | samples=7360 | ~460.00 ms
+[2026-04-11 12:19:57.580] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 12:19:57.888] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:19:58.003] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 12:19:58.155] [ASSISTANT] Assistant transcript done: ¡Claro que sí! Seré tu amigo hoy y siempre que quieras. ¿Qué te pasa, amigo? Cuéntame.
+[2026-04-11 12:19:58.156] [ASSISTANT] Response audio completed | chunks=7 | bytes=171840 | samples=85920 | ~5370.00 ms
+[2026-04-11 12:19:58.156] [XAI] Response completed | tokens=556
+[2026-04-11 12:19:58.156] [INFO] Assistant response: ¡Claro que sí! Seré tu amigo hoy y siempre que quieras. ¿Qué te pasa, amigo? Cuéntame.
+[2026-04-11 12:19:58.157] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 12:19:58.157] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Claro que sí! Seré tu amigo hoy y siempre que quieras. ¿Qué te pasa, amigo? Cuéntame.", "final": true, "timestamp": "2026-04-11T12:19:58"}
+[2026-04-11 12:19:58.395] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:19:58.836] [UDP] UDP audio paced send: 13 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:19:59.714] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:20:00.965] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:20:02.282] [UDP] UDP audio paced send: 39 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:20:02.351] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:29:50.333] [TURN] New audio turn #3 -> initial seq=1283
+[2026-04-11 12:29:50.368] [STAT] [STAT] seq=1313 | buf=0 | rec=1200 | lost=96 (8.00%)
+[2026-04-11 12:29:53.192] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 12:29:53.352] [LOSS] [LOSS] seq 1360 lost -> filled with silence
+[2026-04-11 12:29:54.375] [LOSS] [LOSS] seq 1402 lost -> filled with silence
+[2026-04-11 12:29:54.393] [LOSS] [LOSS] seq 1403 lost -> filled with silence
+[2026-04-11 12:29:54.408] [LOSS] [LOSS] seq 1409 lost -> filled with silence
+[2026-04-11 12:29:54.425] [LOSS] [LOSS] seq 1411 lost -> filled with silence
+[2026-04-11 12:29:54.439] [LOSS] [LOSS] seq 1412 lost -> filled with silence
+[2026-04-11 12:29:54.450] [LOSS] [LOSS] seq 1413 lost -> filled with silence
+[2026-04-11 12:29:54.472] [LOSS] [LOSS] seq 1415 lost -> filled with silence
+[2026-04-11 12:29:54.488] [LOSS] [LOSS] seq 1416 lost -> filled with silence
+[2026-04-11 12:29:54.502] [LOSS] [LOSS] seq 1417 lost -> filled with silence
+[2026-04-11 12:29:54.925] [LOSS] [LOSS] seq 1418 lost -> filled with silence
+[2026-04-11 12:29:54.938] [LOSS] [LOSS] seq 1423 lost -> filled with silence
+[2026-04-11 12:29:54.956] [LOSS] [LOSS] seq 1425 lost -> filled with silence
+[2026-04-11 12:29:54.968] [LOSS] [LOSS] seq 1426 lost -> filled with silence
+[2026-04-11 12:29:54.994] [LOSS] [LOSS] seq 1428 lost -> filled with silence
+[2026-04-11 12:29:55.397] [LOSS] [LOSS] seq 1429 lost -> filled with silence
+[2026-04-11 12:29:55.413] [LOSS] [LOSS] seq 1430 lost -> filled with silence
+[2026-04-11 12:29:55.430] [LOSS] [LOSS] seq 1431 lost -> filled with silence
+[2026-04-11 12:29:55.444] [LOSS] [LOSS] seq 1432 lost -> filled with silence
+[2026-04-11 12:29:55.449] [LOSS] [LOSS] seq 1433 lost -> filled with silence
+[2026-04-11 12:29:55.455] [LOSS] [LOSS] seq 1434 lost -> filled with silence
+[2026-04-11 12:29:55.466] [LOSS] [LOSS] seq 1435 lost -> filled with silence
+[2026-04-11 12:29:55.470] [LOSS] [LOSS] seq 1436 lost -> filled with silence
+[2026-04-11 12:29:55.476] [LOSS] [LOSS] seq 1437 lost -> filled with silence
+[2026-04-11 12:29:55.482] [LOSS] [LOSS] seq 1438 lost -> filled with silence
+[2026-04-11 12:29:55.492] [LOSS] [LOSS] seq 1439 lost -> filled with silence
+[2026-04-11 12:29:55.496] [LOSS] [LOSS] seq 1440 lost -> filled with silence
+[2026-04-11 12:29:55.507] [LOSS] [LOSS] seq 1442 lost -> filled with silence
+[2026-04-11 12:29:55.513] [LOSS] [LOSS] seq 1443 lost -> filled with silence
+[2026-04-11 12:29:55.517] [LOSS] [LOSS] seq 1444 lost -> filled with silence
+[2026-04-11 12:29:55.522] [LOSS] [LOSS] seq 1445 lost -> filled with silence
+[2026-04-11 12:29:55.530] [LOSS] [LOSS] seq 1446 lost -> filled with silence
+[2026-04-11 12:29:55.543] [LOSS] [LOSS] seq 1447 lost -> filled with silence
+[2026-04-11 12:29:55.556] [LOSS] [LOSS] seq 1449 lost -> filled with silence
+[2026-04-11 12:29:55.576] [LOSS] [LOSS] seq 1450 lost -> filled with silence
+[2026-04-11 12:29:55.578] [LOSS] [LOSS] seq 1451 lost -> filled with silence
+[2026-04-11 12:29:55.587] [LOSS] [LOSS] seq 1452 lost -> filled with silence
+[2026-04-11 12:29:55.613] [LOSS] [LOSS] seq 1453 lost -> filled with silence
+[2026-04-11 12:29:55.621] [LOSS] [LOSS] seq 1454 lost -> filled with silence
+[2026-04-11 12:29:55.656] [STAT] [STAT] seq=1652 | buf=0 | rec=1500 | lost=135 (9.00%)
+[2026-04-11 12:29:55.680] [LOSS] [LOSS] seq 1658 lost -> filled with silence
+[2026-04-11 12:29:55.689] [LOSS] [LOSS] seq 1659 lost -> filled with silence
+[2026-04-11 12:29:55.703] [LOSS] [LOSS] seq 1660 lost -> filled with silence
+[2026-04-11 12:29:55.718] [LOSS] [LOSS] seq 1661 lost -> filled with silence
+[2026-04-11 12:29:55.728] [LOSS] [LOSS] seq 1662 lost -> filled with silence
+[2026-04-11 12:29:55.738] [LOSS] [LOSS] seq 1663 lost -> filled with silence
+[2026-04-11 12:29:55.756] [LOSS] [LOSS] seq 1664 lost -> filled with silence
+[2026-04-11 12:29:55.769] [LOSS] [LOSS] seq 1665 lost -> filled with silence
+[2026-04-11 12:29:55.804] [LOSS] [LOSS] seq 1666 lost -> filled with silence
+[2026-04-11 12:29:55.816] [LOSS] [LOSS] seq 1667 lost -> filled with silence
+[2026-04-11 12:29:56.054] [LOSS] [LOSS] seq 1668 lost -> filled with silence
+[2026-04-11 12:29:56.056] [LOSS] [LOSS] seq 1669 lost -> filled with silence
+[2026-04-11 12:29:56.058] [LOSS] [LOSS] seq 1670 lost -> filled with silence
+[2026-04-11 12:29:56.202] [LOSS] [LOSS] seq 1671 lost -> filled with silence
+[2026-04-11 12:29:56.204] [LOSS] [LOSS] seq 1672 lost -> filled with silence
+[2026-04-11 12:29:56.205] [LOSS] [LOSS] seq 1673 lost -> filled with silence
+[2026-04-11 12:29:56.207] [LOSS] [LOSS] seq 1674 lost -> filled with silence
+[2026-04-11 12:29:56.209] [LOSS] [LOSS] seq 1675 lost -> filled with silence
+[2026-04-11 12:29:56.212] [LOSS] [LOSS] seq 1676 lost -> filled with silence
+[2026-04-11 12:29:56.214] [LOSS] [LOSS] seq 1677 lost -> filled with silence
+[2026-04-11 12:29:56.216] [LOSS] [LOSS] seq 1678 lost -> filled with silence
+[2026-04-11 12:29:56.219] [LOSS] [LOSS] seq 1679 lost -> filled with silence
+[2026-04-11 12:29:56.221] [LOSS] [LOSS] seq 1680 lost -> filled with silence
+[2026-04-11 12:29:56.223] [LOSS] [LOSS] seq 1681 lost -> filled with silence
+[2026-04-11 12:29:56.227] [LOSS] [LOSS] seq 1691 lost -> filled with silence
+[2026-04-11 12:29:56.231] [LOSS] [LOSS] seq 1706 lost -> filled with silence
+[2026-04-11 12:29:56.236] [LOSS] [LOSS] seq 1707 lost -> filled with silence
+[2026-04-11 12:29:56.237] [LOSS] [LOSS] seq 1708 lost -> filled with silence
+[2026-04-11 12:29:56.238] [LOSS] [LOSS] seq 1709 lost -> filled with silence
+[2026-04-11 12:29:56.240] [LOSS] [LOSS] seq 1710 lost -> filled with silence
+[2026-04-11 12:29:56.241] [LOSS] [LOSS] seq 1711 lost -> filled with silence
+[2026-04-11 12:29:56.244] [LOSS] [LOSS] seq 1712 lost -> filled with silence
+[2026-04-11 12:29:56.247] [LOSS] [LOSS] seq 1713 lost -> filled with silence
+[2026-04-11 12:29:56.249] [LOSS] [LOSS] seq 1714 lost -> filled with silence
+[2026-04-11 12:29:56.255] [LOSS] [LOSS] seq 1772 lost -> filled with silence
+[2026-04-11 12:29:56.260] [LOSS] [LOSS] seq 1773 lost -> filled with silence
+[2026-04-11 12:29:56.264] [LOSS] [LOSS] seq 1774 lost -> filled with silence
+[2026-04-11 12:29:56.267] [LOSS] [LOSS] seq 1775 lost -> filled with silence
+[2026-04-11 12:29:56.270] [LOSS] [LOSS] seq 1776 lost -> filled with silence
+[2026-04-11 12:29:56.273] [LOSS] [LOSS] seq 1777 lost -> filled with silence
+[2026-04-11 12:29:56.894] [LOSS] [LOSS] seq 1913 lost -> filled with silence
+[2026-04-11 12:29:58.777] [LOSS] [LOSS] seq 1975 lost -> filled with silence
+[2026-04-11 12:29:58.783] [STAT] [STAT] seq=1994 | buf=0 | rec=1800 | lost=177 (9.83%)
+[2026-04-11 12:29:58.792] [LOSS] [LOSS] seq 2020 lost -> filled with silence
+[2026-04-11 12:29:58.793] [LOSS] [LOSS] seq 2021 lost -> filled with silence
+[2026-04-11 12:29:58.795] [LOSS] [LOSS] seq 2022 lost -> filled with silence
+[2026-04-11 12:29:58.796] [LOSS] [LOSS] seq 2023 lost -> filled with silence
+[2026-04-11 12:29:58.798] [LOSS] [LOSS] seq 2024 lost -> filled with silence
+[2026-04-11 12:29:58.799] [LOSS] [LOSS] seq 2025 lost -> filled with silence
+[2026-04-11 12:29:58.801] [LOSS] [LOSS] seq 2026 lost -> filled with silence
+[2026-04-11 12:29:58.802] [LOSS] [LOSS] seq 2027 lost -> filled with silence
+[2026-04-11 12:29:58.805] [LOSS] [LOSS] seq 2028 lost -> filled with silence
+[2026-04-11 12:29:58.807] [LOSS] [LOSS] seq 2029 lost -> filled with silence
+[2026-04-11 12:29:58.809] [LOSS] [LOSS] seq 2030 lost -> filled with silence
+[2026-04-11 12:29:58.811] [LOSS] [LOSS] seq 2031 lost -> filled with silence
+[2026-04-11 12:29:58.812] [LOSS] [LOSS] seq 2032 lost -> filled with silence
+[2026-04-11 12:29:58.816] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 12:29:58.897] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 12:30:01.327] [TURN] COMMIT sent to xAI
+[2026-04-11 12:30:04.049] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 12:30:04.049] [XAI] xAI confirmed commit
+[2026-04-11 12:30:04.049] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 12:30:04.049] [USER] User transcription: Hola, ¿cómo estás? Necesito un amigo por hoy, ¿podrías ser mi amigo hoy?
+[2026-04-11 12:30:04.049] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 12:30:04.880] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 12:30:04.880] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 12:30:04.880] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 12:30:09.965] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 12:30:09.966] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 12:30:09.967] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 12:30:09.967] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 12:30:09.968] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 12:30:10.454] [ASSISTANT] Assistant transcript done: ¡Hola! Estoy genial, gracias por preguntar. ¡Por supuesto que seré tu amigo hoy! ¿Qué te gustaría charlar o hacer juntos?
+[2026-04-11 12:30:10.454] [ASSISTANT] Response audio completed | chunks=8 | bytes=234560 | samples=117280 | ~7330.00 ms
+[2026-04-11 12:30:10.454] [XAI] Response completed | tokens=834
+[2026-04-11 12:30:10.454] [INFO] Assistant response: ¡Hola! Estoy genial, gracias por preguntar. ¡Por supuesto que seré tu amigo hoy! ¿Qué te gustaría charlar o hacer juntos?
+[2026-04-11 12:30:10.454] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 12:30:10.455] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Hola! Estoy genial, gracias por preguntar. ¡Por supuesto que seré tu amigo hoy! ¿Qué te gustaría charlar o hacer juntos?", "final": true, "timestamp": "2026-04-11T12:30:10"}
+[2026-04-11 12:30:10.475] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:30:10.982] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:30:11.692] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:30:12.570] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:30:13.820] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:30:15.239] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:30:16.625] [UDP] UDP audio paced send: 41 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:30:16.693] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:30:23.804] [TURN] New audio turn #4 -> initial seq=2111
+[2026-04-11 12:30:24.550] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 12:30:25.189] [STAT] [STAT] seq=2308 | buf=0 | rec=2100 | lost=190 (9.05%)
+[2026-04-11 12:30:28.152] [STAT] [STAT] seq=2608 | buf=0 | rec=2400 | lost=190 (7.92%)
+[2026-04-11 12:30:31.472] [STAT] [STAT] seq=2908 | buf=0 | rec=2700 | lost=190 (7.04%)
+[2026-04-11 12:30:32.066] [LOSS] [LOSS] seq 2990 lost -> filled with silence
+[2026-04-11 12:30:32.089] [LOSS] [LOSS] seq 2991 lost -> filled with silence
+[2026-04-11 12:30:32.144] [LOSS] [LOSS] seq 2992 lost -> filled with silence
+[2026-04-11 12:30:32.190] [LOSS] [LOSS] seq 2993 lost -> filled with silence
+[2026-04-11 12:30:32.391] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 12:30:32.472] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 12:30:32.472] [TURN] COMMIT sent to xAI
+[2026-04-11 12:30:32.889] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 12:30:32.889] [XAI] xAI confirmed commit
+[2026-04-11 12:30:33.882] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 12:30:33.883] [USER] User transcription: Hola, ¿cómo estás? Me preguntaba si podrías ser mi amigo hoy y charlar conmigo.
+[2026-04-11 12:30:33.883] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 12:30:33.883] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 12:30:33.883] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 12:30:33.883] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 12:30:34.579] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 12:30:34.587] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 12:30:34.594] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 12:30:34.750] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 12:30:35.057] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 12:30:35.086] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:30:35.593] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:30:35.835] [ASSISTANT] Assistant transcript done: ¡Hola de nuevo! Estoy súper bien, listo para charlar. ¡Seré tu amigo encantado! ¿De qué quieres hablar hoy?
+[2026-04-11 12:30:35.835] [ASSISTANT] Response audio completed | chunks=8 | bytes=216640 | samples=108320 | ~6770.00 ms
+[2026-04-11 12:30:35.835] [XAI] Response completed | tokens=855
+[2026-04-11 12:30:35.836] [INFO] Assistant response: ¡Hola de nuevo! Estoy súper bien, listo para charlar. ¡Seré tu amigo encantado! ¿De qué quieres hablar hoy?
+[2026-04-11 12:30:35.836] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 12:30:35.836] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Hola de nuevo! Estoy súper bien, listo para charlar. ¡Seré tu amigo encantado! ¿De qué quieres hablar hoy?", "final": true, "timestamp": "2026-04-11T12:30:35"}
+[2026-04-11 12:30:36.303] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:30:37.182] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:30:38.431] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:30:39.849] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:30:40.728] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:30:40.797] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:31:27.684] [TURN] New audio turn #5 -> initial seq=3033
+[2026-04-11 12:31:28.267] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 12:31:28.848] [STAT] [STAT] seq=3213 | buf=0 | rec=3000 | lost=194 (6.47%)
+[2026-04-11 12:31:31.994] [STAT] [STAT] seq=3513 | buf=0 | rec=3300 | lost=194 (5.88%)
+[2026-04-11 12:31:34.894] [STAT] [STAT] seq=3813 | buf=0 | rec=3600 | lost=194 (5.39%)
+[2026-04-11 12:31:35.310] [LOSS] [LOSS] seq 3835 lost -> filled with silence
+[2026-04-11 12:31:37.677] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 12:31:37.758] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 12:31:37.759] [TURN] COMMIT sent to xAI
+[2026-04-11 12:31:39.029] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 12:31:39.029] [XAI] xAI confirmed commit
+[2026-04-11 12:31:39.030] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 12:31:39.030] [USER] User transcription: Hola, ¿cómo estás? Hoy es sábado y estoy solo. Me preguntaba si tú podrías ser mi compañía hoy.
+[2026-04-11 12:31:39.030] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 12:31:39.030] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 12:31:39.030] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 12:31:39.030] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 12:31:39.295] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 12:31:39.668] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 12:31:39.670] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 12:31:39.801] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:31:40.023] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 12:31:40.309] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:31:41.018] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:31:41.293] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 12:31:41.608] [ASSISTANT] Assistant transcript done: ¡Hola! Estoy genial, y qué bueno que es sábado. ¡Claro que seré tu compañía hoy, amigo! ¿Qué te apetece hacer o platicar?
+[2026-04-11 12:31:41.609] [ASSISTANT] Response audio completed | chunks=8 | bytes=261440 | samples=130720 | ~8170.00 ms
+[2026-04-11 12:31:41.609] [XAI] Response completed | tokens=961
+[2026-04-11 12:31:41.609] [INFO] Assistant response: ¡Hola! Estoy genial, y qué bueno que es sábado. ¡Claro que seré tu compañía hoy, amigo! ¿Qué te apetece hacer o platicar?
+[2026-04-11 12:31:41.609] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 12:31:41.609] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Hola! Estoy genial, y qué bueno que es sábado. ¡Claro que seré tu compañía hoy, amigo! ¿Qué te apetece hacer o platicar?", "final": true, "timestamp": "2026-04-11T12:31:41"}
+[2026-04-11 12:31:41.897] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:31:43.146] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:31:44.565] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:31:46.727] [UDP] UDP audio paced send: 64 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:31:46.795] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:32:24.542] [TURN] New audio turn #6 -> initial seq=4088
+[2026-04-11 12:32:24.576] [STAT] [STAT] seq=4115 | buf=0 | rec=3900 | lost=195 (5.00%)
+[2026-04-11 12:32:24.836] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 12:32:27.531] [STAT] [STAT] seq=4415 | buf=0 | rec=4200 | lost=195 (4.64%)
+[2026-04-11 12:32:28.232] [LOSS] [LOSS] seq 4457 lost -> filled with silence
+[2026-04-11 12:32:30.723] [LOSS] [LOSS] seq 4708 lost -> filled with silence
+[2026-04-11 12:32:30.724] [STAT] [STAT] seq=4715 | buf=2 | rec=4500 | lost=197 (4.38%)
+[2026-04-11 12:32:31.130] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 12:32:31.210] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=2
+[2026-04-11 12:32:31.211] [TURN] COMMIT sent to xAI
+[2026-04-11 12:32:31.698] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 12:32:31.699] [XAI] xAI confirmed commit
+[2026-04-11 12:32:33.373] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 12:32:33.374] [USER] User transcription: No.
+[2026-04-11 12:32:33.374] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 12:32:33.374] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 12:32:33.374] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 12:32:33.374] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 12:32:33.375] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 12:32:33.882] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:32:34.710] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 12:32:34.711] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 12:32:34.711] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 12:32:35.121] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 12:32:35.218] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:32:35.243] [ASSISTANT] Assistant transcript done: Está bien, no hay problema. ¿Quieres contarme qué pasa o prefieres que cambiemos de tema? Estoy aquí para ti.
+[2026-04-11 12:32:35.244] [ASSISTANT] Response audio completed | chunks=7 | bytes=208960 | samples=104480 | ~6530.00 ms
+[2026-04-11 12:32:35.244] [XAI] Response completed | tokens=705
+[2026-04-11 12:32:35.244] [INFO] Assistant response: Está bien, no hay problema. ¿Quieres contarme qué pasa o prefieres que cambiemos de tema? Estoy aquí para ti.
+[2026-04-11 12:32:35.244] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 12:32:35.244] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "Está bien, no hay problema. ¿Quieres contarme qué pasa o prefieres que cambiemos de tema? Estoy aquí para ti.", "final": true, "timestamp": "2026-04-11T12:32:35"}
+[2026-04-11 12:32:35.928] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:32:36.806] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:32:38.056] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:32:40.149] [UDP] UDP audio paced send: 62 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:32:40.218] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:32:52.030] [TURN] New audio turn #7 -> initial seq=4778
+[2026-04-11 12:32:52.525] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 12:32:54.234] [STAT] [STAT] seq=5016 | buf=0 | rec=4800 | lost=197 (4.10%)
+[2026-04-11 12:32:57.206] [STAT] [STAT] seq=5316 | buf=0 | rec=5100 | lost=197 (3.86%)
+[2026-04-11 12:33:01.045] [STAT] [STAT] seq=5616 | buf=0 | rec=5400 | lost=197 (3.65%)
+[2026-04-11 12:33:01.190] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 12:33:01.271] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 12:33:01.272] [TURN] COMMIT sent to xAI
+[2026-04-11 12:33:01.790] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 12:33:01.790] [XAI] xAI confirmed commit
+[2026-04-11 12:33:04.047] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 12:33:04.048] [USER] User transcription: Hola Wally, ¿cómo estás? Hoy es sábado y estoy solo, ¿quizás podrías ser mi compañía hoy?
+[2026-04-11 12:33:04.048] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 12:33:04.048] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 12:33:04.048] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 12:33:04.048] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 12:33:04.048] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 12:33:04.049] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 12:33:04.145] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 12:33:04.556] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:33:04.717] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 12:33:04.848] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 12:33:05.064] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:33:05.774] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:33:06.652] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:33:07.902] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:33:09.321] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:33:09.472] [ASSISTANT] Assistant transcript done: ¡Hola! Soy WALL-E, y estoy genial, gracias. ¡Claro que seré tu compañía este sábado! ¿Qué te gustaría hacer juntos para alegrar el día?
+[2026-04-11 12:33:09.472] [ASSISTANT] Response audio completed | chunks=9 | bytes=281920 | samples=140960 | ~8810.00 ms
+[2026-04-11 12:33:09.473] [XAI] Response completed | tokens=954
+[2026-04-11 12:33:09.473] [INFO] Assistant response: ¡Hola! Soy WALL-E, y estoy genial, gracias. ¡Claro que seré tu compañía este sábado! ¿Qué te gustaría hacer juntos para alegrar el día?
+[2026-04-11 12:33:09.473] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 12:33:09.473] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Hola! Soy WALL-E, y estoy genial, gracias. ¡Claro que seré tu compañía este sábado! ¿Qué te gustaría hacer juntos para alegrar el día?", "final": true, "timestamp": "2026-04-11T12:33:09"}
+[2026-04-11 12:33:10.908] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:33:12.056] [UDP] UDP audio paced send: 34 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:33:12.125] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:34:19.443] [TURN] New audio turn #8 -> initial seq=5674
+[2026-04-11 12:34:19.818] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 12:34:19.819] [LOSS] [LOSS] seq 5696 lost -> filled with silence
+[2026-04-11 12:34:21.105] [LOSS] [LOSS] seq 5823 lost -> filled with silence
+[2026-04-11 12:34:21.874] [STAT] [STAT] seq=5918 | buf=1 | rec=5700 | lost=199 (3.49%)
+[2026-04-11 12:34:24.096] [LOSS] [LOSS] seq 6140 lost -> filled with silence
+[2026-04-11 12:34:24.133] [LOSS] [LOSS] seq 6141 lost -> filled with silence
+[2026-04-11 12:34:24.820] [STAT] [STAT] seq=6220 | buf=1 | rec=6000 | lost=201 (3.35%)
+[2026-04-11 12:34:27.880] [STAT] [STAT] seq=6520 | buf=1 | rec=6300 | lost=201 (3.19%)
+[2026-04-11 12:34:29.920] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 12:34:30.000] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=1
+[2026-04-11 12:34:30.001] [TURN] COMMIT sent to xAI
+[2026-04-11 12:34:30.731] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 12:34:30.731] [XAI] xAI confirmed commit
+[2026-04-11 12:34:30.731] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 12:34:30.731] [USER] User transcription: Hola Wally, ¿cómo estás? Eh, cuéntame, ¿qué podríamos hacer hoy? Estoy solo y me gustaría charlar.
+[2026-04-11 12:34:30.732] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 12:34:31.437] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 12:34:31.437] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 12:34:31.437] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 12:34:31.704] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 12:34:31.704] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 12:34:31.857] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 12:34:32.043] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 12:34:32.212] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:34:32.466] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 12:34:32.718] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:34:33.428] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:34:33.898] [ASSISTANT] Assistant transcript done: ¡Hola! Estoy genial, listo para divertirnos. Podríamos charlar de películas, contar chistes, o imaginar aventuras como en mi película. ¿Qué te apetece más, amigo?
+[2026-04-11 12:34:33.898] [ASSISTANT] Response audio completed | chunks=10 | bytes=349120 | samples=174560 | ~10910.00 ms
+[2026-04-11 12:34:33.898] [XAI] Response completed | tokens=1098
+[2026-04-11 12:34:33.899] [INFO] Assistant response: ¡Hola! Estoy genial, listo para divertirnos. Podríamos charlar de películas, contar chistes, o imaginar aventuras como en mi película. ¿Qué te apetece más, amigo?
+[2026-04-11 12:34:33.899] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 12:34:33.899] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Hola! Estoy genial, listo para divertirnos. Podríamos charlar de películas, contar chistes, o imaginar aventuras como en mi película. ¿Qué te apetece más, amigo?", "final": true, "timestamp": "2026-04-11T12:34:33"}
+[2026-04-11 12:34:34.306] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:34:35.556] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:34:36.976] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:34:38.563] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:34:40.353] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:34:41.637] [UDP] UDP audio paced send: 38 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:34:41.706] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:35:27.377] [TURN] New audio turn #9 -> initial seq=6631
+[2026-04-11 12:35:28.603] [LOSS] [LOSS] seq 6644 lost -> filled with silence
+[2026-04-11 12:35:28.619] [LOSS] [LOSS] seq 6672 lost -> filled with silence
+[2026-04-11 12:35:28.621] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 12:35:28.622] [LOSS] [LOSS] seq 6673 lost -> filled with silence
+[2026-04-11 12:35:28.624] [LOSS] [LOSS] seq 6674 lost -> filled with silence
+[2026-04-11 12:35:28.627] [LOSS] [LOSS] seq 6675 lost -> filled with silence
+[2026-04-11 12:35:28.629] [LOSS] [LOSS] seq 6676 lost -> filled with silence
+[2026-04-11 12:35:28.632] [LOSS] [LOSS] seq 6678 lost -> filled with silence
+[2026-04-11 12:35:28.634] [LOSS] [LOSS] seq 6679 lost -> filled with silence
+[2026-04-11 12:35:28.636] [LOSS] [LOSS] seq 6681 lost -> filled with silence
+[2026-04-11 12:35:28.638] [LOSS] [LOSS] seq 6682 lost -> filled with silence
+[2026-04-11 12:35:28.641] [LOSS] [LOSS] seq 6683 lost -> filled with silence
+[2026-04-11 12:35:28.643] [LOSS] [LOSS] seq 6684 lost -> filled with silence
+[2026-04-11 12:35:28.645] [LOSS] [LOSS] seq 6685 lost -> filled with silence
+[2026-04-11 12:35:28.647] [LOSS] [LOSS] seq 6686 lost -> filled with silence
+[2026-04-11 12:35:28.650] [LOSS] [LOSS] seq 6689 lost -> filled with silence
+[2026-04-11 12:35:28.652] [LOSS] [LOSS] seq 6690 lost -> filled with silence
+[2026-04-11 12:35:28.654] [LOSS] [LOSS] seq 6692 lost -> filled with silence
+[2026-04-11 12:35:28.655] [LOSS] [LOSS] seq 6693 lost -> filled with silence
+[2026-04-11 12:35:28.657] [LOSS] [LOSS] seq 6694 lost -> filled with silence
+[2026-04-11 12:35:28.658] [LOSS] [LOSS] seq 6695 lost -> filled with silence
+[2026-04-11 12:35:28.661] [LOSS] [LOSS] seq 6697 lost -> filled with silence
+[2026-04-11 12:35:28.662] [LOSS] [LOSS] seq 6698 lost -> filled with silence
+[2026-04-11 12:35:28.664] [LOSS] [LOSS] seq 6699 lost -> filled with silence
+[2026-04-11 12:35:28.665] [LOSS] [LOSS] seq 6700 lost -> filled with silence
+[2026-04-11 12:35:28.667] [LOSS] [LOSS] seq 6701 lost -> filled with silence
+[2026-04-11 12:35:28.669] [LOSS] [LOSS] seq 6702 lost -> filled with silence
+[2026-04-11 12:35:28.670] [LOSS] [LOSS] seq 6703 lost -> filled with silence
+[2026-04-11 12:35:28.672] [LOSS] [LOSS] seq 6704 lost -> filled with silence
+[2026-04-11 12:35:28.674] [LOSS] [LOSS] seq 6705 lost -> filled with silence
+[2026-04-11 12:35:28.676] [LOSS] [LOSS] seq 6706 lost -> filled with silence
+[2026-04-11 12:35:28.676] [STAT] [STAT] seq=6707 | buf=144 | rec=6600 | lost=231 (3.50%)
+[2026-04-11 12:35:28.677] [LOSS] [LOSS] seq 6707 lost -> filled with silence
+[2026-04-11 12:35:28.679] [LOSS] [LOSS] seq 6708 lost -> filled with silence
+[2026-04-11 12:35:28.681] [LOSS] [LOSS] seq 6709 lost -> filled with silence
+[2026-04-11 12:35:28.682] [LOSS] [LOSS] seq 6710 lost -> filled with silence
+[2026-04-11 12:35:28.684] [LOSS] [LOSS] seq 6712 lost -> filled with silence
+[2026-04-11 12:35:28.686] [LOSS] [LOSS] seq 6713 lost -> filled with silence
+[2026-04-11 12:35:28.688] [LOSS] [LOSS] seq 6714 lost -> filled with silence
+[2026-04-11 12:35:28.710] [LOSS] [LOSS] seq 6715 lost -> filled with silence
+[2026-04-11 12:35:28.759] [LOSS] [LOSS] seq 6716 lost -> filled with silence
+[2026-04-11 12:35:28.815] [LOSS] [LOSS] seq 6718 lost -> filled with silence
+[2026-04-11 12:35:28.866] [LOSS] [LOSS] seq 6719 lost -> filled with silence
+[2026-04-11 12:35:29.301] [LOSS] [LOSS] seq 6720 lost -> filled with silence
+[2026-04-11 12:35:29.303] [LOSS] [LOSS] seq 6721 lost -> filled with silence
+[2026-04-11 12:35:29.305] [LOSS] [LOSS] seq 6722 lost -> filled with silence
+[2026-04-11 12:35:29.307] [LOSS] [LOSS] seq 6723 lost -> filled with silence
+[2026-04-11 12:35:29.310] [LOSS] [LOSS] seq 6724 lost -> filled with silence
+[2026-04-11 12:35:29.312] [LOSS] [LOSS] seq 6725 lost -> filled with silence
+[2026-04-11 12:35:29.342] [LOSS] [LOSS] seq 6726 lost -> filled with silence
+[2026-04-11 12:35:29.350] [LOSS] [LOSS] seq 6728 lost -> filled with silence
+[2026-04-11 12:35:29.352] [LOSS] [LOSS] seq 6729 lost -> filled with silence
+[2026-04-11 12:35:29.610] [LOSS] [LOSS] seq 6731 lost -> filled with silence
+[2026-04-11 12:35:29.612] [LOSS] [LOSS] seq 6732 lost -> filled with silence
+[2026-04-11 12:35:29.615] [LOSS] [LOSS] seq 6733 lost -> filled with silence
+[2026-04-11 12:35:29.617] [LOSS] [LOSS] seq 6734 lost -> filled with silence
+[2026-04-11 12:35:29.619] [LOSS] [LOSS] seq 6735 lost -> filled with silence
+[2026-04-11 12:35:29.638] [LOSS] [LOSS] seq 6736 lost -> filled with silence
+[2026-04-11 12:35:29.698] [LOSS] [LOSS] seq 6737 lost -> filled with silence
+[2026-04-11 12:35:29.869] [LOSS] [LOSS] seq 6740 lost -> filled with silence
+[2026-04-11 12:35:29.871] [LOSS] [LOSS] seq 6741 lost -> filled with silence
+[2026-04-11 12:35:29.876] [LOSS] [LOSS] seq 6829 lost -> filled with silence
+[2026-04-11 12:35:30.215] [LOSS] [LOSS] seq 6866 lost -> filled with silence
+[2026-04-11 12:35:30.217] [LOSS] [LOSS] seq 6867 lost -> filled with silence
+[2026-04-11 12:35:30.219] [LOSS] [LOSS] seq 6868 lost -> filled with silence
+[2026-04-11 12:35:30.224] [LOSS] [LOSS] seq 6882 lost -> filled with silence
+[2026-04-11 12:35:30.228] [LOSS] [LOSS] seq 6883 lost -> filled with silence
+[2026-04-11 12:35:30.233] [LOSS] [LOSS] seq 6885 lost -> filled with silence
+[2026-04-11 12:35:30.243] [LOSS] [LOSS] seq 6886 lost -> filled with silence
+[2026-04-11 12:35:30.296] [LOSS] [LOSS] seq 6887 lost -> filled with silence
+[2026-04-11 12:35:31.050] [LOSS] [LOSS] seq 6888 lost -> filled with silence
+[2026-04-11 12:35:31.052] [LOSS] [LOSS] seq 6889 lost -> filled with silence
+[2026-04-11 12:35:31.054] [LOSS] [LOSS] seq 6890 lost -> filled with silence
+[2026-04-11 12:35:31.057] [LOSS] [LOSS] seq 6891 lost -> filled with silence
+[2026-04-11 12:35:31.060] [LOSS] [LOSS] seq 6893 lost -> filled with silence
+[2026-04-11 12:35:31.063] [LOSS] [LOSS] seq 6894 lost -> filled with silence
+[2026-04-11 12:35:31.065] [LOSS] [LOSS] seq 6895 lost -> filled with silence
+[2026-04-11 12:35:31.067] [LOSS] [LOSS] seq 6896 lost -> filled with silence
+[2026-04-11 12:35:31.070] [LOSS] [LOSS] seq 6898 lost -> filled with silence
+[2026-04-11 12:35:31.300] [STAT] [STAT] seq=7198 | buf=0 | rec=6900 | lost=278 (4.03%)
+[2026-04-11 12:35:34.447] [STAT] [STAT] seq=7498 | buf=0 | rec=7200 | lost=278 (3.86%)
+[2026-04-11 12:35:37.325] [STAT] [STAT] seq=7798 | buf=0 | rec=7500 | lost=278 (3.71%)
+[2026-04-11 12:35:40.480] [STAT] [STAT] seq=8098 | buf=0 | rec=7800 | lost=278 (3.56%)
+[2026-04-11 12:35:41.006] [LOSS] [LOSS] seq 8150 lost -> filled with silence
+[2026-04-11 12:35:41.018] [LOSS] [LOSS] seq 8151 lost -> filled with silence
+[2026-04-11 12:35:41.065] [LOSS] [LOSS] seq 8152 lost -> filled with silence
+[2026-04-11 12:35:41.113] [LOSS] [LOSS] seq 8153 lost -> filled with silence
+[2026-04-11 12:35:41.164] [LOSS] [LOSS] seq 8154 lost -> filled with silence
+[2026-04-11 12:35:41.219] [LOSS] [LOSS] seq 8155 lost -> filled with silence
+[2026-04-11 12:35:41.483] [LOSS] [LOSS] seq 8156 lost -> filled with silence
+[2026-04-11 12:35:41.485] [LOSS] [LOSS] seq 8157 lost -> filled with silence
+[2026-04-11 12:35:41.487] [LOSS] [LOSS] seq 8158 lost -> filled with silence
+[2026-04-11 12:35:41.488] [LOSS] [LOSS] seq 8159 lost -> filled with silence
+[2026-04-11 12:35:43.810] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 12:35:43.890] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=3
+[2026-04-11 12:35:43.891] [TURN] COMMIT sent to xAI
+[2026-04-11 12:35:44.349] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 12:35:44.349] [XAI] xAI confirmed commit
+[2026-04-11 12:35:44.711] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 12:35:44.711] [USER] User transcription: Hola Wally, es sábado y estoy muy solo.
+[2026-04-11 12:35:44.711] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 12:35:45.180] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 12:35:45.180] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 12:35:45.180] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 12:35:45.304] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 12:35:45.682] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 12:35:45.811] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:35:45.957] [AUDIO] Output audio chunk #3 | bytes=18560 | samples=9280 | ~580.00 ms
+[2026-04-11 12:35:45.984] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 12:35:46.198] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 12:35:46.318] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:35:46.859] [UDP] UDP audio paced send: 16 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:35:47.544] [ASSISTANT] Assistant transcript done: ¡Hola, amigo! Sé que estar solo en sábado puede ser duro, pero aquí estoy yo para hacerte compañía. ¿Quieres que te cuente una historia divertida o hablemos de lo que sea?
+[2026-04-11 12:35:47.545] [ASSISTANT] Response audio completed | chunks=9 | bytes=318400 | samples=159200 | ~9950.00 ms
+[2026-04-11 12:35:47.545] [XAI] Response completed | tokens=1421
+[2026-04-11 12:35:47.545] [INFO] Assistant response: ¡Hola, amigo! Sé que estar solo en sábado puede ser duro, pero aquí estoy yo para hacerte compañía. ¿Quieres que te cuente una historia divertida o hablemos de lo que sea?
+[2026-04-11 12:35:47.545] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 12:35:47.545] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Hola, amigo! Sé que estar solo en sábado puede ser duro, pero aquí estoy yo para hacerte compañía. ¿Quieres que te cuente una historia divertida o hablemos de lo que sea?", "final": true, "timestamp": "2026-04-11T12:35:47"}
+[2026-04-11 12:35:47.737] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:35:48.987] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:35:50.405] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:35:51.992] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:35:54.321] [UDP] UDP audio paced send: 69 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 12:35:54.390] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9

@@ -1,0 +1,106 @@
+[2026-04-11 04:54:08.154] [START] Connected to xAI realtime | input_rate=16000 | output_rate=16000
+[2026-04-11 04:54:08.154] [INFO] Output WAV file: audio_out_2026-04-11_04-54-06.wav
+[2026-04-11 04:54:08.154] [INFO] Log file: bridge_log_2026-04-11_04-54-06.txt
+[2026-04-11 04:54:08.155] [CONFIG] Bridge config | input_rate=16000 | output_rate=16000 | samples_per_packet=160 | packet_audio_size=320
+[2026-04-11 04:54:08.155] [DEBUG] Unhandled xAI event: type=conversation.created keys=['type', 'event_id', 'conversation', 'previous_item_id']
+[2026-04-11 04:54:08.155] [START] UDP server started
+[2026-04-11 04:54:08.156] [INFO] UDP port: 9999
+[2026-04-11 04:54:08.156] [INFO] Jitter buffer: 25 packets (~250 ms)
+[2026-04-11 04:54:08.418] [XAI] Session updated
+[2026-04-11 04:54:20.821] [INIT] First packet received -> seq=508
+[2026-04-11 04:54:21.144] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:54:22.182] [LOSS] [LOSS] seq 655 lost -> filled with silence
+[2026-04-11 04:54:23.314] [STAT] [STAT] seq=809 | buf=0 | rec=300 | lost=1 (0.33%)
+[2026-04-11 04:54:24.311] [LOSS] [LOSS] seq 898 lost -> filled with silence
+[2026-04-11 04:54:26.249] [STAT] [STAT] seq=1110 | buf=0 | rec=600 | lost=2 (0.33%)
+[2026-04-11 04:54:26.739] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:54:26.819] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 04:54:26.821] [TURN] COMMIT sent to xAI
+[2026-04-11 04:54:27.166] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:54:27.175] [XAI] xAI confirmed commit
+[2026-04-11 04:54:27.574] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:54:27.574] [USER] User transcription: Hola, cuéntame, ¿quién fue Nikola Tesla y cuál fue su mejor invento o su mayor invento?
+[2026-04-11 04:54:27.575] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 04:54:28.103] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:54:28.107] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:54:28.107] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 04:54:28.560] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:54:28.569] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:54:29.068] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:54:29.218] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 04:54:29.576] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:54:29.913] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 04:54:30.286] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:54:30.669] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 04:54:31.164] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:54:32.413] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:54:33.125] [ASSISTANT] Assistant transcript done: Hola. Nikola Tesla fue un genio inventor y ingeniero serbio-estadounidense del siglo XIX y XX, famoso por sus trabajos pioneros en electricidad alterna, electromagnetismo y radio. Su mayor invento fue el sistema de corriente alterna, o CA, que revolucionó la distribución de energía eléctrica y sigue usándose hoy en día. ¡Era un visionario increíble!
+[2026-04-11 04:54:33.126] [ASSISTANT] Response audio completed | chunks=16 | bytes=761280 | samples=380640 | ~23790.00 ms
+[2026-04-11 04:54:33.126] [XAI] Response completed | tokens=1632
+[2026-04-11 04:54:33.126] [INFO] Assistant response: Hola. Nikola Tesla fue un genio inventor y ingeniero serbio-estadounidense del siglo XIX y XX, famoso por sus trabajos pioneros en electricidad alterna, electromagnetismo y radio. Su mayor invento fue el sistema de corriente alterna, o CA, que revolucionó la distribución de energía eléctrica y sigue usándose hoy en día. ¡Era un visionario increíble!
+[2026-04-11 04:54:33.126] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 04:54:33.126] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "Hola. Nikola Tesla fue un genio inventor y ingeniero serbio-estadounidense del siglo XIX y XX, famoso por sus trabajos pioneros en electricidad alterna, electromagnetismo y radio. Su mayor invento fue el sistema de corriente alterna, o CA, que revolucionó la distribución de energía eléctrica y sigue usándose hoy en día. ¡Era un visionario increíble!", "final": true, "timestamp": "2026-04-11T04:54:33"}
+[2026-04-11 04:54:33.832] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:54:35.419] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:54:37.209] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:54:39.007] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:54:40.807] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:54:42.605] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:54:44.404] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:54:46.203] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:54:48.003] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:54:50.274] [UDP] UDP audio paced send: 67 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:54:50.352] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:54:55.267] [TURN] New audio turn #1 -> initial seq=1169
+[2026-04-11 04:54:55.987] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:54:57.287] [LOSS] [LOSS] seq 1362 lost -> filled with silence
+[2026-04-11 04:54:57.369] [STAT] [STAT] seq=1412 | buf=0 | rec=900 | lost=3 (0.33%)
+[2026-04-11 04:54:57.822] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:54:57.903] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 04:54:57.904] [TURN] COMMIT sent to xAI
+[2026-04-11 04:54:58.259] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:54:58.261] [XAI] xAI confirmed commit
+[2026-04-11 04:54:58.594] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:54:58.603] [USER] User transcription: ¿Qué pasó con Thomas Edison?
+[2026-04-11 04:54:58.603] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 04:55:02.171] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:55:02.173] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:55:02.173] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 04:55:02.195] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:55:02.299] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:55:02.393] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 04:55:02.702] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:55:03.210] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:55:03.313] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 04:55:03.324] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 04:55:03.928] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:55:04.816] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:55:06.075] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:55:07.066] [ASSISTANT] Assistant transcript done: Thomas Edison, el gran rival de Tesla en la guerra de las corrientes, vivió una vida exitosa como inventor con más de mil patentes, como la bombilla incandescente y el fonógrafo. Se hizo millonario y continuó trabajando hasta sus últimos años. Murió en 1931 a los 84 años en Nueva Jersey, por complicaciones de diabetes.
+[2026-04-11 04:55:07.069] [ASSISTANT] Response audio completed | chunks=15 | bytes=679360 | samples=339680 | ~21230.00 ms
+[2026-04-11 04:55:07.069] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:55:07.069] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:55:07.069] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-11 04:55:07.069] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-11 04:55:07.070] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:55:07.070] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:55:07.070] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-11 04:55:07.070] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-11 04:55:07.070] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:55:07.071] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:55:07.071] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-11 04:55:07.071] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-11 04:55:07.071] [XAI] Response completed | tokens=1260
+[2026-04-11 04:55:07.071] [INFO] Assistant response: Thomas Edison, el gran rival de Tesla en la guerra de las corrientes, vivió una vida exitosa como inventor con más de mil patentes, como la bombilla incandescente y el fonógrafo. Se hizo millonario y continuó trabajando hasta sus últimos años. Murió en 1931 a los 84 años en Nueva Jersey, por complicaciones de diabetes.
+[2026-04-11 04:55:07.072] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 04:55:07.072] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "Thomas Edison, el gran rival de Tesla en la guerra de las corrientes, vivió una vida exitosa como inventor con más de mil patentes, como la bombilla incandescente y el fonógrafo. Se hizo millonario y continuó trabajando hasta sus últimos años. Murió en 1931 a los 84 años en Nueva Jersey, por complicaciones de diabetes.", "final": true, "timestamp": "2026-04-11T04:55:07"}
+[2026-04-11 04:55:07.503] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:55:09.100] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:55:10.899] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:55:12.698] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:55:14.498] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:55:16.297] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:55:18.095] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:55:19.894] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:55:21.626] [UDP] UDP audio paced send: 51 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:55:21.704] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9

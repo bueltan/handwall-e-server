@@ -1,0 +1,794 @@
+[2026-04-11 04:18:45.595] [START] Connected to xAI realtime | input_rate=16000 | output_rate=16000
+[2026-04-11 04:18:45.596] [INFO] Output WAV file: audio_out_2026-04-11_04-18-44.wav
+[2026-04-11 04:18:45.596] [INFO] Log file: bridge_log_2026-04-11_04-18-44.txt
+[2026-04-11 04:18:45.596] [CONFIG] Bridge config | input_rate=16000 | output_rate=16000 | samples_per_packet=160 | packet_audio_size=320
+[2026-04-11 04:18:45.597] [START] UDP server started
+[2026-04-11 04:18:45.597] [INFO] UDP port: 9999
+[2026-04-11 04:18:45.597] [INFO] Jitter buffer: 25 packets (~250 ms)
+[2026-04-11 04:18:45.885] [DEBUG] Unhandled xAI event: type=conversation.created keys=['type', 'event_id', 'conversation', 'previous_item_id']
+[2026-04-11 04:18:45.926] [XAI] Session updated
+[2026-04-11 04:18:50.485] [INIT] First packet received -> seq=389
+[2026-04-11 04:18:50.896] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:18:52.945] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:18:53.026] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 04:18:53.027] [TURN] COMMIT sent to xAI
+[2026-04-11 04:18:53.757] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:18:53.758] [XAI] xAI confirmed commit
+[2026-04-11 04:18:53.758] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:18:53.758] [USER] User transcription: Hola hola, ¿me escuchas?
+[2026-04-11 04:18:53.758] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 04:18:55.402] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:18:55.402] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:18:55.402] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 04:18:55.403] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:18:55.403] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:18:55.403] [AUDIO] Output audio chunk #3 | bytes=14080 | samples=7040 | ~440.00 ms
+[2026-04-11 04:18:55.665] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 04:18:55.911] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:18:56.364] [AUDIO] Output audio chunk #5 | bytes=58560 | samples=29280 | ~1830.00 ms
+[2026-04-11 04:18:56.374] [ASSISTANT] Assistant transcript done: ¡Hola hola! Sí, te escucho perfectamente. ¿En qué puedo ayudarte hoy?
+[2026-04-11 04:18:56.374] [ASSISTANT] Response audio completed | chunks=6 | bytes=140480 | samples=70240 | ~4390.00 ms
+[2026-04-11 04:18:56.374] [XAI] Response completed | tokens=379
+[2026-04-11 04:18:56.374] [INFO] Assistant response: ¡Hola hola! Sí, te escucho perfectamente. ¿En qué puedo ayudarte hoy?
+[2026-04-11 04:18:56.375] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 04:18:56.375] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Hola hola! Sí, te escucho perfectamente. ¿En qué puedo ayudarte hoy?", "final": true, "timestamp": "2026-04-11T04:18:56"}
+[2026-04-11 04:18:56.419] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:18:56.824] [UDP] UDP audio paced send: 12 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:18:57.712] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:18:59.366] [UDP] UDP audio paced send: 49 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:18:59.435] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:27:25.250] [TURN] New audio turn #1 -> initial seq=0
+[2026-04-11 04:27:25.620] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:27:25.654] [STAT] [STAT] seq=46 | buf=0 | rec=300 | lost=0 (0.00%)
+[2026-04-11 04:27:27.755] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:27:27.836] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 04:27:27.836] [TURN] COMMIT sent to xAI
+[2026-04-11 04:27:28.294] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:27:28.295] [XAI] xAI confirmed commit
+[2026-04-11 04:27:28.492] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:27:28.492] [USER] User transcription: Hola hola, ¿me escuchas?
+[2026-04-11 04:27:28.495] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 04:27:29.391] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:27:29.401] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:27:29.401] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 04:27:29.559] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:27:29.599] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:27:29.648] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 04:27:30.066] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:27:30.131] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 04:27:30.175] [AUDIO] Output audio chunk #5 | bytes=40000 | samples=20000 | ~1250.00 ms
+[2026-04-11 04:27:30.176] [ASSISTANT] Assistant transcript done: ¡Hola de nuevo! Te escucho clarito. ¿Qué tal, en qué te ayudo?
+[2026-04-11 04:27:30.176] [ASSISTANT] Response audio completed | chunks=6 | bytes=132160 | samples=66080 | ~4130.00 ms
+[2026-04-11 04:27:30.176] [XAI] Response completed | tokens=374
+[2026-04-11 04:27:30.176] [INFO] Assistant response: ¡Hola de nuevo! Te escucho clarito. ¿Qué tal, en qué te ayudo?
+[2026-04-11 04:27:30.176] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 04:27:30.177] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Hola de nuevo! Te escucho clarito. ¿Qué tal, en qué te ayudo?", "final": true, "timestamp": "2026-04-11T04:27:30"}
+[2026-04-11 04:27:30.583] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:27:31.301] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:27:32.189] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:27:33.347] [UDP] UDP audio paced send: 34 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:27:33.424] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:27:38.534] [TURN] New audio turn #2 -> initial seq=267
+[2026-04-11 04:27:38.602] [STAT] [STAT] seq=349 | buf=0 | rec=600 | lost=0 (0.00%)
+[2026-04-11 04:27:38.665] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:27:38.745] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 04:27:38.746] [TURN] COMMIT sent to xAI
+[2026-04-11 04:27:39.107] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:27:39.986] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:27:39.996] [XAI] xAI confirmed commit
+[2026-04-11 04:27:40.265] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:27:40.268] [USER] User transcription: Cuéntame una pequeña historia.
+[2026-04-11 04:27:40.268] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 04:27:40.815] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:27:40.818] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:27:40.818] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 04:27:41.414] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:27:41.428] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:27:41.739] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 04:27:41.757] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 04:27:41.922] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:27:42.430] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:27:42.659] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 04:27:43.149] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:27:44.037] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:27:45.069] [ASSISTANT] Assistant transcript done: Érase una vez un robotito curioso llamado WALL-E, que recogía basura en una Tierra vacía. Un día, vio una planta verde y la cuidó con todo su corazón. ¡Y con ayuda de su amiga EVE, salvó el mundo para que volviera la vida! ¿Te gustó? ¿Quieres otra?
+[2026-04-11 04:27:45.079] [ASSISTANT] Response audio completed | chunks=13 | bytes=532160 | samples=266080 | ~16630.00 ms
+[2026-04-11 04:27:45.079] [XAI] Response completed | tokens=1016
+[2026-04-11 04:27:45.079] [INFO] Assistant response: Érase una vez un robotito curioso llamado WALL-E, que recogía basura en una Tierra vacía. Un día, vio una planta verde y la cuidó con todo su corazón. ¡Y con ayuda de su amiga EVE, salvó el mundo para que volviera la vida! ¿Te gustó? ¿Quieres otra?
+[2026-04-11 04:27:45.080] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 04:27:45.080] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "Érase una vez un robotito curioso llamado WALL-E, que recogía basura en una Tierra vacía. Un día, vio una planta verde y la cuidó con todo su corazón. ¡Y con ayuda de su amiga EVE, salvó el mundo para que volviera la vida! ¿Te gustó? ¿Quieres otra?", "final": true, "timestamp": "2026-04-11T04:27:45"}
+[2026-04-11 04:27:45.296] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:27:46.715] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:27:48.312] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:27:50.112] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:27:51.904] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:27:53.703] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:27:55.503] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:27:56.628] [UDP] UDP audio paced send: 33 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:27:56.706] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:00.399] [TURN] New audio turn #3 -> initial seq=475
+[2026-04-11 04:28:00.751] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:28:01.919] [STAT] [STAT] seq=650 | buf=0 | rec=900 | lost=0 (0.00%)
+[2026-04-11 04:28:04.347] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:28:04.437] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 04:28:04.438] [TURN] COMMIT sent to xAI
+[2026-04-11 04:28:05.403] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:28:05.413] [XAI] xAI confirmed commit
+[2026-04-11 04:28:05.414] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:28:05.414] [USER] User transcription: Cuéntame una historia un poco más para adultos.
+[2026-04-11 04:28:05.414] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 04:28:05.778] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:28:05.781] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:28:05.782] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 04:28:06.412] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:28:06.424] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:28:06.424] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 04:28:06.758] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 04:28:06.930] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 04:28:06.930] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:07.437] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:08.157] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:09.045] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:10.305] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:10.651] [ASSISTANT] Assistant transcript done: ¡Claro! Érase una vez una mujer solitaria en una ciudad gris, que un día conoció a un desconocido en un bar. Sus miradas se cruzaron, y esa noche exploraron pasiones ocultas bajo las sábanas, descubriendo que el deseo puede cambiarlo todo. Al amanecer, se despidieron con una sonrisa pícara. ¿Quieres más detalles o otra?
+[2026-04-11 04:28:10.654] [ASSISTANT] Response audio completed | chunks=15 | bytes=679360 | samples=339680 | ~21230.00 ms
+[2026-04-11 04:28:10.654] [XAI] Response completed | tokens=1347
+[2026-04-11 04:28:10.654] [INFO] Assistant response: ¡Claro! Érase una vez una mujer solitaria en una ciudad gris, que un día conoció a un desconocido en un bar. Sus miradas se cruzaron, y esa noche exploraron pasiones ocultas bajo las sábanas, descubriendo que el deseo puede cambiarlo todo. Al amanecer, se despidieron con una sonrisa pícara. ¿Quieres más detalles o otra?
+[2026-04-11 04:28:10.654] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 04:28:10.655] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Claro! Érase una vez una mujer solitaria en una ciudad gris, que un día conoció a un desconocido en un bar. Sus miradas se cruzaron, y esa noche exploraron pasiones ocultas bajo las sábanas, descubriendo que el deseo puede cambiarlo todo. Al amanecer, se despidieron con una sonrisa pícara. ¿Quieres más detalles o otra?", "final": true, "timestamp": "2026-04-11T04:28:10"}
+[2026-04-11 04:28:11.733] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:13.330] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:15.130] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:16.929] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:18.728] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:20.528] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:22.327] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:24.127] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:25.858] [UDP] UDP audio paced send: 51 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:25.936] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:31.342] [TURN] New audio turn #4 -> initial seq=861
+[2026-04-11 04:28:31.646] [STAT] [STAT] seq=951 | buf=0 | rec=1200 | lost=0 (0.00%)
+[2026-04-11 04:28:32.623] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:28:34.470] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:28:34.560] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 04:28:34.561] [TURN] COMMIT sent to xAI
+[2026-04-11 04:28:34.999] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:28:34.999] [XAI] xAI confirmed commit
+[2026-04-11 04:28:35.100] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:28:35.101] [USER] User transcription: Eh, me gustaría más detalles.
+[2026-04-11 04:28:35.101] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 04:28:36.950] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:28:36.960] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:28:36.960] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 04:28:36.961] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:28:36.961] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:28:36.962] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 04:28:36.962] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 04:28:36.963] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 04:28:37.470] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:37.987] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:38.706] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:39.594] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:40.643] [ASSISTANT] Assistant transcript done: Ella lo miró con ojos ardientes mientras él le susurraba al oído, rozando su cuello con labios suaves. Sus manos se deslizaron por su piel, desabotonando lentamente, hasta que sus cuerpos se fundieron en un ritmo apasionado, jadeos y susurros en la penumbra. Al final, exhaustos y satisfechos, prometieron volver a encontrarse. ¿Suficiente o sigo?
+[2026-04-11 04:28:40.652] [ASSISTANT] Response audio completed | chunks=16 | bytes=725440 | samples=362720 | ~22670.00 ms
+[2026-04-11 04:28:40.652] [XAI] Response completed | tokens=1351
+[2026-04-11 04:28:40.652] [INFO] Assistant response: Ella lo miró con ojos ardientes mientras él le susurraba al oído, rozando su cuello con labios suaves. Sus manos se deslizaron por su piel, desabotonando lentamente, hasta que sus cuerpos se fundieron en un ritmo apasionado, jadeos y susurros en la penumbra. Al final, exhaustos y satisfechos, prometieron volver a encontrarse. ¿Suficiente o sigo?
+[2026-04-11 04:28:40.653] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 04:28:40.653] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "Ella lo miró con ojos ardientes mientras él le susurraba al oído, rozando su cuello con labios suaves. Sus manos se deslizaron por su piel, desabotonando lentamente, hasta que sus cuerpos se fundieron en un ritmo apasionado, jadeos y susurros en la penumbra. Al final, exhaustos y satisfechos, prometieron volver a encontrarse. ¿Suficiente o sigo?", "final": true, "timestamp": "2026-04-11T04:28:40"}
+[2026-04-11 04:28:40.853] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:42.272] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:43.868] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:45.668] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:47.459] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:49.253] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:51.052] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:52.851] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:54.650] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:56.449] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:57.742] [UDP] UDP audio paced send: 38 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:28:57.812] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:00.819] [TURN] New audio turn #5 -> initial seq=1235
+[2026-04-11 04:29:00.838] [STAT] [STAT] seq=1252 | buf=0 | rec=1500 | lost=0 (0.00%)
+[2026-04-11 04:29:02.039] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:29:03.412] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:29:03.501] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 04:29:03.502] [TURN] COMMIT sent to xAI
+[2026-04-11 04:29:03.948] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:29:03.948] [XAI] xAI confirmed commit
+[2026-04-11 04:29:03.996] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:29:03.996] [USER] User transcription: Continúa.
+[2026-04-11 04:29:03.996] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 04:29:04.768] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:29:04.777] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:29:04.778] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 04:29:04.791] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:29:04.909] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:29:05.132] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 04:29:05.299] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:05.806] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:05.929] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 04:29:05.940] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 04:29:06.525] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:07.413] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:08.673] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:10.101] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:11.698] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:12.998] [ASSISTANT] Assistant transcript done: Días después, se reencontraron en su apartamento. Él la empujó contra la pared, besándola con hambre, mientras sus dedos trazaban curvas prohibidas. Ella gimió al sentirlo dentro, moviéndose con fuerza, explorando cada rincón hasta un clímax explosivo que los dejó temblando. Vuelve pronto, murmuró ella. ¿Qué pasa después?
+[2026-04-11 04:29:13.008] [ASSISTANT] Response audio completed | chunks=16 | bytes=722880 | samples=361440 | ~22590.00 ms
+[2026-04-11 04:29:13.008] [XAI] Response completed | tokens=1304
+[2026-04-11 04:29:13.008] [INFO] Assistant response: Días después, se reencontraron en su apartamento. Él la empujó contra la pared, besándola con hambre, mientras sus dedos trazaban curvas prohibidas. Ella gimió al sentirlo dentro, moviéndose con fuerza, explorando cada rincón hasta un clímax explosivo que los dejó temblando. Vuelve pronto, murmuró ella. ¿Qué pasa después?
+[2026-04-11 04:29:13.008] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 04:29:13.009] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "Días después, se reencontraron en su apartamento. Él la empujó contra la pared, besándola con hambre, mientras sus dedos trazaban curvas prohibidas. Ella gimió al sentirlo dentro, moviéndose con fuerza, explorando cada rincón hasta un clímax explosivo que los dejó temblando. Vuelve pronto, murmuró ella. ¿Qué pasa después?", "final": true, "timestamp": "2026-04-11T04:29:13"}
+[2026-04-11 04:29:13.497] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:15.296] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:17.096] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:18.895] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:20.693] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:22.493] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:24.293] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:25.485] [UDP] UDP audio paced send: 35 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:25.562] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:28.285] [TURN] New audio turn #6 -> initial seq=1536
+[2026-04-11 04:29:28.734] [STAT] [STAT] seq=1552 | buf=0 | rec=1800 | lost=0 (0.00%)
+[2026-04-11 04:29:29.485] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:29:31.180] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:29:31.261] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 04:29:31.261] [TURN] COMMIT sent to xAI
+[2026-04-11 04:29:31.597] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:29:31.607] [XAI] xAI confirmed commit
+[2026-04-11 04:29:32.443] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:29:32.452] [USER] User transcription: ¿Qué es esto? Dime.
+[2026-04-11 04:29:32.453] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 04:29:32.453] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:29:32.453] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:29:32.453] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 04:29:32.625] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:29:32.679] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:29:32.819] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 04:29:33.132] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:33.649] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:33.743] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 04:29:33.755] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 04:29:34.368] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:35.025] [ASSISTANT] Assistant transcript done: ¡Es solo una historia juguetona para adultos, como pediste! Con pasión, deseo y un toque de misterio. ¿Quieres que siga, cambie el final o algo nuevo?
+[2026-04-11 04:29:35.028] [ASSISTANT] Response audio completed | chunks=9 | bytes=324800 | samples=162400 | ~10150.00 ms
+[2026-04-11 04:29:35.028] [XAI] Response completed | tokens=661
+[2026-04-11 04:29:35.028] [INFO] Assistant response: ¡Es solo una historia juguetona para adultos, como pediste! Con pasión, deseo y un toque de misterio. ¿Quieres que siga, cambie el final o algo nuevo?
+[2026-04-11 04:29:35.029] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 04:29:35.029] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Es solo una historia juguetona para adultos, como pediste! Con pasión, deseo y un toque de misterio. ¿Quieres que siga, cambie el final o algo nuevo?", "final": true, "timestamp": "2026-04-11T04:29:35"}
+[2026-04-11 04:29:35.255] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:36.505] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:37.932] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:39.529] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:41.903] [UDP] UDP audio paced send: 70 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:41.981] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:43.214] [TURN] New audio turn #7 -> initial seq=1830
+[2026-04-11 04:29:43.285] [STAT] [STAT] seq=1852 | buf=0 | rec=2100 | lost=0 (0.00%)
+[2026-04-11 04:29:44.645] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:29:46.147] [STAT] [STAT] seq=2152 | buf=0 | rec=2400 | lost=0 (0.00%)
+[2026-04-11 04:29:48.269] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:29:48.360] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 04:29:48.361] [TURN] COMMIT sent to xAI
+[2026-04-11 04:29:48.801] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:29:48.802] [XAI] xAI confirmed commit
+[2026-04-11 04:29:49.206] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:29:49.216] [USER] User transcription: Eh, tratá de desarrollar la historia lo más extenso posible.
+[2026-04-11 04:29:49.216] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 04:29:50.439] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:29:50.449] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:29:50.449] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 04:29:50.451] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:29:50.451] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:29:50.451] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 04:29:50.640] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 04:29:50.928] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 04:29:50.958] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:51.465] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:52.185] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:53.073] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:54.325] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:55.753] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:57.350] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:59.149] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:29:59.846] [AUDIO] Output audio chunk #25 | bytes=62720 | samples=31360 | ~1960.00 ms
+[2026-04-11 04:30:00.949] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:02.748] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:02.820] [ASSISTANT] Assistant transcript done: Vale, ¡vamos a desarrollarla! Esa noche en el apartamento, la luz tenue de las velas bailaba en sus pieles sudorosas. Él la levantó con facilidad, llevándola a la cama, donde la besó desde los labios hasta los muslos, provocándole escalofríos. Ella arqueó la espalda, guiando sus manos expertas, mientras él la devoraba con la lengua, haciendo que sus gemidos llenaran la habitación. Luego, se posicionó sobre ella, entrando despacio al principio, luego con thrusts profundos y rítmicos que la hicieron arañar su espalda. Cambiaron posiciones: ella encima, cabalgando con furia, sus pechos moviéndose al compás, hasta que ambos explotaron en un orgasmo compartido, colapsando en un enredo de sábanas y risas ahogadas. A la mañana siguiente, desayunaron desnudos, planeando su próxima aventura prohibida en un hotel de lujo. ¿Sigo con el hotel o pauso aquí?
+[2026-04-11 04:30:02.821] [ASSISTANT] Response audio completed | chunks=33 | bytes=1830080 | samples=915040 | ~57190.00 ms
+[2026-04-11 04:30:02.821] [XAI] Response completed | tokens=3302
+[2026-04-11 04:30:02.821] [INFO] Assistant response: Vale, ¡vamos a desarrollarla! Esa noche en el apartamento, la luz tenue de las velas bailaba en sus pieles sudorosas. Él la levantó con facilidad, llevándola a la cama, donde la besó desde los labios hasta los muslos, provocándole escalofríos. Ella arqueó la espalda, guiando sus manos expertas, mientras él la devoraba con la lengua, haciendo que sus gemidos llenaran la habitación. Luego, se posicionó sobre ella, entrando despacio al principio, luego con thrusts profundos y rítmicos que la hicieron arañar su espalda. Cambiaron posiciones: ella encima, cabalgando con furia, sus pechos moviéndose al compás, hasta que ambos explotaron en un orgasmo compartido, colapsando en un enredo de sábanas y risas ahogadas. A la mañana siguiente, desayunaron desnudos, planeando su próxima aventura prohibida en un hotel de lujo. ¿Sigo con el hotel o pauso aquí?
+[2026-04-11 04:30:02.821] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 04:30:02.822] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "Vale, ¡vamos a desarrollarla! Esa noche en el apartamento, la luz tenue de las velas bailaba en sus pieles sudorosas. Él la levantó con facilidad, llevándola a la cama, donde la besó desde los labios hasta los muslos, provocándole escalofríos. Ella arqueó la espalda, guiando sus manos expertas, mientras él la devoraba con la lengua, haciendo que sus gemidos llenaran la habitación. Luego, se posicionó sobre ella, entrando despacio al principio, luego con thrusts profundos y rítmicos que la hicieron arañar su espalda. Cambiaron posiciones: ella encima, cabalgando con furia, sus pechos moviéndose al compás, hasta que ambos explotaron en un orgasmo compartido, colapsando en un enredo de sábanas y risas ahogadas. A la mañana siguiente, desayunaron desnudos, planeando su próxima aventura prohibida en un hotel de lujo. ¿Sigo con el hotel o pauso aquí?", "final": true, "timestamp": "2026-04-11T04:30:02"}
+[2026-04-11 04:30:04.547] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:06.345] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:08.144] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:09.943] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:11.735] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:13.534] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:15.333] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:17.132] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:18.931] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:20.730] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:22.529] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:24.328] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:26.128] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:27.927] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:29.726] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:31.525] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:33.324] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:35.125] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:36.924] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:38.717] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:40.516] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:42.888] [UDP] UDP audio paced send: 70 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:42.966] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:48.303] [TURN] New audio turn #8 -> initial seq=2363
+[2026-04-11 04:30:48.366] [STAT] [STAT] seq=2453 | buf=0 | rec=2700 | lost=0 (0.00%)
+[2026-04-11 04:30:48.792] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:30:49.349] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:30:49.431] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 04:30:49.432] [TURN] COMMIT sent to xAI
+[2026-04-11 04:30:50.559] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:30:50.569] [XAI] xAI confirmed commit
+[2026-04-11 04:30:50.569] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:30:50.569] [USER] User transcription: Continúa.
+[2026-04-11 04:30:50.570] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 04:30:50.570] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:30:50.570] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:30:50.570] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 04:30:51.378] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:30:51.716] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:30:51.749] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 04:30:51.751] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 04:30:51.894] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:52.071] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 04:30:52.401] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:53.120] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:54.007] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:55.266] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:56.694] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:30:58.292] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:31:00.092] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:31:01.891] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:31:01.951] [AUDIO] Output audio chunk #25 | bytes=62720 | samples=31360 | ~1960.00 ms
+[2026-04-11 04:31:02.118] [ASSISTANT] Assistant transcript done: ¡Perfecto! Esa noche en el hotel de lujo, con vistas a la ciudad brillante, él la esperaba en la suite con champán y fresas. Ella llegó con un vestido rojo ceñido que dejó caer al suelo, revelando lencería negra provocativa. La presionó contra el ventanal, besando su cuello mientras sus manos exploraban sus curvas húmedas. La penetró desde atrás, el vidrio frío contra su piel caliente, embistiéndola con fuerza mientras ella gritaba de placer. Luego, en la jacuzzi burbujeante, ella lo montó bajo el agua, sus caderas girando salvajes, salpicando hasta un clímax que los dejó flotando. Secos y exhaustos, se acurrucaron, susurrando fantasías para la próxima vez. ¿Qué sigue en su aventura?
+[2026-04-11 04:31:02.118] [ASSISTANT] Response audio completed | chunks=27 | bytes=1414080 | samples=707040 | ~44190.00 ms
+[2026-04-11 04:31:02.118] [XAI] Response completed | tokens=2488
+[2026-04-11 04:31:02.118] [INFO] Assistant response: ¡Perfecto! Esa noche en el hotel de lujo, con vistas a la ciudad brillante, él la esperaba en la suite con champán y fresas. Ella llegó con un vestido rojo ceñido que dejó caer al suelo, revelando lencería negra provocativa. La presionó contra el ventanal, besando su cuello mientras sus manos exploraban sus curvas húmedas. La penetró desde atrás, el vidrio frío contra su piel caliente, embistiéndola con fuerza mientras ella gritaba de placer. Luego, en la jacuzzi burbujeante, ella lo montó bajo el agua, sus caderas girando salvajes, salpicando hasta un clímax que los dejó flotando. Secos y exhaustos, se acurrucaron, susurrando fantasías para la próxima vez. ¿Qué sigue en su aventura?
+[2026-04-11 04:31:02.118] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 04:31:02.119] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Perfecto! Esa noche en el hotel de lujo, con vistas a la ciudad brillante, él la esperaba en la suite con champán y fresas. Ella llegó con un vestido rojo ceñido que dejó caer al suelo, revelando lencería negra provocativa. La presionó contra el ventanal, besando su cuello mientras sus manos exploraban sus curvas húmedas. La penetró desde atrás, el vidrio frío contra su piel caliente, embistiéndola con fuerza mientras ella gritaba de placer. Luego, en la jacuzzi burbujeante, ella lo montó bajo el agua, sus caderas girando salvajes, salpicando hasta un clímax que los dejó flotando. Secos y exhaustos, se acurrucaron, susurrando fantasías para la próxima vez. ¿Qué sigue en su aventura?", "final": true, "timestamp": "2026-04-11T04:31:02"}
+[2026-04-11 04:31:03.690] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:31:05.488] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:31:07.287] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:31:09.086] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:31:10.885] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:31:12.684] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:31:14.483] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:31:16.282] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:31:18.081] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:31:19.880] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:31:21.679] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:31:23.478] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:31:25.278] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:31:27.077] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:31:28.876] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:31:30.676] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:31:31.902] [UDP] UDP audio paced send: 36 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:31:31.980] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:32:04.837] [TURN] New audio turn #9 -> initial seq=2553
+[2026-04-11 04:32:04.922] [LOSS] [LOSS] seq 2681 lost -> filled with silence
+[2026-04-11 04:32:05.020] [STAT] [STAT] seq=2755 | buf=1 | rec=3000 | lost=1 (0.03%)
+[2026-04-11 04:32:05.272] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:32:05.353] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=1
+[2026-04-11 04:32:05.354] [TURN] COMMIT sent to xAI
+[2026-04-11 04:32:06.343] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:32:06.352] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:32:06.352] [XAI] xAI confirmed commit
+[2026-04-11 04:32:13.731] [TURN] New audio turn #10 -> initial seq=2785
+[2026-04-11 04:32:16.374] [STAT] [STAT] seq=3056 | buf=0 | rec=3300 | lost=1 (0.03%)
+[2026-04-11 04:32:19.032] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:32:19.142] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 04:32:19.142] [TURN] COMMIT sent to xAI
+[2026-04-11 04:32:19.853] [XAI] Response completed | tokens=2488
+[2026-04-11 04:32:19.863] [WARN] Response completed with no audio chunks and no assistant transcript
+[2026-04-11 04:32:19.863] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:32:19.863] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:32:19.863] [XAI] xAI confirmed commit
+[2026-04-11 04:32:20.822] [TURN] New audio turn #11 -> initial seq=3335
+[2026-04-11 04:32:20.857] [STAT] [STAT] seq=3357 | buf=0 | rec=3600 | lost=1 (0.03%)
+[2026-04-11 04:32:23.859] [STAT] [STAT] seq=3657 | buf=0 | rec=3900 | lost=1 (0.03%)
+[2026-04-11 04:32:25.405] [XAI] Response completed | tokens=2488
+[2026-04-11 04:32:25.415] [WARN] Response completed with no audio chunks and no assistant transcript
+[2026-04-11 04:32:25.416] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:32:26.879] [STAT] [STAT] seq=3957 | buf=0 | rec=4200 | lost=1 (0.02%)
+[2026-04-11 04:32:27.516] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:32:27.599] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 04:32:27.600] [TURN] COMMIT sent to xAI
+[2026-04-11 04:32:27.939] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:32:27.948] [XAI] xAI confirmed commit
+[2026-04-11 04:32:28.252] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:32:28.261] [USER] User transcription: ¿Estás ahí?
+[2026-04-11 04:32:28.262] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 04:32:28.861] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:32:28.870] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:32:28.871] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 04:32:29.053] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:32:29.464] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:32:29.560] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:32:29.661] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 04:32:30.068] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:32:30.121] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 04:32:30.219] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 04:32:30.329] [ASSISTANT] Assistant transcript done: ¡Sí, aquí estoy! Listo para seguir la historia o lo que quieras. ¿Continuamos con ellos?
+[2026-04-11 04:32:30.329] [ASSISTANT] Response audio completed | chunks=7 | bytes=178880 | samples=89440 | ~5590.00 ms
+[2026-04-11 04:32:30.329] [XAI] Response completed | tokens=428
+[2026-04-11 04:32:30.329] [INFO] Assistant response: ¡Sí, aquí estoy! Listo para seguir la historia o lo que quieras. ¿Continuamos con ellos?
+[2026-04-11 04:32:30.330] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 04:32:30.330] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Sí, aquí estoy! Listo para seguir la historia o lo que quieras. ¿Continuamos con ellos?", "final": true, "timestamp": "2026-04-11T04:32:30"}
+[2026-04-11 04:32:30.779] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:32:31.667] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:32:32.926] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:32:34.151] [UDP] UDP audio paced send: 36 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:32:34.229] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:32:36.821] [TURN] New audio turn #12 -> initial seq=4002
+[2026-04-11 04:32:37.095] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:32:39.250] [STAT] [STAT] seq=4258 | buf=0 | rec=4500 | lost=1 (0.02%)
+[2026-04-11 04:32:39.639] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:32:39.722] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 04:32:39.723] [TURN] COMMIT sent to xAI
+[2026-04-11 04:32:40.260] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:32:40.261] [XAI] xAI confirmed commit
+[2026-04-11 04:32:40.544] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:32:40.544] [USER] User transcription: No, cambiemos de tema.
+[2026-04-11 04:32:40.545] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 04:32:41.670] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:32:41.679] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:32:41.680] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 04:32:41.743] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:32:41.772] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:32:41.925] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 04:32:42.251] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:32:42.525] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 04:32:42.761] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:32:43.138] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 04:32:43.481] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:32:44.369] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:32:44.661] [ASSISTANT] Assistant transcript done: ¡Genial! ¿De qué te gustaría hablar ahora? ¿Noticias, chistes, consejos o algo en particular?
+[2026-04-11 04:32:44.661] [ASSISTANT] Response audio completed | chunks=8 | bytes=223680 | samples=111840 | ~6990.00 ms
+[2026-04-11 04:32:44.662] [XAI] Response completed | tokens=542
+[2026-04-11 04:32:44.662] [INFO] Assistant response: ¡Genial! ¿De qué te gustaría hablar ahora? ¿Noticias, chistes, consejos o algo en particular?
+[2026-04-11 04:32:44.662] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 04:32:44.662] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Genial! ¿De qué te gustaría hablar ahora? ¿Noticias, chistes, consejos o algo en particular?", "final": true, "timestamp": "2026-04-11T04:32:44"}
+[2026-04-11 04:32:45.629] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:32:47.057] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:32:48.148] [UDP] UDP audio paced send: 32 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:32:48.226] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:33:09.988] [TURN] New audio turn #13 -> initial seq=4311
+[2026-04-11 04:33:10.272] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:33:11.207] [LOSS] [LOSS] seq 4445 lost -> filled with silence
+[2026-04-11 04:33:11.893] [STAT] [STAT] seq=4561 | buf=0 | rec=4800 | lost=2 (0.04%)
+[2026-04-11 04:33:12.127] [LOSS] [LOSS] seq 4568 lost -> filled with silence
+[2026-04-11 04:33:13.263] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:33:13.352] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 04:33:13.353] [TURN] COMMIT sent to xAI
+[2026-04-11 04:33:13.870] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:33:13.873] [XAI] xAI confirmed commit
+[2026-04-11 04:33:14.178] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:33:14.180] [USER] User transcription: Nómbrame las planetas del sistema solar.
+[2026-04-11 04:33:14.181] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 04:33:16.407] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:33:16.417] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:33:16.417] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 04:33:16.421] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:33:16.844] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:33:16.928] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:33:17.162] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 04:33:17.435] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:33:17.654] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 04:33:18.154] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:33:18.277] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 04:33:19.042] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:33:20.301] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:33:21.728] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:33:22.551] [ASSISTANT] Assistant transcript done: ¡Claro! Los planetas del sistema solar en orden son: Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno. ¡Plutón ya no cuenta como planeta, es planeta enano! ¿Quieres más detalles sobre alguno?
+[2026-04-11 04:33:22.561] [ASSISTANT] Response audio completed | chunks=13 | bytes=527680 | samples=263840 | ~16490.00 ms
+[2026-04-11 04:33:22.561] [XAI] Response completed | tokens=1091
+[2026-04-11 04:33:22.562] [INFO] Assistant response: ¡Claro! Los planetas del sistema solar en orden son: Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno. ¡Plutón ya no cuenta como planeta, es planeta enano! ¿Quieres más detalles sobre alguno?
+[2026-04-11 04:33:22.562] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 04:33:22.562] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Claro! Los planetas del sistema solar en orden son: Mercurio, Venus, Tierra, Marte, Júpiter, Saturno, Urano y Neptuno. ¡Plutón ya no cuenta como planeta, es planeta enano! ¿Quieres más detalles sobre alguno?", "final": true, "timestamp": "2026-04-11T04:33:22"}
+[2026-04-11 04:33:23.325] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:33:25.123] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:33:26.921] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:33:28.720] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:33:30.520] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:33:31.543] [UDP] UDP audio paced send: 30 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:33:31.621] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:34:49.369] [TURN] New audio turn #14 -> initial seq=0
+[2026-04-11 04:34:50.186] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:34:51.055] [STAT] [STAT] seq=168 | buf=0 | rec=5100 | lost=3 (0.06%)
+[2026-04-11 04:34:51.951] [LOSS] [LOSS] seq 250 lost -> filled with silence
+[2026-04-11 04:34:53.875] [STAT] [STAT] seq=469 | buf=0 | rec=5400 | lost=4 (0.07%)
+[2026-04-11 04:34:56.192] [LOSS] [LOSS] seq 650 lost -> filled with silence
+[2026-04-11 04:34:56.909] [STAT] [STAT] seq=770 | buf=0 | rec=5700 | lost=5 (0.09%)
+[2026-04-11 04:34:57.499] [LOSS] [LOSS] seq 818 lost -> filled with silence
+[2026-04-11 04:34:58.907] [LOSS] [LOSS] seq 936 lost -> filled with silence
+[2026-04-11 04:34:59.322] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:34:59.412] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=1
+[2026-04-11 04:34:59.413] [TURN] COMMIT sent to xAI
+[2026-04-11 04:35:00.126] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:35:00.136] [XAI] xAI confirmed commit
+[2026-04-11 04:35:00.137] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:35:00.137] [USER] User transcription: Cuéntame una pequeña historia sobre la... de Nikola Tesla.
+[2026-04-11 04:35:00.137] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 04:35:00.822] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:35:00.832] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:35:00.832] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 04:35:00.876] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:35:01.167] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:35:01.251] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 04:35:01.383] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:01.641] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 04:35:01.890] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:02.002] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 04:35:02.608] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:03.496] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:04.755] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:06.183] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:06.375] [ASSISTANT] Assistant transcript done: ¡Vale! Nikola Tesla era un genio excéntrico que soñaba con electricidad gratuita para el mundo. Una noche tormentosa en su laboratorio de Colorado Springs, creó relámpagos artificiales gigantes con su bobina, iluminando el cielo como un mago loco. Aunque el mundo no lo entendió del todo, su visión de energía inalámbrica aún nos inspira hoy. ¡Era un verdadero visionario! ¿Más sobre Tesla?
+[2026-04-11 04:35:06.375] [ASSISTANT] Response audio completed | chunks=17 | bytes=813120 | samples=406560 | ~25410.00 ms
+[2026-04-11 04:35:06.375] [XAI] Response completed | tokens=1877
+[2026-04-11 04:35:06.376] [INFO] Assistant response: ¡Vale! Nikola Tesla era un genio excéntrico que soñaba con electricidad gratuita para el mundo. Una noche tormentosa en su laboratorio de Colorado Springs, creó relámpagos artificiales gigantes con su bobina, iluminando el cielo como un mago loco. Aunque el mundo no lo entendió del todo, su visión de energía inalámbrica aún nos inspira hoy. ¡Era un verdadero visionario! ¿Más sobre Tesla?
+[2026-04-11 04:35:06.376] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 04:35:06.376] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Vale! Nikola Tesla era un genio excéntrico que soñaba con electricidad gratuita para el mundo. Una noche tormentosa en su laboratorio de Colorado Springs, creó relámpagos artificiales gigantes con su bobina, iluminando el cielo como un mago loco. Aunque el mundo no lo entendió del todo, su visión de energía inalámbrica aún nos inspira hoy. ¡Era un verdadero visionario! ¿Más sobre Tesla?", "final": true, "timestamp": "2026-04-11T04:35:06"}
+[2026-04-11 04:35:07.780] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:09.579] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:11.379] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:13.177] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:14.977] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:16.775] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:18.575] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:20.375] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:22.174] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:24.142] [UDP] UDP audio paced send: 58 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:24.220] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:28.670] [TURN] New audio turn #15 -> initial seq=1008
+[2026-04-11 04:35:29.134] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:35:29.145] [LOSS] [LOSS] seq 1058 lost -> filled with silence
+[2026-04-11 04:35:29.151] [STAT] [STAT] seq=1073 | buf=0 | rec=6000 | lost=8 (0.13%)
+[2026-04-11 04:35:31.559] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:35:31.649] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 04:35:31.650] [TURN] COMMIT sent to xAI
+[2026-04-11 04:35:31.988] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:35:31.997] [XAI] xAI confirmed commit
+[2026-04-11 04:35:32.192] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:35:32.194] [USER] User transcription: Claro, cuéntame mucho más.
+[2026-04-11 04:35:32.195] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 04:35:34.960] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:35:34.989] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:35:34.989] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 04:35:35.482] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:35:35.996] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:35:36.006] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 04:35:36.006] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:36.175] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 04:35:36.272] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 04:35:36.513] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:37.232] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:38.120] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:39.380] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:40.807] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:42.403] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:44.203] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:46.002] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:46.885] [AUDIO] Output audio chunk #25 | bytes=62720 | samples=31360 | ~1960.00 ms
+[2026-04-11 04:35:47.800] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:49.600] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:51.399] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:53.198] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:54.997] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:55.424] [AUDIO] Output audio chunk #50 | bytes=62720 | samples=31360 | ~1960.00 ms
+[2026-04-11 04:35:56.787] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:35:58.586] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:00.385] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:02.184] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:03.976] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:05.187] [ASSISTANT] Assistant transcript done: ¡Claro! Nikola Tesla nació en 1856 en Smiljan, actual Croacia, en una tormenta de relámpagos que su madre vio como un signo de luz. Hijo de un sacerdote, mostró genio desde niño: a los 3 años, chispas de su gato lo fascinaron con la electricidad. Estudió ingeniería, pero emigró a EE.UU. en 1884 para trabajar con Thomas Edison. Allí empezó su rivalidad: Edison defendía la corriente continua (DC), ineficiente para largas distancias, mientras Tesla impulsaba la alterna (AC), más potente. Edison lo prometió bonos por mejorar sus dinamos, pero no pagó, diciendo que era humor americano. Tesla se fue furioso y se alió con George Westinghouse. Ganaron la Guerra de las Corrientes: AC iluminó la Exposición de Chicago en 1893 y la primera hidroeléctrica en Niagara en 1895. Sus inventos clave: motor de inducción AC, bobina de Tesla para alto voltaje, sistemas polifásicos, y más de 300 patentes, como lámparas fluorescentes, rayos X y turbinas sin palas. En 1899, en Colorado Springs, construyó su mayor bobina: creó relámpagos de 41 metros, truenos a 24 km, encendió bombillas a distancia y creyó captar señales marcianas. ¡Electrificó mariposas y cascos de caballos! Luego, Wardenclyffe Tower en Long Island (1901), financiada por J.P. Morgan, para transmitir energía y señales inalámbricas globales. Pero Marconi usó sus patentes para radio transatlántico, Morgan retiró fondos y la torre fue demolida en 1917 como locura millonaria. Eccéntrico, soltero por celibato científico, amaba palomas (gastó fortunas curándolas), contaba pasos obsesivamente y visualizaba inventos perfectos en su mente. Murió solo en 1943 en Nueva York, pobre pero visionario: su AC alimenta el mundo hoy. ¡Un mago de la electricidad! ¿Quieres detalles de algún invento?
+[2026-04-11 04:36:05.197] [ASSISTANT] Response audio completed | chunks=74 | bytes=4403520 | samples=2201760 | ~137610.00 ms
+[2026-04-11 04:36:05.197] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:36:05.197] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:36:05.197] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-11 04:36:05.198] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-11 04:36:05.198] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:36:05.198] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:36:05.198] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-11 04:36:05.198] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-11 04:36:05.198] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:36:05.198] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:36:05.199] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-11 04:36:05.199] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-11 04:36:05.199] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:36:05.199] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:36:05.199] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-11 04:36:05.199] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-11 04:36:05.199] [XAI] Response completed | tokens=7530
+[2026-04-11 04:36:05.199] [INFO] Assistant response: ¡Claro! Nikola Tesla nació en 1856 en Smiljan, actual Croacia, en una tormenta de relámpagos que su madre vio como un signo de luz. Hijo de un sacerdote, mostró genio desde niño: a los 3 años, chispas de su gato lo fascinaron con la electricidad. Estudió ingeniería, pero emigró a EE.UU. en 1884 para trabajar con Thomas Edison. Allí empezó su rivalidad: Edison defendía la corriente continua (DC), ineficiente para largas distancias, mientras Tesla impulsaba la alterna (AC), más potente. Edison lo prometió bonos por mejorar sus dinamos, pero no pagó, diciendo que era humor americano. Tesla se fue furioso y se alió con George Westinghouse. Ganaron la Guerra de las Corrientes: AC iluminó la Exposición de Chicago en 1893 y la primera hidroeléctrica en Niagara en 1895. Sus inventos clave: motor de inducción AC, bobina de Tesla para alto voltaje, sistemas polifásicos, y más de 300 patentes, como lámparas fluorescentes, rayos X y turbinas sin palas. En 1899, en Colorado Springs, construyó su mayor bobina: creó relámpagos de 41 metros, truenos a 24 km, encendió bombillas a distancia y creyó captar señales marcianas. ¡Electrificó mariposas y cascos de caballos! Luego, Wardenclyffe Tower en Long Island (1901), financiada por J.P. Morgan, para transmitir energía y señales inalámbricas globales. Pero Marconi usó sus patentes para radio transatlántico, Morgan retiró fondos y la torre fue demolida en 1917 como locura millonaria. Eccéntrico, soltero por celibato científico, amaba palomas (gastó fortunas curándolas), contaba pasos obsesivamente y visualizaba inventos perfectos en su mente. Murió solo en 1943 en Nueva York, pobre pero visionario: su AC alimenta el mundo hoy. ¡Un mago de la electricidad! ¿Quieres detalles de algún invento?
+[2026-04-11 04:36:05.200] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 04:36:05.200] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Claro! Nikola Tesla nació en 1856 en Smiljan, actual Croacia, en una tormenta de relámpagos que su madre vio como un signo de luz. Hijo de un sacerdote, mostró genio desde niño: a los 3 años, chispas de su gato lo fascinaron con la electricidad. Estudió ingeniería, pero emigró a EE.UU. en 1884 para trabajar con Thomas Edison. Allí empezó su rivalidad: Edison defendía la corriente continua (DC), ineficiente para largas distancias, mientras Tesla impulsaba la alterna (AC), más potente. Edison lo prometió bonos por mejorar sus dinamos, pero no pagó, diciendo que era humor americano. Tesla se fue furioso y se alió con George Westinghouse. Ganaron la Guerra de las Corrientes: AC iluminó la Exposición de Chicago en 1893 y la primera hidroeléctrica en Niagara en 1895. Sus inventos clave: motor de inducción AC, bobina de Tesla para alto voltaje, sistemas polifásicos, y más de 300 patentes, como lámparas fluorescentes, rayos X y turbinas sin palas. En 1899, en Colorado Springs, construyó su mayor bobina: creó relámpagos de 41 metros, truenos a 24 km, encendió bombillas a distancia y creyó captar señales marcianas. ¡Electrificó mariposas y cascos de caballos! Luego, Wardenclyffe Tower en Long Island (1901), financiada por J.P. Morgan, para transmitir energía y señales inalámbricas globales. Pero Marconi usó sus patentes para radio transatlántico, Morgan retiró fondos y la torre fue demolida en 1917 como locura millonaria. Eccéntrico, soltero por celibato científico, amaba palomas (gastó fortunas curándolas), contaba pasos obsesivamente y visualizaba inventos perfectos en su mente. Murió solo en 1943 en Nueva York, pobre pero visionario: su AC alimenta el mundo hoy. ¡Un mago de la electricidad! ¿Quieres detalles de algún invento?", "final": true, "timestamp": "2026-04-11T04:36:05"}
+[2026-04-11 04:36:05.775] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:07.567] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:09.366] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:11.156] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:12.955] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:14.754] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:16.554] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:18.353] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:20.153] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:21.944] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:23.742] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:25.542] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:27.341] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:29.140] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:30.939] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:32.737] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:33.956] [TURN] New audio turn #16 -> initial seq=1316
+[2026-04-11 04:36:34.241] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:36:34.536] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:34.663] [STAT] [STAT] seq=1371 | buf=3 | rec=6300 | lost=8 (0.13%)
+[2026-04-11 04:36:34.665] [LOSS] [LOSS] seq 1371 lost -> filled with silence
+[2026-04-11 04:36:35.870] [LOSS] [LOSS] seq 1512 lost -> filled with silence
+[2026-04-11 04:36:35.881] [LOSS] [LOSS] seq 1513 lost -> filled with silence
+[2026-04-11 04:36:36.326] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:37.338] [STAT] [STAT] seq=1677 | buf=0 | rec=6600 | lost=11 (0.17%)
+[2026-04-11 04:36:37.775] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:36:37.865] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 04:36:37.866] [TURN] COMMIT sent to xAI
+[2026-04-11 04:36:38.124] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:38.356] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:36:38.365] [XAI] xAI confirmed commit
+[2026-04-11 04:36:38.439] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:36:38.439] [USER] User transcription: ¿Por qué, por qué murió pobre?
+[2026-04-11 04:36:38.439] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 04:36:39.215] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:36:39.225] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:36:39.225] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 04:36:39.881] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:36:39.921] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:36:39.922] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 04:36:39.923] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:41.222] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 04:36:41.232] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 04:36:41.712] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:43.511] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:45.310] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:46.373] [ASSISTANT] Assistant transcript done: Nikola Tesla murió pobre porque, aunque era un genio con más de 300 patentes, era pésimo en negocios: regaló muchas patentes por poco dinero, como las de AC a Westinghouse. Proyectos locos como la Torre Wardenclyffe fallaron sin inversores, y vivió solo, gastando en palomas y experimentos. ¡Aún así, cambió el mundo con su electricidad! ¿Más detalles?
+[2026-04-11 04:36:46.382] [ASSISTANT] Response audio completed | chunks=17 | bytes=814400 | samples=407200 | ~25450.00 ms
+[2026-04-11 04:36:46.383] [XAI] Response completed | tokens=1584
+[2026-04-11 04:36:46.383] [INFO] Assistant response: Nikola Tesla murió pobre porque, aunque era un genio con más de 300 patentes, era pésimo en negocios: regaló muchas patentes por poco dinero, como las de AC a Westinghouse. Proyectos locos como la Torre Wardenclyffe fallaron sin inversores, y vivió solo, gastando en palomas y experimentos. ¡Aún así, cambió el mundo con su electricidad! ¿Más detalles?
+[2026-04-11 04:36:46.383] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 04:36:46.383] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "Nikola Tesla murió pobre porque, aunque era un genio con más de 300 patentes, era pésimo en negocios: regaló muchas patentes por poco dinero, como las de AC a Westinghouse. Proyectos locos como la Torre Wardenclyffe fallaron sin inversores, y vivió solo, gastando en palomas y experimentos. ¡Aún así, cambió el mundo con su electricidad! ¿Más detalles?", "final": true, "timestamp": "2026-04-11T04:36:46"}
+[2026-04-11 04:36:47.108] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:48.907] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:50.707] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:52.505] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:54.304] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:56.103] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:57.903] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:36:59.701] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:01.500] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:03.299] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:05.098] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:06.889] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:08.687] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:10.486] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:12.285] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:14.084] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:15.882] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:17.681] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:19.480] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:21.280] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:23.079] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:24.878] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:26.677] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:28.476] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:30.276] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:32.075] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:33.873] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:35.672] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:37.471] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:39.271] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:41.677] [UDP] UDP audio paced send: 71 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:41.756] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:42.263] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:42.772] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:43.491] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:44.379] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:45.639] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:47.066] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:48.663] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:50.462] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:52.261] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:54.060] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:55.859] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:57.658] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:37:59.456] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:38:01.256] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:38:03.055] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:38:05.050] [UDP] UDP audio paced send: 59 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:38:05.120] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:38:09.543] [TURN] New audio turn #17 -> initial seq=1721
+[2026-04-11 04:38:09.869] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:38:10.904] [LOSS] [LOSS] seq 1870 lost -> filled with silence
+[2026-04-11 04:38:11.749] [STAT] [STAT] seq=1978 | buf=0 | rec=6900 | lost=12 (0.17%)
+[2026-04-11 04:38:12.448] [LOSS] [LOSS] seq 2027 lost -> filled with silence
+[2026-04-11 04:38:14.287] [LOSS] [LOSS] seq 2180 lost -> filled with silence
+[2026-04-11 04:38:14.763] [STAT] [STAT] seq=2280 | buf=0 | rec=7200 | lost=14 (0.19%)
+[2026-04-11 04:38:17.548] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:38:17.658] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 04:38:17.658] [TURN] COMMIT sent to xAI
+[2026-04-11 04:38:17.944] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:38:17.947] [XAI] xAI confirmed commit
+[2026-04-11 04:38:18.836] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:38:18.846] [USER] User transcription: Sí, por favor, cuéntame algo corto sobre, eh, la bobina de Tesla.
+[2026-04-11 04:38:18.846] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 04:38:22.919] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:38:22.936] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:38:22.936] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 04:38:23.591] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:38:23.601] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:38:23.680] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 04:38:23.944] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 04:38:24.088] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-11 04:38:24.107] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:38:24.614] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:38:25.334] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:38:26.222] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:38:27.481] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:38:28.910] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:38:30.071] [ASSISTANT] Assistant transcript done: ¡Claro! La bobina de Tesla es un invento genial de 1891: un transformador que genera altos voltajes y frecuencias para crear relámpagos artificiales espectaculares, como chispas gigantes de hasta 50 metros. ¡Tesla la usó en Colorado Springs para experimentos locos de energía inalámbrica! ¿Quieres verla en acción o más?
+[2026-04-11 04:38:30.081] [ASSISTANT] Response audio completed | chunks=16 | bytes=757440 | samples=378720 | ~23670.00 ms
+[2026-04-11 04:38:30.081] [XAI] Response completed | tokens=1709
+[2026-04-11 04:38:30.081] [INFO] Assistant response: ¡Claro! La bobina de Tesla es un invento genial de 1891: un transformador que genera altos voltajes y frecuencias para crear relámpagos artificiales espectaculares, como chispas gigantes de hasta 50 metros. ¡Tesla la usó en Colorado Springs para experimentos locos de energía inalámbrica! ¿Quieres verla en acción o más?
+[2026-04-11 04:38:30.082] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 04:38:30.082] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Claro! La bobina de Tesla es un invento genial de 1891: un transformador que genera altos voltajes y frecuencias para crear relámpagos artificiales espectaculares, como chispas gigantes de hasta 50 metros. ¡Tesla la usó en Colorado Springs para experimentos locos de energía inalámbrica! ¿Quieres verla en acción o más?", "final": true, "timestamp": "2026-04-11T04:38:30"}
+[2026-04-11 04:38:30.506] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:38:32.306] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:38:34.105] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:38:35.904] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:38:37.703] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:38:39.501] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:38:41.300] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:38:43.099] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:38:45.270] [UDP] UDP audio paced send: 64 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:38:45.348] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:43:20.805] [TURN] New audio turn #18 -> initial seq=0
+[2026-04-11 04:43:20.929] [STAT] [STAT] seq=22 | buf=0 | rec=7500 | lost=14 (0.19%)
+[2026-04-11 04:43:21.080] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-11 04:43:22.782] [LOSS] [LOSS] seq 94 lost -> filled with silence
+[2026-04-11 04:43:22.833] [TURN] UDP COMMIT signal received from ('10.19.187.137', 9999)
+[2026-04-11 04:43:22.913] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-11 04:43:22.914] [TURN] COMMIT sent to xAI
+[2026-04-11 04:43:23.415] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-11 04:43:23.417] [XAI] xAI confirmed commit
+[2026-04-11 04:43:23.491] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:43:23.492] [USER] User transcription: Hola hola
+[2026-04-11 04:43:23.492] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-11 04:43:24.916] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-11 04:43:24.926] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-11 04:43:24.926] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-11 04:43:25.558] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:43:26.067] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:43:26.415] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-11 04:43:26.925] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:43:27.685] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-11 04:43:28.405] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:43:29.048] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-11 04:43:29.928] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:43:36.775] [AUDIO] Output audio chunk #5 | bytes=30400 | samples=15200 | ~950.00 ms
+[2026-04-11 04:43:36.792] [ASSISTANT] Assistant transcript done: ¡Hola hola! ¿Todo bien? ¿Seguimos con Tesla o algo nuevo?
+[2026-04-11 04:43:36.792] [ASSISTANT] Response audio completed | chunks=6 | bytes=122560 | samples=61280 | ~3830.00 ms
+[2026-04-11 04:43:36.822] [XAI] Response completed | tokens=305
+[2026-04-11 04:43:36.823] [INFO] Assistant response: ¡Hola hola! ¿Todo bien? ¿Seguimos con Tesla o algo nuevo?
+[2026-04-11 04:43:36.823] [UDP] UDP target addr: ('10.19.187.137', 9999)
+[2026-04-11 04:43:36.823] [UDP] UDP JSON sent to ('10.19.187.137', 9999): {"type": "assistant_response", "value": "¡Hola hola! ¿Todo bien? ¿Seguimos con Tesla o algo nuevo?", "final": true, "timestamp": "2026-04-11T04:43:36"}
+[2026-04-11 04:43:37.663] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-11 04:43:37.741] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
