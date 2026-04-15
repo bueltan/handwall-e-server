@@ -302,6 +302,11 @@ class XaiRealtimeClient:
                 elif event_type == "response.output_audio.delta":
                     pcm_data = base64.b64decode(event["delta"])
 
+                    try:
+                        self.wav_writer.write(pcm_data)
+                    except Exception as exc:
+                        self.logger.log(f"Failed writing output WAV: {exc}", "WARN")
+
                     self.output_audio_chunks += 1
                     self.output_audio_bytes += len(pcm_data)
 

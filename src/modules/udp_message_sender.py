@@ -1,22 +1,22 @@
 import asyncio
 import json
-import socket
 from typing import Optional, Tuple
 
 from modules.bridget_logger import BridgeLogger
+from modules.udp_server import UdpServer
 
 
 class UdpMessageSender:
-    """Send JSON messages and raw audio packets to the last known UDP peer."""
+    """Send JSON messages and raw audio packets using the same UDP socket as UdpServer."""
 
-    AUDIO_CHUNK_SIZE = 1200
+    AUDIO_CHUNK_SIZE = 640
     OUTPUT_SAMPLE_RATE = 16000
     BYTES_PER_SAMPLE = 2  # PCM16 mono
-    PACING_FACTOR = 0.90  # < 1.0 = un poco más rápido que realtime
+    PACING_FACTOR = 1.10  # un poco más lento que realtime para remoto
 
-    def __init__(self, logger: BridgeLogger) -> None:
+    def __init__(self, logger: BridgeLogger, udp_server: UdpServer) -> None:
         self.logger = logger
-        self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        self.udp_server = udp_server
 
     @property
     def audio_packet_seconds(self) -> float:
@@ -27,20 +27,35 @@ class UdpMessageSender:
         )
         return base_seconds * self.PACING_FACTOR
 
-    def send_json(self, payload: dict, addr: Optional[Tuple[str, int]]) -> None:
+    def _sendto(self, payload: bytes, addr: Optional[Tuple[str, int]]) -> bool:
         if not addr:
-            self.logger.log("Cannot send UDP JSON: remote address is unknown", "WARN")
-            return
+            self.logger.log("Cannot send UDP packet: remote address is unknown", "WARN")
+            return False
+
+        if not self.udp_server.sock:
+            self.logger.log("Cannot send UDP packet: UDP server socket is not ready", "WARN")
+            return False
 
         try:
+            self.udp_server.sock.sendto(payload, addr)
+            return True
+        except Exception as exc:
+            self.logger.log(f"Failed to send UDP packet to {addr}: {exc}", "ERROR")
+            return False
+
+    def send_json(self, payload: dict, addr: Optional[Tuple[str, int]]) -> None:
+        try:
             data = json.dumps(payload, ensure_ascii=False).encode("utf-8")
-            self.sock.sendto(data, addr)
+        except Exception as exc:
+            self.logger.log(f"Failed to encode UDP JSON: {exc}", "ERROR")
+            return
+
+        ok = self._sendto(data, addr)
+        if ok:
             self.logger.log(
                 f"UDP JSON sent to {addr}: {data.decode('utf-8', errors='ignore')}",
                 "UDP",
             )
-        except Exception as exc:
-            self.logger.log(f"Failed to send UDP JSON: {exc}", "ERROR")
 
     async def send_audio_chunked(
         self,
@@ -49,6 +64,10 @@ class UdpMessageSender:
     ) -> None:
         if not addr:
             self.logger.log("Cannot send UDP audio: remote address is unknown", "WARN")
+            return
+
+        if not self.udp_server.sock:
+            self.logger.log("Cannot send UDP audio: UDP server socket is not ready", "WARN")
             return
 
         try:
@@ -61,12 +80,19 @@ class UdpMessageSender:
                 if not chunk:
                     continue
 
-                self.sock.sendto(chunk, addr)
+                ok = self._sendto(chunk, addr)
+                if not ok:
+                    break
+
                 sent_chunks += 1
 
-                target_time = start_time + (
-                    sent_chunks * self.audio_packet_seconds
-                )
+                if sent_chunks <= 5 or sent_chunks % 20 == 0:
+                    self.logger.log(
+                        f"Sending audio chunk #{sent_chunks} to {addr} | bytes={len(chunk)}",
+                        "UDP",
+                    )
+
+                target_time = start_time + (sent_chunks * self.audio_packet_seconds)
                 delay = target_time - loop.time()
                 if delay > 0:
                     await asyncio.sleep(delay)
@@ -85,21 +111,10 @@ class UdpMessageSender:
             self.logger.log(f"Failed to send UDP audio chunk: {exc}", "ERROR")
 
     def send_audio_end(self, addr: Optional[Tuple[str, int]]) -> None:
-        if not addr:
-            self.logger.log(
-                "Cannot send UDP audio end marker: remote address is unknown",
-                "WARN",
-            )
-            return
-
-        try:
-            self.sock.sendto(b"__END__", addr)
+        ok = self._sendto(b"__END__", addr)
+        if ok:
             self.logger.log(f"UDP audio end marker sent to {addr}", "UDP")
-        except Exception as exc:
-            self.logger.log(f"Failed to send UDP audio end marker: {exc}", "ERROR")
 
     def close(self) -> None:
-        try:
-            self.sock.close()
-        except Exception:
-            pass
+        # El socket pertenece a UdpServer
+        pass
