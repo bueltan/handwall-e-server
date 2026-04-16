@@ -42,14 +42,15 @@ class UdpToXaiBridge:
             self.audio_queue,
             self.commit_queue,
         )
-        self.udp_message_sender = UdpMessageSender(self.logger, self.udp_server.sock)
+
+        self.udp_message_sender = None
 
         self.xai_client = XaiRealtimeClient(
             self.xai_config,
             self.udp_config,
             self.logger,
             self.wav_writer,
-            self.udp_message_sender,
+            None,
             self.udp_server,
         )
 
