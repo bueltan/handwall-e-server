@@ -34,7 +34,7 @@ class UdpToXaiBridge:
         self.commit_queue: asyncio.Queue = asyncio.Queue()
 
         self.jitter_buffer = JitterBuffer(self.udp_config, self.logger)
-        self.udp_message_sender = UdpMessageSender(self.logger)
+        self.udp_message_sender = UdpMessageSender(self.logger, self.udp_server.sock)
 
         self.udp_server = UdpServer(
             self.udp_config,
