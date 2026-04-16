@@ -1,5 +1,6 @@
 import asyncio
 import base64
+from builtins import int
 from datetime import datetime
 import json
 import os
@@ -41,6 +42,8 @@ class XaiRealtimeClient:
         self.stop_event = asyncio.Event()
 
         self.current_assistant_text = ""
+        self.pending_assistant_text = ""
+
         self.output_audio_bytes = 0
         self.output_audio_chunks = 0
 
@@ -50,17 +53,26 @@ class XaiRealtimeClient:
         self.output_turn_finished = False
 
         self.reconnect_attempt = 0
+        self.current_playback_id = 0
+        self.output_sequence = 0
+        self.output_started_at_ms = 0
 
     async def connect(self) -> None:
-        """Backward-compatible one-shot connect."""
         await self.connect_once()
 
     def _reset_output_turn_state(self) -> None:
         self.current_assistant_text = ""
+        self.pending_assistant_text = ""
         self.output_audio_bytes = 0
         self.output_audio_chunks = 0
         self.output_turn_finished = False
         self.output_audio_done_event.clear()
+
+        self.current_playback_id += 1
+        self.output_sequence = 0
+        self.output_started_at_ms = 0
+
+        self.udp_message_sender.reset_audio_pacing(self.current_playback_id)
 
     def _clear_output_queue(self) -> None:
         while True:
@@ -70,11 +82,8 @@ class XaiRealtimeClient:
                 break
 
     def _fail_current_turn(self) -> None:
-        """
-        Called when websocket dies mid-turn.
-        Unblock waiters, clear stale output, and tell ESP32 that audio ended.
-        """
         self.current_assistant_text = ""
+        self.pending_assistant_text = ""
         self.output_audio_bytes = 0
         self.output_audio_chunks = 0
         self.output_turn_finished = False
@@ -253,6 +262,27 @@ class XaiRealtimeClient:
             finally:
                 self.ws = None
 
+    async def _send_pending_assistant_text(self) -> None:
+        assistant_text = self.pending_assistant_text.strip()
+        if not assistant_text or not self.udp_server.remote_addr:
+            return
+
+        self.logger.log(f"Assistant response: {assistant_text}")
+        self.logger.log(
+            f"UDP target addr: {self.udp_server.remote_addr}",
+            "UDP",
+        )
+        self.udp_message_sender.send_json(
+            {
+                "type": "assistant_response",
+                "value": assistant_text,
+                "final": True,
+                "timestamp": datetime.now().isoformat(timespec="seconds"),
+            },
+            self.udp_server.remote_addr,
+        )
+        self.pending_assistant_text = ""
+
     async def udp_audio_sender(self) -> None:
         while True:
             pcm_data = await self.output_audio_queue.get()
@@ -261,20 +291,26 @@ class XaiRealtimeClient:
                 break
 
             try:
-                await self.udp_message_sender.send_audio_chunked(
+                self.output_sequence = await self.udp_message_sender.send_audio_chunked(
                     pcm_data,
                     self.udp_server.remote_addr,
+                    playback_id=self.current_playback_id,
+                    start_sequence=self.output_sequence,
+                    start_timestamp_ms=self.output_started_at_ms,
                 )
             except Exception as exc:
                 self.logger.log(f"UDP audio sender error: {exc}", "ERROR")
 
             if self.output_audio_queue.empty() and self.output_turn_finished:
                 try:
+                    await asyncio.sleep(0.15)
+
                     self.udp_message_sender.send_audio_end(
                         self.udp_server.remote_addr,
                     )
+                    await self._send_pending_assistant_text()
                 except Exception as exc:
-                    self.logger.log(f"Failed to send audio_end: {exc}", "WARN")
+                    self.logger.log(f"Failed to finalize output: {exc}", "WARN")
 
                 self.output_turn_finished = False
                 self.output_audio_done_event.set()
@@ -302,13 +338,9 @@ class XaiRealtimeClient:
                 elif event_type == "response.output_audio.delta":
                     pcm_data = base64.b64decode(event["delta"])
 
-                    try:
-                        self.wav_writer.write(pcm_data)
-                    except Exception as exc:
-                        self.logger.log(f"Failed writing output WAV: {exc}", "WARN")
-
                     self.output_audio_chunks += 1
                     self.output_audio_bytes += len(pcm_data)
+                    #self.wav_writer.write(pcm_data)
 
                     if (
                         self.output_audio_chunks <= 5
@@ -368,12 +400,15 @@ class XaiRealtimeClient:
 
                     if self.output_audio_queue.empty():
                         try:
+                            await asyncio.sleep(0.15)
+
                             self.udp_message_sender.send_audio_end(
                                 self.udp_server.remote_addr,
                             )
+                            await self._send_pending_assistant_text()
                         except Exception as exc:
                             self.logger.log(
-                                f"Failed to send audio_end immediately: {exc}",
+                                f"Failed to finalize output immediately: {exc}",
                                 "WARN",
                             )
 
@@ -388,6 +423,7 @@ class XaiRealtimeClient:
                     )
 
                     assistant_text = self.current_assistant_text.strip()
+                    self.pending_assistant_text = assistant_text
 
                     if self.output_audio_chunks == 0 and not assistant_text:
                         self.logger.log(
@@ -396,25 +432,8 @@ class XaiRealtimeClient:
                         )
                         self.output_audio_done_event.set()
 
-                    if assistant_text and self.udp_server.remote_addr:
-                        self.logger.log(
-                            f"Assistant response: {assistant_text}"
-                        )
-                        self.logger.log(
-                            f"UDP target addr: {self.udp_server.remote_addr}",
-                            "UDP",
-                        )
-                        self.udp_message_sender.send_json(
-                            {
-                                "type": "assistant_response",
-                                "value": assistant_text,
-                                "final": True,
-                                "timestamp": datetime.now().isoformat(
-                                    timespec="seconds"
-                                ),
-                            },
-                            self.udp_server.remote_addr,
-                        )
+                    if self.output_audio_chunks == 0 and assistant_text:
+                        await self._send_pending_assistant_text()
 
                 elif event_type == "ping":
                     pass

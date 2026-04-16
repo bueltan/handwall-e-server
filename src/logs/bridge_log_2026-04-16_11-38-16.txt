@@ -1,0 +1,110 @@
+[2026-04-16 11:38:16.182] [INFO] Output WAV file: audio_out_2026-04-16_11-38-16.wav
+[2026-04-16 11:38:16.182] [INFO] Log file: bridge_log_2026-04-16_11-38-16.txt
+[2026-04-16 11:38:16.182] [CONFIG] Bridge config | input_rate=16000 | output_rate=16000 | samples_per_packet=160 | packet_audio_size=320
+[2026-04-16 11:38:17.699] [START] Connected to xAI realtime | input_rate=16000 | output_rate=16000
+[2026-04-16 11:38:17.708] [START] UDP server started
+[2026-04-16 11:38:17.708] [INFO] UDP port: 9999
+[2026-04-16 11:38:17.708] [INFO] Jitter buffer: 25 packets (~250 ms)
+[2026-04-16 11:38:17.977] [DEBUG] Unhandled xAI event: type=conversation.created keys=['type', 'event_id', 'conversation', 'previous_item_id']
+[2026-04-16 11:38:18.008] [XAI] Session updated
+[2026-04-16 11:38:20.403] [INIT] First packet received -> seq=250
+[2026-04-16 11:38:20.715] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-16 11:38:21.829] [LOSS] [LOSS] seq 386 lost -> filled with silence
+[2026-04-16 11:38:22.022] [TURN] UDP COMMIT signal received from ('10.230.249.137', 9999)
+[2026-04-16 11:38:22.112] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-16 11:38:22.113] [TURN] COMMIT sent to xAI
+[2026-04-16 11:38:22.450] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-16 11:38:22.459] [XAI] xAI confirmed commit
+[2026-04-16 11:38:22.859] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 11:38:22.868] [USER] User transcription: Hola, buenos días, ¿cómo estás?
+[2026-04-16 11:38:22.869] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-16 11:38:24.295] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 11:38:24.305] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 11:38:24.305] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-16 11:38:24.306] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-16 11:38:24.306] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-16 11:38:24.307] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-16 11:38:24.557] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-16 11:38:24.784] [UDP] UDP audio paced send: 28 chunks | chunk_bytes=640 | packet_ms=17.00 | playback_id=1
+[2026-04-16 11:38:25.269] [UDP] UDP audio paced send: 28 chunks | chunk_bytes=640 | packet_ms=17.00 | playback_id=1
+[2026-04-16 11:38:25.466] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-16 11:38:25.524] [ASSISTANT] Assistant transcript done: ¡Hola! Buenos días, estoy genial, ¡gracias por preguntar! ¿En qué puedo ayudarte hoy?
+[2026-04-16 11:38:25.527] [DEBUG] Unhandled xAI event: type=response.content_part.done keys=['type', 'event_id', 'item_id', 'response_id', 'content_index', 'output_index', 'previous_item_id']
+[2026-04-16 11:38:25.527] [ASSISTANT] Response audio completed | chunks=7 | bytes=187840 | samples=93920 | ~5870.00 ms
+[2026-04-16 11:38:25.527] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 11:38:25.527] [XAI] Response completed | tokens=438
+[2026-04-16 11:38:25.527] [INFO] Assistant response: ¡Hola! Buenos días, estoy genial, ¡gracias por preguntar! ¿En qué puedo ayudarte hoy?
+[2026-04-16 11:38:25.527] [UDP] UDP target addr: ('10.230.249.137', 9999)
+[2026-04-16 11:38:25.528] [UDP] UDP JSON sent to ('10.230.249.137', 9999): {"type": "assistant_response", "value": "¡Hola! Buenos días, estoy genial, ¡gracias por preguntar! ¿En qué puedo ayudarte hoy?", "final": true, "timestamp": "2026-04-16T11:38:25"}
+[2026-04-16 11:38:25.926] [UDP] UDP audio paced send: 38 chunks | chunk_bytes=640 | packet_ms=17.00 | playback_id=1
+[2026-04-16 11:38:26.745] [UDP] UDP audio paced send: 48 chunks | chunk_bytes=640 | packet_ms=17.00 | playback_id=1
+[2026-04-16 11:38:27.912] [UDP] UDP audio paced send: 68 chunks | chunk_bytes=640 | packet_ms=17.00 | playback_id=1
+[2026-04-16 11:38:29.316] [UDP] UDP audio paced send: 82 chunks | chunk_bytes=640 | packet_ms=17.00 | playback_id=1
+[2026-04-16 11:38:29.360] [UDP] UDP audio paced send: 2 chunks | chunk_bytes=640 | packet_ms=17.00 | playback_id=1
+[2026-04-16 11:38:29.360] [UDP] UDP audio end marker sent to ('10.230.249.137', 9999)
+[2026-04-16 11:38:33.023] [TURN] New audio turn #1 -> initial seq=464
+[2026-04-16 11:38:33.466] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-16 11:38:33.751] [STAT] [STAT] seq=552 | buf=0 | rec=300 | lost=1 (0.33%)
+[2026-04-16 11:38:37.135] [LOSS] [LOSS] seq 843 lost -> filled with silence
+[2026-04-16 11:38:37.141] [STAT] [STAT] seq=853 | buf=0 | rec=600 | lost=2 (0.33%)
+[2026-04-16 11:38:39.666] [STAT] [STAT] seq=1153 | buf=0 | rec=900 | lost=2 (0.22%)
+[2026-04-16 11:38:40.777] [TURN] UDP COMMIT signal received from ('10.230.249.137', 9999)
+[2026-04-16 11:38:40.867] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-16 11:38:40.869] [TURN] COMMIT sent to xAI
+[2026-04-16 11:38:41.271] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-16 11:38:41.273] [XAI] xAI confirmed commit
+[2026-04-16 11:38:41.699] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 11:38:41.709] [USER] User transcription: Dime el clima en Bariloche, Argentina.
+[2026-04-16 11:38:41.709] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-16 11:38:45.263] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 11:38:45.292] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 11:38:45.293] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-16 11:38:45.833] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-16 11:38:45.843] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-16 11:38:45.843] [AUDIO] Output audio chunk #3 | bytes=14080 | samples=7040 | ~440.00 ms
+[2026-04-16 11:38:46.128] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-16 11:38:46.319] [UDP] UDP audio paced send: 28 chunks | chunk_bytes=640 | packet_ms=17.00 | playback_id=2
+[2026-04-16 11:38:46.752] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-16 11:38:46.804] [UDP] UDP audio paced send: 28 chunks | chunk_bytes=640 | packet_ms=17.00 | playback_id=2
+[2026-04-16 11:38:47.181] [UDP] UDP audio paced send: 22 chunks | chunk_bytes=640 | packet_ms=17.00 | playback_id=2
+[2026-04-16 11:38:48.008] [UDP] UDP audio paced send: 48 chunks | chunk_bytes=640 | packet_ms=17.00 | playback_id=2
+[2026-04-16 11:38:49.174] [UDP] UDP audio paced send: 68 chunks | chunk_bytes=640 | packet_ms=17.00 | playback_id=2
+[2026-04-16 11:38:49.668] [ASSISTANT] Assistant transcript done: En Bariloche hoy hace fresco, alrededor de 13 a 15 grados durante el día, con nubes parciales y posibilidad de lluvia débil. Temperaturas más bajas por la noche, cerca de 7 a 10 grados, con vientos del oeste. ¡Abrígate si vas para allá!
+[2026-04-16 11:38:49.678] [DEBUG] Unhandled xAI event: type=response.content_part.done keys=['type', 'event_id', 'item_id', 'response_id', 'content_index', 'output_index', 'previous_item_id']
+[2026-04-16 11:38:49.678] [ASSISTANT] Response audio completed | chunks=13 | bytes=507840 | samples=253920 | ~15870.00 ms
+[2026-04-16 11:38:49.679] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 11:38:49.679] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 11:38:49.679] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-16 11:38:49.679] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-16 11:38:49.679] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 11:38:49.679] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 11:38:49.680] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 11:38:49.680] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-16 11:38:49.680] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-16 11:38:49.680] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 11:38:49.680] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 11:38:49.680] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 11:38:49.681] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-16 11:38:49.681] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-16 11:38:49.681] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 11:38:49.681] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 11:38:49.681] [XAI] Response completed | tokens=1271
+[2026-04-16 11:38:49.681] [INFO] Assistant response: En Bariloche hoy hace fresco, alrededor de 13 a 15 grados durante el día, con nubes parciales y posibilidad de lluvia débil. Temperaturas más bajas por la noche, cerca de 7 a 10 grados, con vientos del oeste. ¡Abrígate si vas para allá!
+[2026-04-16 11:38:49.682] [UDP] UDP target addr: ('10.230.249.137', 9999)
+[2026-04-16 11:38:49.682] [UDP] UDP JSON sent to ('10.230.249.137', 9999): {"type": "assistant_response", "value": "En Bariloche hoy hace fresco, alrededor de 13 a 15 grados durante el día, con nubes parciales y posibilidad de lluvia débil. Temperaturas más bajas por la noche, cerca de 7 a 10 grados, con vientos del oeste. ¡Abrígate si vas para allá!", "final": true, "timestamp": "2026-04-16T11:38:49"}
+[2026-04-16 11:38:50.510] [UDP] UDP audio paced send: 78 chunks | chunk_bytes=640 | packet_ms=17.00 | playback_id=2
+[2026-04-16 11:38:52.016] [UDP] UDP audio paced send: 88 chunks | chunk_bytes=640 | packet_ms=17.00 | playback_id=2
+[2026-04-16 11:38:53.692] [UDP] UDP audio paced send: 98 chunks | chunk_bytes=640 | packet_ms=17.00 | playback_id=2
+[2026-04-16 11:38:55.369] [UDP] UDP audio paced send: 98 chunks | chunk_bytes=640 | packet_ms=17.00 | playback_id=2
+[2026-04-16 11:38:57.045] [UDP] UDP audio paced send: 98 chunks | chunk_bytes=640 | packet_ms=17.00 | playback_id=2
+[2026-04-16 11:38:58.721] [UDP] UDP audio paced send: 98 chunks | chunk_bytes=640 | packet_ms=17.00 | playback_id=2
+[2026-04-16 11:38:59.412] [UDP] UDP audio paced send: 40 chunks | chunk_bytes=640 | packet_ms=17.00 | playback_id=2
+[2026-04-16 11:38:59.455] [UDP] UDP audio paced send: 2 chunks | chunk_bytes=640 | packet_ms=17.00 | playback_id=2
+[2026-04-16 11:38:59.456] [UDP] UDP audio end marker sent to ('10.230.249.137', 9999)
+[2026-04-16 11:39:16.079] [STOP] Bridge tasks cancelled
+[2026-04-16 11:39:16.089] [UDP] UDP JSON sent to ('10.230.249.137', 9999): {"type": "bridge_status", "value": "xai_disconnected", "timestamp": "2026-04-16T11:39:16"}
+[2026-04-16 11:39:16.090] [UDP] UDP audio end marker sent to ('10.230.249.137', 9999)
+[2026-04-16 11:39:17.850] [SUMMARY] === END OF TRANSMISSION ===
+[2026-04-16 11:39:17.860] [SUMMARY] Output saved to: audio_out_2026-04-16_11-38-16.wav
+[2026-04-16 11:39:17.860] [SUMMARY] Total packets received: 1010
+[2026-04-16 11:39:17.860] [SUMMARY] Total packets lost: 2 (0.20%)

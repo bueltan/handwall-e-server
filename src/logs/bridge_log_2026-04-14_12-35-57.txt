@@ -1,0 +1,291 @@
+[2026-04-14 12:35:57.484] [INFO] Output WAV file: audio_out_2026-04-14_12-35-57.wav
+[2026-04-14 12:35:57.485] [INFO] Log file: bridge_log_2026-04-14_12-35-57.txt
+[2026-04-14 12:35:57.485] [CONFIG] Bridge config | input_rate=16000 | output_rate=16000 | samples_per_packet=160 | packet_audio_size=320
+[2026-04-14 12:35:59.200] [START] Connected to xAI realtime | input_rate=16000 | output_rate=16000
+[2026-04-14 12:35:59.200] [START] UDP server started
+[2026-04-14 12:35:59.201] [INFO] UDP port: 9999
+[2026-04-14 12:35:59.201] [INFO] Jitter buffer: 25 packets (~250 ms)
+[2026-04-14 12:35:59.656] [DEBUG] Unhandled xAI event: type=conversation.created keys=['type', 'event_id', 'conversation', 'previous_item_id']
+[2026-04-14 12:35:59.656] [XAI] Session updated
+[2026-04-14 12:36:05.033] [INIT] First packet received -> seq=0
+[2026-04-14 12:36:05.350] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-14 12:36:07.799] [STAT] [STAT] seq=300 | buf=0 | rec=300 | lost=0 (0.00%)
+[2026-04-14 12:36:10.773] [STAT] [STAT] seq=600 | buf=0 | rec=600 | lost=0 (0.00%)
+[2026-04-14 12:36:13.757] [STAT] [STAT] seq=900 | buf=0 | rec=900 | lost=0 (0.00%)
+[2026-04-14 12:36:16.849] [STAT] [STAT] seq=1200 | buf=0 | rec=1200 | lost=0 (0.00%)
+[2026-04-14 12:36:19.762] [STAT] [STAT] seq=1500 | buf=0 | rec=1500 | lost=0 (0.00%)
+[2026-04-14 12:36:21.402] [LOSS] [LOSS] seq 1634 lost -> filled with silence
+[2026-04-14 12:36:21.450] [LOSS] [LOSS] seq 1635 lost -> filled with silence
+[2026-04-14 12:36:21.463] [LOSS] [LOSS] seq 1636 lost -> filled with silence
+[2026-04-14 12:36:21.473] [LOSS] [LOSS] seq 1637 lost -> filled with silence
+[2026-04-14 12:36:21.483] [LOSS] [LOSS] seq 1638 lost -> filled with silence
+[2026-04-14 12:36:23.082] [STAT] [STAT] seq=1805 | buf=0 | rec=1800 | lost=5 (0.28%)
+[2026-04-14 12:36:26.150] [STAT] [STAT] seq=2105 | buf=0 | rec=2100 | lost=5 (0.24%)
+[2026-04-14 12:36:28.163] [LOSS] [LOSS] seq 2310 lost -> filled with silence
+[2026-04-14 12:36:28.786] [STAT] [STAT] seq=2406 | buf=0 | rec=2400 | lost=6 (0.25%)
+[2026-04-14 12:36:31.780] [STAT] [STAT] seq=2706 | buf=0 | rec=2700 | lost=6 (0.22%)
+[2026-04-14 12:36:34.776] [STAT] [STAT] seq=3006 | buf=0 | rec=3000 | lost=6 (0.20%)
+[2026-04-14 12:36:37.837] [STAT] [STAT] seq=3306 | buf=0 | rec=3300 | lost=6 (0.18%)
+[2026-04-14 12:36:40.813] [STAT] [STAT] seq=3606 | buf=0 | rec=3600 | lost=6 (0.17%)
+[2026-04-14 12:36:43.771] [STAT] [STAT] seq=3906 | buf=0 | rec=3900 | lost=6 (0.15%)
+[2026-04-14 12:36:47.024] [STAT] [STAT] seq=4206 | buf=0 | rec=4200 | lost=6 (0.14%)
+[2026-04-14 12:36:49.888] [STAT] [STAT] seq=4506 | buf=0 | rec=4500 | lost=6 (0.13%)
+[2026-04-14 12:36:52.844] [STAT] [STAT] seq=4806 | buf=0 | rec=4800 | lost=6 (0.12%)
+[2026-04-14 12:36:55.547] [TURN] UDP COMMIT signal received from ('10.230.249.137', 9999)
+[2026-04-14 12:36:55.627] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-14 12:36:55.629] [TURN] COMMIT sent to xAI
+[2026-04-14 12:36:56.298] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-14 12:36:56.298] [XAI] xAI confirmed commit
+[2026-04-14 12:36:56.298] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-14 12:36:56.298] [USER] User transcription: Hola Grok, eh, tengo una consulta. Eh, yo estoy haciendo una conexión UDP a través de un SP32 a un servidor Python, y Python se encarga de hacer un bridge al, a XAI, inteligencia artificial. Cuestión que localmente todo funciona bien, ahora justamente estamos hablando por medio de eso y en remoto logro ver que los paquetes llegan, o sea, inclusive puede interpretar mi voz y y que intenta enviármelo, pero no recibo nada en el SP32.
+[2026-04-14 12:36:56.298] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-14 12:36:56.909] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-14 12:36:56.912] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-14 12:36:56.912] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-14 12:36:57.549] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-14 12:36:57.552] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-14 12:36:57.686] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-14 12:36:57.782] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-14 12:36:58.056] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:36:58.145] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-14 12:36:58.564] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:36:59.283] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:00.171] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:01.430] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:02.857] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:04.454] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:05.534] [ASSISTANT] Assistant transcript done: ¡Hola! Suena frustrante eso del ESP32 no recibiendo la respuesta del servidor Python. Primero, confirma que el firewall o NAT del servidor remoto no esté bloqueando los paquetes UDP de vuelta al ESP32 – prueba con herramientas como Wireshark en ambos lados para ver si salen. Si los paquetes llegan pero no se procesan, revisa el callback de recepción en el ESP32, el puerto de bind y si hay timeout o buffer lleno. ¿Me das más detalles del código o la IP/puertos para ayudarte mejor? ¡Vamos a solucionarlo!
+[2026-04-14 12:37:05.544] [DEBUG] Unhandled xAI event: type=response.content_part.done keys=['type', 'event_id', 'item_id', 'response_id', 'content_index', 'output_index', 'previous_item_id']
+[2026-04-14 12:37:05.544] [ASSISTANT] Response audio completed | chunks=23 | bytes=1197760 | samples=598880 | ~37430.00 ms
+[2026-04-14 12:37:05.544] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-14 12:37:05.545] [XAI] Response completed | tokens=4655
+[2026-04-14 12:37:05.545] [INFO] Assistant response: ¡Hola! Suena frustrante eso del ESP32 no recibiendo la respuesta del servidor Python. Primero, confirma que el firewall o NAT del servidor remoto no esté bloqueando los paquetes UDP de vuelta al ESP32 – prueba con herramientas como Wireshark en ambos lados para ver si salen. Si los paquetes llegan pero no se procesan, revisa el callback de recepción en el ESP32, el puerto de bind y si hay timeout o buffer lleno. ¿Me das más detalles del código o la IP/puertos para ayudarte mejor? ¡Vamos a solucionarlo!
+[2026-04-14 12:37:05.545] [UDP] UDP target addr: ('10.230.249.137', 9999)
+[2026-04-14 12:37:05.545] [UDP] UDP JSON sent to ('10.230.249.137', 9999): {"type": "assistant_response", "value": "¡Hola! Suena frustrante eso del ESP32 no recibiendo la respuesta del servidor Python. Primero, confirma que el firewall o NAT del servidor remoto no esté bloqueando los paquetes UDP de vuelta al ESP32 – prueba con herramientas como Wireshark en ambos lados para ver si salen. Si los paquetes llegan pero no se procesan, revisa el callback de recepción en el ESP32, el puerto de bind y si hay timeout o buffer lleno. ¿Me das más detalles del código o la IP/puertos para ayudarte mejor? ¡Vamos a solucionarlo!", "final": true, "timestamp": "2026-04-14T12:37:05"}
+[2026-04-14 12:37:06.253] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:08.052] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:09.853] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:11.645] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:13.437] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:15.236] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:17.036] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:18.836] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:20.635] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:22.434] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:24.233] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:26.032] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:27.831] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:29.631] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:31.836] [UDP] UDP audio paced send: 65 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:31.914] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:31.915] [UDP] UDP audio end marker sent to ('10.230.249.137', 9999)
+[2026-04-14 12:37:39.433] [TURN] New audio turn #1 -> initial seq=5084
+[2026-04-14 12:37:39.469] [STAT] [STAT] seq=5107 | buf=0 | rec=5100 | lost=6 (0.12%)
+[2026-04-14 12:37:39.717] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-14 12:37:42.091] [LOSS] [LOSS] seq 5322 lost -> filled with silence
+[2026-04-14 12:37:42.102] [LOSS] [LOSS] seq 5323 lost -> filled with silence
+[2026-04-14 12:37:42.104] [LOSS] [LOSS] seq 5324 lost -> filled with silence
+[2026-04-14 12:37:42.107] [LOSS] [LOSS] seq 5325 lost -> filled with silence
+[2026-04-14 12:37:42.109] [LOSS] [LOSS] seq 5326 lost -> filled with silence
+[2026-04-14 12:37:42.121] [LOSS] [LOSS] seq 5327 lost -> filled with silence
+[2026-04-14 12:37:42.162] [LOSS] [LOSS] seq 5328 lost -> filled with silence
+[2026-04-14 12:37:42.318] [LOSS] [LOSS] seq 5329 lost -> filled with silence
+[2026-04-14 12:37:42.320] [LOSS] [LOSS] seq 5330 lost -> filled with silence
+[2026-04-14 12:37:42.322] [LOSS] [LOSS] seq 5331 lost -> filled with silence
+[2026-04-14 12:37:42.362] [LOSS] [LOSS] seq 5332 lost -> filled with silence
+[2026-04-14 12:37:42.427] [LOSS] [LOSS] seq 5333 lost -> filled with silence
+[2026-04-14 12:37:42.463] [LOSS] [LOSS] seq 5334 lost -> filled with silence
+[2026-04-14 12:37:42.522] [LOSS] [LOSS] seq 5335 lost -> filled with silence
+[2026-04-14 12:37:42.562] [LOSS] [LOSS] seq 5336 lost -> filled with silence
+[2026-04-14 12:37:43.124] [LOSS] [LOSS] seq 5337 lost -> filled with silence
+[2026-04-14 12:37:43.136] [LOSS] [LOSS] seq 5338 lost -> filled with silence
+[2026-04-14 12:37:43.136] [STAT] [STAT] seq=5339 | buf=85 | rec=5400 | lost=23 (0.43%)
+[2026-04-14 12:37:43.138] [LOSS] [LOSS] seq 5339 lost -> filled with silence
+[2026-04-14 12:37:43.141] [LOSS] [LOSS] seq 5340 lost -> filled with silence
+[2026-04-14 12:37:46.644] [STAT] [STAT] seq=5726 | buf=0 | rec=5700 | lost=25 (0.44%)
+[2026-04-14 12:37:48.779] [STAT] [STAT] seq=6026 | buf=0 | rec=6000 | lost=25 (0.42%)
+[2026-04-14 12:37:49.913] [TURN] UDP COMMIT signal received from ('10.230.249.137', 9999)
+[2026-04-14 12:37:50.003] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-14 12:37:50.004] [TURN] COMMIT sent to xAI
+[2026-04-14 12:37:50.352] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-14 12:37:50.361] [XAI] xAI confirmed commit
+[2026-04-14 12:37:50.511] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-14 12:37:50.513] [USER] User transcription: Eh, la interfaz que estoy construyendo hasta el momento es una interfaz por voz. Se me complica compartirte logs y archivos.
+[2026-04-14 12:37:50.535] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-14 12:37:51.122] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-14 12:37:51.132] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-14 12:37:51.132] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-14 12:37:53.743] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-14 12:37:53.752] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-14 12:37:53.753] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-14 12:37:53.753] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-14 12:37:53.763] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-14 12:37:54.261] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:54.777] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:55.497] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:56.385] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:57.643] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:37:58.375] [ASSISTANT] Assistant transcript done: ¡Entiendo, una interfaz por voz genial con ESP32! No hay problema sin logs. Pasos rápidos: 1) En ESP32, asegúrate de bindear el socket UDP al puerto correcto con `bind()` antes de enviar, y usa `recvfrom()` en un loop no bloqueante. 2) En Python remoto, responde al mismo puerto origen del paquete recibido. Prueba ping UDP simple entre ambos para aislar. ¿Funciona el ESP32 recibiendo de otro cliente local? ¡Dime cómo va!
+[2026-04-14 12:37:58.384] [DEBUG] Unhandled xAI event: type=response.content_part.done keys=['type', 'event_id', 'item_id', 'response_id', 'content_index', 'output_index', 'previous_item_id']
+[2026-04-14 12:37:58.385] [ASSISTANT] Response audio completed | chunks=21 | bytes=1075520 | samples=537760 | ~33610.00 ms
+[2026-04-14 12:37:58.385] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-14 12:37:58.385] [XAI] Response completed | tokens=2360
+[2026-04-14 12:37:58.385] [INFO] Assistant response: ¡Entiendo, una interfaz por voz genial con ESP32! No hay problema sin logs. Pasos rápidos: 1) En ESP32, asegúrate de bindear el socket UDP al puerto correcto con `bind()` antes de enviar, y usa `recvfrom()` en un loop no bloqueante. 2) En Python remoto, responde al mismo puerto origen del paquete recibido. Prueba ping UDP simple entre ambos para aislar. ¿Funciona el ESP32 recibiendo de otro cliente local? ¡Dime cómo va!
+[2026-04-14 12:37:58.385] [UDP] UDP target addr: ('10.230.249.137', 9999)
+[2026-04-14 12:37:58.385] [UDP] UDP JSON sent to ('10.230.249.137', 9999): {"type": "assistant_response", "value": "¡Entiendo, una interfaz por voz genial con ESP32! No hay problema sin logs. Pasos rápidos: 1) En ESP32, asegúrate de bindear el socket UDP al puerto correcto con `bind()` antes de enviar, y usa `recvfrom()` en un loop no bloqueante. 2) En Python remoto, responde al mismo puerto origen del paquete recibido. Prueba ping UDP simple entre ambos para aislar. ¿Funciona el ESP32 recibiendo de otro cliente local? ¡Dime cómo va!", "final": true, "timestamp": "2026-04-14T12:37:58"}
+[2026-04-14 12:37:59.071] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:38:00.667] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:38:02.467] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:38:04.266] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:38:06.065] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:38:07.864] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:38:09.664] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:38:11.455] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:38:13.255] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:38:15.054] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:38:16.853] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:38:18.653] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:38:20.452] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:38:22.251] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:38:24.557] [UDP] UDP audio paced send: 68 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:38:24.635] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:38:24.635] [UDP] UDP audio end marker sent to ('10.230.249.137', 9999)
+[2026-04-14 12:38:27.567] [TURN] New audio turn #2 -> initial seq=6146
+[2026-04-14 12:38:28.063] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-14 12:38:29.161] [STAT] [STAT] seq=6327 | buf=0 | rec=6300 | lost=25 (0.40%)
+[2026-04-14 12:38:32.158] [STAT] [STAT] seq=6627 | buf=0 | rec=6600 | lost=25 (0.38%)
+[2026-04-14 12:38:34.699] [LOSS] [LOSS] seq 6858 lost -> filled with silence
+[2026-04-14 12:38:35.219] [STAT] [STAT] seq=6928 | buf=0 | rec=6900 | lost=26 (0.38%)
+[2026-04-14 12:38:35.626] [LOSS] [LOSS] seq 6950 lost -> filled with silence
+[2026-04-14 12:38:37.931] [LOSS] [LOSS] seq 7183 lost -> filled with silence
+[2026-04-14 12:38:38.218] [STAT] [STAT] seq=7230 | buf=0 | rec=7200 | lost=28 (0.39%)
+[2026-04-14 12:38:41.174] [STAT] [STAT] seq=7530 | buf=0 | rec=7500 | lost=28 (0.37%)
+[2026-04-14 12:38:44.713] [STAT] [STAT] seq=7830 | buf=0 | rec=7800 | lost=28 (0.36%)
+[2026-04-14 12:38:47.218] [STAT] [STAT] seq=8130 | buf=0 | rec=8100 | lost=28 (0.35%)
+[2026-04-14 12:38:50.374] [STAT] [STAT] seq=8430 | buf=0 | rec=8400 | lost=28 (0.33%)
+[2026-04-14 12:38:51.906] [LOSS] [LOSS] seq 8556 lost -> filled with silence
+[2026-04-14 12:38:53.277] [STAT] [STAT] seq=8731 | buf=0 | rec=8700 | lost=29 (0.33%)
+[2026-04-14 12:38:56.287] [STAT] [STAT] seq=9031 | buf=0 | rec=9000 | lost=29 (0.32%)
+[2026-04-14 12:38:59.300] [STAT] [STAT] seq=9331 | buf=0 | rec=9300 | lost=29 (0.31%)
+[2026-04-14 12:39:02.499] [STAT] [STAT] seq=9631 | buf=0 | rec=9600 | lost=29 (0.30%)
+[2026-04-14 12:39:05.459] [LOSS] [LOSS] seq 9922 lost -> filled with silence
+[2026-04-14 12:39:05.472] [STAT] [STAT] seq=9932 | buf=0 | rec=9900 | lost=30 (0.30%)
+[2026-04-14 12:39:08.380] [STAT] [STAT] seq=10232 | buf=0 | rec=10200 | lost=30 (0.29%)
+[2026-04-14 12:39:11.324] [STAT] [STAT] seq=10532 | buf=0 | rec=10500 | lost=30 (0.29%)
+[2026-04-14 12:39:14.462] [STAT] [STAT] seq=10832 | buf=0 | rec=10800 | lost=30 (0.28%)
+[2026-04-14 12:39:17.660] [STAT] [STAT] seq=11132 | buf=0 | rec=11100 | lost=30 (0.27%)
+[2026-04-14 12:39:19.995] [LOSS] [LOSS] seq 11345 lost -> filled with silence
+[2026-04-14 12:39:20.380] [STAT] [STAT] seq=11433 | buf=0 | rec=11400 | lost=31 (0.27%)
+[2026-04-14 12:39:23.363] [STAT] [STAT] seq=11733 | buf=0 | rec=11700 | lost=31 (0.26%)
+[2026-04-14 12:39:25.737] [TURN] UDP COMMIT signal received from ('10.230.249.137', 9999)
+[2026-04-14 12:39:25.828] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-14 12:39:25.829] [TURN] COMMIT sent to xAI
+[2026-04-14 12:39:26.090] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-14 12:39:26.092] [XAI] xAI confirmed commit
+[2026-04-14 12:39:26.566] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-14 12:39:26.569] [USER] User transcription: Localmente funciona, o sea, todo funciona localmente. El tema es que falla cuando pongo el servidor Python en un servidor remoto. Eh, abrí la conexión en Nginx, o sea, creé un stream y le di un listen al puerto, al al puerto UDP que apuntaba al servicio. Entonces, eh, mi aparato el el SP32 tiene un sistema de ping y pong y el ping y pong falla también. Entonces yo no creo que sea un problema de buffer, de audio, sino que es eh puede ser que una parte del firmware del del firmware esté bloqueando la conexión eh saliente.
+[2026-04-14 12:39:26.569] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-14 12:39:29.560] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-14 12:39:29.589] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-14 12:39:29.589] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-14 12:39:30.384] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-14 12:39:30.394] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-14 12:39:30.396] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-14 12:39:30.542] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-14 12:39:30.850] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-14 12:39:30.901] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:39:31.409] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:39:32.127] [UDP] UDP audio paced send: 21 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:39:33.016] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:39:34.275] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:39:35.703] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:39:37.299] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:39:39.098] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:39:39.476] [ASSISTANT] Assistant transcript done: ¡Ajá, el ping-pong fallando apunta directo al problema! Con Nginx stream UDP, agrega `reuseport` en el `listen`: `listen TU_PUERTO udp reuseport;`. Eso maneja bien las respuestas de vuelta, sin NAT issues. En ESP32, confirma `udp.begin(localPort)` antes de enviar, para bindear y recibir replies al mismo puerto. Prueba sin Nginx directo al Python primero, ¿llega el pong? ¡Cuéntame!
+[2026-04-14 12:39:39.479] [DEBUG] Unhandled xAI event: type=response.content_part.done keys=['type', 'event_id', 'item_id', 'response_id', 'content_index', 'output_index', 'previous_item_id']
+[2026-04-14 12:39:39.479] [ASSISTANT] Response audio completed | chunks=21 | bytes=1046080 | samples=523040 | ~32690.00 ms
+[2026-04-14 12:39:39.479] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-14 12:39:39.479] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-14 12:39:39.479] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-14 12:39:39.480] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-14 12:39:39.480] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-14 12:39:39.480] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-14 12:39:39.480] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-14 12:39:39.480] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-14 12:39:39.481] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-14 12:39:39.481] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-14 12:39:39.481] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-14 12:39:39.481] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-14 12:39:39.481] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-14 12:39:39.481] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-14 12:39:39.482] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-14 12:39:39.482] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-14 12:39:39.482] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-14 12:39:39.482] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-14 12:39:39.482] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-14 12:39:39.482] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-14 12:39:39.483] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-14 12:39:39.483] [XAI] Response completed | tokens=4782
+[2026-04-14 12:39:39.483] [INFO] Assistant response: ¡Ajá, el ping-pong fallando apunta directo al problema! Con Nginx stream UDP, agrega `reuseport` en el `listen`: `listen TU_PUERTO udp reuseport;`. Eso maneja bien las respuestas de vuelta, sin NAT issues. En ESP32, confirma `udp.begin(localPort)` antes de enviar, para bindear y recibir replies al mismo puerto. Prueba sin Nginx directo al Python primero, ¿llega el pong? ¡Cuéntame!
+[2026-04-14 12:39:39.483] [UDP] UDP target addr: ('10.230.249.137', 9999)
+[2026-04-14 12:39:39.483] [UDP] UDP JSON sent to ('10.230.249.137', 9999): {"type": "assistant_response", "value": "¡Ajá, el ping-pong fallando apunta directo al problema! Con Nginx stream UDP, agrega `reuseport` en el `listen`: `listen TU_PUERTO udp reuseport;`. Eso maneja bien las respuestas de vuelta, sin NAT issues. En ESP32, confirma `udp.begin(localPort)` antes de enviar, para bindear y recibir replies al mismo puerto. Prueba sin Nginx directo al Python primero, ¿llega el pong? ¡Cuéntame!", "final": true, "timestamp": "2026-04-14T12:39:39"}
+[2026-04-14 12:39:40.897] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:39:42.697] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:39:44.496] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:39:46.296] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:39:48.095] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:39:49.895] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:39:51.694] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:39:53.492] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:39:55.292] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:39:57.091] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:39:58.889] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:40:00.351] [UDP] UDP audio paced send: 43 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:40:00.429] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:40:00.430] [UDP] UDP audio end marker sent to ('10.230.249.137', 9999)
+[2026-04-14 12:40:04.065] [TURN] New audio turn #3 -> initial seq=11969
+[2026-04-14 12:40:04.365] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-14 12:40:04.625] [STAT] [STAT] seq=12034 | buf=0 | rec=12000 | lost=31 (0.26%)
+[2026-04-14 12:40:07.689] [STAT] [STAT] seq=12334 | buf=0 | rec=12300 | lost=31 (0.25%)
+[2026-04-14 12:40:10.595] [STAT] [STAT] seq=12634 | buf=0 | rec=12600 | lost=31 (0.25%)
+[2026-04-14 12:40:13.599] [STAT] [STAT] seq=12934 | buf=0 | rec=12900 | lost=31 (0.24%)
+[2026-04-14 12:40:14.494] [TURN] UDP COMMIT signal received from ('10.230.249.137', 9999)
+[2026-04-14 12:40:14.584] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-14 12:40:14.585] [TURN] COMMIT sent to xAI
+[2026-04-14 12:40:14.845] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-14 12:40:14.848] [XAI] xAI confirmed commit
+[2026-04-14 12:40:15.120] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-14 12:40:15.122] [USER] User transcription: Ah, claro, voy a hacer eso, voy a modificar las configuraciones de Nginx, que seguramente son incorrectas.
+[2026-04-14 12:40:15.122] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-14 12:40:16.444] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-14 12:40:16.454] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-14 12:40:16.455] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-14 12:40:16.456] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-14 12:40:16.457] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-14 12:40:16.562] [AUDIO] Output audio chunk #3 | bytes=23680 | samples=11840 | ~740.00 ms
+[2026-04-14 12:40:16.867] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-14 12:40:16.964] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:40:17.472] [UDP] UDP audio paced send: 15 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:40:17.589] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-14 12:40:18.158] [UDP] UDP audio paced send: 20 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:40:19.045] [UDP] UDP audio paced send: 26 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:40:20.296] [UDP] UDP audio paced send: 37 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:40:21.724] [UDP] UDP audio paced send: 42 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:40:23.321] [UDP] UDP audio paced send: 47 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:40:23.559] [ASSISTANT] Assistant transcript done: ¡Perfecto, eso debería arreglarlo! Usa también `proxy_responses 1;` y `proxy_timeout 10s;` en el stream de Nginx para UDP ping-pong. Si persiste, chequea firewall del servidor (ufw/iptables allow UDP bidireccional). ¡Éxito, avísame cómo sale!
+[2026-04-14 12:40:23.559] [DEBUG] Unhandled xAI event: type=response.content_part.done keys=['type', 'event_id', 'item_id', 'response_id', 'content_index', 'output_index', 'previous_item_id']
+[2026-04-14 12:40:23.559] [ASSISTANT] Response audio completed | chunks=15 | bytes=676160 | samples=338080 | ~21130.00 ms
+[2026-04-14 12:40:23.560] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-14 12:40:23.560] [XAI] Response completed | tokens=1684
+[2026-04-14 12:40:23.560] [INFO] Assistant response: ¡Perfecto, eso debería arreglarlo! Usa también `proxy_responses 1;` y `proxy_timeout 10s;` en el stream de Nginx para UDP ping-pong. Si persiste, chequea firewall del servidor (ufw/iptables allow UDP bidireccional). ¡Éxito, avísame cómo sale!
+[2026-04-14 12:40:23.560] [UDP] UDP target addr: ('10.230.249.137', 9999)
+[2026-04-14 12:40:23.560] [UDP] UDP JSON sent to ('10.230.249.137', 9999): {"type": "assistant_response", "value": "¡Perfecto, eso debería arreglarlo! Usa también `proxy_responses 1;` y `proxy_timeout 10s;` en el stream de Nginx para UDP ping-pong. Si persiste, chequea firewall del servidor (ufw/iptables allow UDP bidireccional). ¡Éxito, avísame cómo sale!", "final": true, "timestamp": "2026-04-14T12:40:23"}
+[2026-04-14 12:40:25.120] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:40:26.920] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:40:28.720] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:40:30.519] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:40:32.319] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:40:34.118] [UDP] UDP audio paced send: 53 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:40:35.782] [UDP] UDP audio paced send: 49 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:40:35.860] [UDP] UDP audio paced send: 2 chunks of 1200 bytes | packet_ms=33.75 | pacing_factor=0.9
+[2026-04-14 12:40:35.860] [UDP] UDP audio end marker sent to ('10.230.249.137', 9999)

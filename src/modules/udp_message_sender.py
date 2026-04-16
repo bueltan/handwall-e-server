@@ -1,22 +1,37 @@
 import asyncio
 import json
+import socket
+import struct
 from typing import Optional, Tuple
 
 from modules.bridget_logger import BridgeLogger
-from modules.udp_server import UdpServer
 
 
 class UdpMessageSender:
-    """Send JSON messages and raw audio packets using the same UDP socket as UdpServer."""
+    """Send JSON messages and paced raw audio packets to the last known UDP peer."""
 
-    AUDIO_CHUNK_SIZE = 640
+    # 320 bytes = 160 mono PCM16 samples = 10 ms @ 16 kHz
+    AUDIO_CHUNK_SIZE = 320
     OUTPUT_SAMPLE_RATE = 16000
-    BYTES_PER_SAMPLE = 2  # PCM16 mono
-    PACING_FACTOR = 1.10  # un poco más lento que realtime para remoto
+    BYTES_PER_SAMPLE = 2
 
-    def __init__(self, logger: BridgeLogger, udp_server: UdpServer) -> None:
+    # Exact realtime pacing.
+    PACING_FACTOR = 1.0
+
+    # Yield to the event loop every N packets to avoid bursty scheduling.
+    YIELD_EVERY_CHUNKS = 20
+
+    def __init__(self, logger: BridgeLogger) -> None:
         self.logger = logger
-        self.udp_server = udp_server
+        self.sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+        try:
+            self.sock.setsockopt(socket.SOL_SOCKET, socket.SO_SNDBUF, 1024 * 1024)
+        except Exception:
+            pass
+
+        self._paced_playback_id: Optional[int] = None
+        self._next_send_time: Optional[float] = None
 
     @property
     def audio_packet_seconds(self) -> float:
@@ -27,94 +42,126 @@ class UdpMessageSender:
         )
         return base_seconds * self.PACING_FACTOR
 
-    def _sendto(self, payload: bytes, addr: Optional[Tuple[str, int]]) -> bool:
-        if not addr:
-            self.logger.log("Cannot send UDP packet: remote address is unknown", "WARN")
-            return False
-
-        if not self.udp_server.sock:
-            self.logger.log("Cannot send UDP packet: UDP server socket is not ready", "WARN")
-            return False
-
-        try:
-            self.udp_server.sock.sendto(payload, addr)
-            return True
-        except Exception as exc:
-            self.logger.log(f"Failed to send UDP packet to {addr}: {exc}", "ERROR")
-            return False
+    def reset_audio_pacing(self, playback_id: int) -> None:
+        self._paced_playback_id = playback_id
+        self._next_send_time = None
 
     def send_json(self, payload: dict, addr: Optional[Tuple[str, int]]) -> None:
-        try:
-            data = json.dumps(payload, ensure_ascii=False).encode("utf-8")
-        except Exception as exc:
-            self.logger.log(f"Failed to encode UDP JSON: {exc}", "ERROR")
+        if not addr:
+            self.logger.log("Cannot send UDP JSON: remote address is unknown", "WARN")
             return
 
-        ok = self._sendto(data, addr)
-        if ok:
+        try:
+            data = json.dumps(payload, ensure_ascii=True).encode("utf-8")
+            self.sock.sendto(data, addr)
             self.logger.log(
                 f"UDP JSON sent to {addr}: {data.decode('utf-8', errors='ignore')}",
                 "UDP",
             )
+        except Exception as exc:
+            self.logger.log(f"Failed to send UDP JSON: {exc}", "ERROR")
 
     async def send_audio_chunked(
         self,
         pcm_data: bytes,
         addr: Optional[Tuple[str, int]],
-    ) -> None:
+        playback_id: int,
+        start_sequence: int,
+        start_timestamp_ms: int,
+    ) -> int:
+        """
+        Send assistant audio with header:
+        [playback_id:u32][sequence:u32][timestamp_ms:u32][pcm...]
+
+        Returns the next sequence number to continue from.
+        """
         if not addr:
             self.logger.log("Cannot send UDP audio: remote address is unknown", "WARN")
-            return
-
-        if not self.udp_server.sock:
-            self.logger.log("Cannot send UDP audio: UDP server socket is not ready", "WARN")
-            return
+            return start_sequence
 
         try:
             loop = asyncio.get_running_loop()
-            start_time = loop.time()
+
+            if self._paced_playback_id != playback_id:
+                self.reset_audio_pacing(playback_id)
+
+            sequence = start_sequence
             sent_chunks = 0
+            packet_ms = int(self.audio_packet_seconds * 1000)
 
             for offset in range(0, len(pcm_data), self.AUDIO_CHUNK_SIZE):
                 chunk = pcm_data[offset: offset + self.AUDIO_CHUNK_SIZE]
                 if not chunk:
                     continue
 
-                ok = self._sendto(chunk, addr)
-                if not ok:
-                    break
+                chunk_timestamp_ms = start_timestamp_ms + (
+                    (sequence - start_sequence) * packet_ms
+                )
 
-                sent_chunks += 1
+                header = struct.pack(
+                    "<III",
+                    playback_id,
+                    sequence,
+                    chunk_timestamp_ms,
+                )
 
-                if sent_chunks <= 5 or sent_chunks % 20 == 0:
-                    self.logger.log(
-                        f"Sending audio chunk #{sent_chunks} to {addr} | bytes={len(chunk)}",
-                        "UDP",
-                    )
+                packet = header + chunk
 
-                target_time = start_time + (sent_chunks * self.audio_packet_seconds)
-                delay = target_time - loop.time()
+                now = loop.time()
+                if self._next_send_time is None:
+                    self._next_send_time = now
+
+                delay = self._next_send_time - now
                 if delay > 0:
                     await asyncio.sleep(delay)
 
+                self.sock.sendto(packet, addr)
+
+                # Advance pacing without accumulating a giant backlog.
+                self._next_send_time = max(
+                    self._next_send_time + self.audio_packet_seconds,
+                    loop.time(),
+                )
+
+                sequence += 1
+                sent_chunks += 1
+
+                # Let the event loop breathe periodically.
+                if sent_chunks % self.YIELD_EVERY_CHUNKS == 0:
+                    await asyncio.sleep(0)
+
             self.logger.log(
                 (
-                    f"UDP audio paced send: {sent_chunks} chunks of "
-                    f"{self.AUDIO_CHUNK_SIZE} bytes | "
+                    f"UDP audio paced send: {sent_chunks} chunks | "
+                    f"chunk_bytes={self.AUDIO_CHUNK_SIZE} | "
                     f"packet_ms={self.audio_packet_seconds * 1000:.2f} | "
-                    f"pacing_factor={self.PACING_FACTOR}"
+                    f"playback_id={playback_id}"
                 ),
                 "UDP",
             )
 
+            return sequence
+
         except Exception as exc:
             self.logger.log(f"Failed to send UDP audio chunk: {exc}", "ERROR")
+            return start_sequence
 
     def send_audio_end(self, addr: Optional[Tuple[str, int]]) -> None:
-        ok = self._sendto(b"__END__", addr)
-        if ok:
+        if not addr:
+            self.logger.log(
+                "Cannot send UDP audio end marker: remote address is unknown",
+                "WARN",
+            )
+            return
+
+        try:
+            self.sock.sendto(b"__END__", addr)
             self.logger.log(f"UDP audio end marker sent to {addr}", "UDP")
+        except Exception as exc:
+            self.logger.log(f"Failed to send UDP audio end marker: {exc}", "ERROR")
 
     def close(self) -> None:
-        # El socket pertenece a UdpServer
-        pass
+        try:
+            self.sock.close()
+        except Exception:
+            pass

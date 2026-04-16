@@ -1,0 +1,43 @@
+[2026-04-16 11:33:05.713] [INFO] Output WAV file: audio_out_2026-04-16_11-33-05.wav
+[2026-04-16 11:33:05.713] [INFO] Log file: bridge_log_2026-04-16_11-33-05.txt
+[2026-04-16 11:33:05.713] [CONFIG] Bridge config | input_rate=16000 | output_rate=16000 | samples_per_packet=160 | packet_audio_size=320
+[2026-04-16 11:33:06.994] [START] Connected to xAI realtime | input_rate=16000 | output_rate=16000
+[2026-04-16 11:33:06.994] [START] UDP server started
+[2026-04-16 11:33:06.994] [INFO] UDP port: 9999
+[2026-04-16 11:33:06.994] [INFO] Jitter buffer: 25 packets (~250 ms)
+[2026-04-16 11:33:07.277] [DEBUG] Unhandled xAI event: type=conversation.created keys=['type', 'event_id', 'conversation', 'previous_item_id']
+[2026-04-16 11:33:07.293] [XAI] Session updated
+[2026-04-16 11:33:19.299] [INIT] First packet received -> seq=0
+[2026-04-16 11:33:19.576] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-16 11:33:21.685] [TURN] UDP COMMIT signal received from ('10.230.249.137', 9999)
+[2026-04-16 11:33:21.776] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-16 11:33:21.779] [TURN] COMMIT sent to xAI
+[2026-04-16 11:33:22.031] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-16 11:33:22.041] [XAI] xAI confirmed commit
+[2026-04-16 11:33:22.337] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 11:33:22.339] [USER] User transcription: Hola buenos días ¿cómo estás?
+[2026-04-16 11:33:22.339] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-16 11:33:22.908] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 11:33:22.917] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 11:33:22.918] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-16 11:33:23.238] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-16 11:33:23.248] [ERROR] Failed to send UDP audio chunk: 'I' format requires 0 <= number <= 4294967295
+[2026-04-16 11:33:23.365] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-16 11:33:23.367] [ERROR] Failed to send UDP audio chunk: 'I' format requires 0 <= number <= 4294967295
+[2026-04-16 11:33:23.422] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-16 11:33:23.424] [ERROR] Failed to send UDP audio chunk: 'I' format requires 0 <= number <= 4294967295
+[2026-04-16 11:33:23.939] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-16 11:33:23.939] [ERROR] Failed to send UDP audio chunk: 'I' format requires 0 <= number <= 4294967295
+[2026-04-16 11:33:25.303] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-16 11:33:25.313] [ERROR] Failed to send UDP audio chunk: 'I' format requires 0 <= number <= 4294967295
+[2026-04-16 11:33:25.366] [ASSISTANT] Assistant transcript done: ¡Hola! Buenos días, estoy genial, ¡gracias por preguntar! ¿En qué puedo ayudarte hoy?
+[2026-04-16 11:33:25.368] [DEBUG] Unhandled xAI event: type=response.content_part.done keys=['type', 'event_id', 'item_id', 'response_id', 'content_index', 'output_index', 'previous_item_id']
+[2026-04-16 11:33:25.368] [ASSISTANT] Response audio completed | chunks=7 | bytes=197440 | samples=98720 | ~6170.00 ms
+[2026-04-16 11:33:25.368] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 11:33:25.368] [XAI] Response completed | tokens=469
+[2026-04-16 11:33:25.368] [INFO] Assistant response: ¡Hola! Buenos días, estoy genial, ¡gracias por preguntar! ¿En qué puedo ayudarte hoy?
+[2026-04-16 11:33:25.368] [UDP] UDP target addr: ('10.230.249.137', 9999)
+[2026-04-16 11:33:25.368] [UDP] UDP JSON sent to ('10.230.249.137', 9999): {"type": "assistant_response", "value": "¡Hola! Buenos días, estoy genial, ¡gracias por preguntar! ¿En qué puedo ayudarte hoy?", "final": true, "timestamp": "2026-04-16T11:33:25"}
+[2026-04-16 11:33:25.368] [ERROR] Failed to send UDP audio chunk: 'I' format requires 0 <= number <= 4294967295
+[2026-04-16 11:33:25.369] [ERROR] Failed to send UDP audio chunk: 'I' format requires 0 <= number <= 4294967295
+[2026-04-16 11:33:25.369] [UDP] UDP audio end marker sent to ('10.230.249.137', 9999)

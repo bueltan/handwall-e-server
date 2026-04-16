@@ -34,6 +34,7 @@ class UdpToXaiBridge:
         self.commit_queue: asyncio.Queue = asyncio.Queue()
 
         self.jitter_buffer = JitterBuffer(self.udp_config, self.logger)
+        self.udp_message_sender = UdpMessageSender(self.logger)
 
         self.udp_server = UdpServer(
             self.udp_config,
@@ -41,11 +42,6 @@ class UdpToXaiBridge:
             self.jitter_buffer,
             self.audio_queue,
             self.commit_queue,
-        )
-
-        self.udp_message_sender = UdpMessageSender(
-            self.logger,
-            self.udp_server,
         )
 
         self.xai_client = XaiRealtimeClient(
@@ -78,6 +74,12 @@ class UdpToXaiBridge:
                 break
 
     async def websocket_sender(self) -> None:
+        """
+        Forward either audio chunks or commit commands to xAI.
+
+        Audio packets are appended to the input buffer.
+        Commit commands finalize the current user turn and request a response.
+        """
         while self.running:
             audio_task = asyncio.create_task(self.audio_queue.get())
             commit_task = asyncio.create_task(self.commit_queue.get())
@@ -134,6 +136,7 @@ class UdpToXaiBridge:
                     )
 
     async def run(self) -> None:
+        """Start the bridge and keep all async tasks running together."""
         xai_task = None
         websocket_sender_task = None
         udp_audio_task = None

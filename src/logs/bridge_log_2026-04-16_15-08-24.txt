@@ -1,0 +1,87 @@
+[2026-04-16 15:08:24.816] [INFO] Output WAV file: audio_out_2026-04-16_15-08-24.wav
+[2026-04-16 15:08:24.816] [INFO] Log file: bridge_log_2026-04-16_15-08-24.txt
+[2026-04-16 15:08:24.816] [CONFIG] Bridge config | input_rate=16000 | output_rate=16000 | samples_per_packet=160 | packet_audio_size=320
+[2026-04-16 15:08:26.182] [START] Connected to xAI realtime | input_rate=16000 | output_rate=16000
+[2026-04-16 15:08:26.182] [START] UDP server started
+[2026-04-16 15:08:26.183] [INFO] UDP port: 9999
+[2026-04-16 15:08:26.183] [INFO] Jitter buffer: 25 packets (~250 ms)
+[2026-04-16 15:08:26.319] [DEBUG] Unhandled xAI event: type=conversation.created keys=['type', 'event_id', 'conversation', 'previous_item_id']
+[2026-04-16 15:08:26.690] [XAI] Session updated
+[2026-04-16 15:08:28.738] [INIT] First packet received -> seq=1546
+[2026-04-16 15:08:29.245] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-16 15:08:31.198] [TURN] UDP COMMIT signal received from ('10.230.249.137', 9999)
+[2026-04-16 15:08:31.279] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-16 15:08:31.280] [TURN] COMMIT sent to xAI
+[2026-04-16 15:08:31.887] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-16 15:08:31.887] [XAI] xAI confirmed commit
+[2026-04-16 15:08:31.889] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 15:08:31.890] [USER] User transcription: Hola, buenos días, ¿me escuchas?
+[2026-04-16 15:08:31.890] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-16 15:08:32.622] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 15:08:32.623] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 15:08:32.623] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-16 15:08:33.272] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-16 15:08:33.424] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-16 15:08:33.457] [AUDIO] Output audio chunk #3 | bytes=21760 | samples=10880 | ~680.00 ms
+[2026-04-16 15:08:33.878] [UDP] UDP audio paced send: 56 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=1
+[2026-04-16 15:08:33.921] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-16 15:08:34.371] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-16 15:08:34.451] [ASSISTANT] Assistant transcript done: ¡Hola! Buenos días, sí te escucho perfectamente. ¿En qué puedo ayudarte hoy?
+[2026-04-16 15:08:34.452] [DEBUG] Unhandled xAI event: type=response.content_part.done keys=['type', 'event_id', 'item_id', 'response_id', 'content_index', 'output_index', 'previous_item_id']
+[2026-04-16 15:08:34.452] [ASSISTANT] Response audio completed | chunks=7 | bytes=160960 | samples=80480 | ~5030.00 ms
+[2026-04-16 15:08:34.452] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 15:08:34.452] [XAI] Response completed | tokens=405
+[2026-04-16 15:08:34.494] [UDP] UDP audio paced send: 56 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=1
+[2026-04-16 15:08:35.242] [UDP] UDP audio paced send: 68 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=1
+[2026-04-16 15:08:36.298] [UDP] UDP audio paced send: 96 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=1
+[2026-04-16 15:08:37.794] [UDP] UDP audio paced send: 136 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=1
+[2026-04-16 15:08:38.751] [UDP] UDP audio paced send: 87 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=1
+[2026-04-16 15:08:38.795] [UDP] UDP audio paced send: 4 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=1
+[2026-04-16 15:08:38.946] [UDP] UDP audio end marker sent to ('10.230.249.137', 9999)
+[2026-04-16 15:08:38.946] [INFO] Assistant response: ¡Hola! Buenos días, sí te escucho perfectamente. ¿En qué puedo ayudarte hoy?
+[2026-04-16 15:08:38.946] [UDP] UDP target addr: ('10.230.249.137', 9999)
+[2026-04-16 15:08:38.946] [UDP] UDP JSON sent to ('10.230.249.137', 9999): {"type": "assistant_response", "value": "\u00a1Hola! Buenos d\u00edas, s\u00ed te escucho perfectamente. \u00bfEn qu\u00e9 puedo ayudarte hoy?", "final": true, "timestamp": "2026-04-16T15:08:38"}
+[2026-04-16 15:08:41.127] [TURN] New audio turn #1 -> initial seq=1787
+[2026-04-16 15:08:41.224] [STAT] [STAT] seq=1850 | buf=0 | rec=300 | lost=0 (0.00%)
+[2026-04-16 15:08:41.620] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-16 15:08:42.367] [LOSS] [LOSS] seq 1924 lost -> filled with silence
+[2026-04-16 15:08:42.660] [TURN] UDP COMMIT signal received from ('10.230.249.137', 9999)
+[2026-04-16 15:08:42.741] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-16 15:08:42.742] [TURN] COMMIT sent to xAI
+[2026-04-16 15:08:43.048] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-16 15:08:43.048] [XAI] xAI confirmed commit
+[2026-04-16 15:08:43.382] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 15:08:43.382] [USER] User transcription: Cuéntame una pequeña historia.
+[2026-04-16 15:08:43.412] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-16 15:08:44.723] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 15:08:44.723] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 15:08:44.724] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-16 15:08:44.873] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-16 15:08:45.000] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-16 15:08:45.008] [AUDIO] Output audio chunk #3 | bytes=14080 | samples=7040 | ~440.00 ms
+[2026-04-16 15:08:45.016] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-16 15:08:45.124] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-16 15:08:45.479] [UDP] UDP audio paced send: 56 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=2
+[2026-04-16 15:08:46.096] [UDP] UDP audio paced send: 56 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=2
+[2026-04-16 15:08:46.580] [UDP] UDP audio paced send: 44 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=2
+[2026-04-16 15:08:47.636] [UDP] UDP audio paced send: 96 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=2
+[2026-04-16 15:08:49.131] [UDP] UDP audio paced send: 136 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=2
+[2026-04-16 15:08:49.896] [ASSISTANT] Assistant transcript done: Érase una vez un robotito curioso llamado WALL-E, que vivía en una Tierra llena de basura. Un día, vio una planta verde brotar entre los escombros. ¡La cuidó con todo su corazón! Juntos, volaron al espacio en busca de un nuevo hogar. Y así, el amor salvó el mundo. ¿Te gustó?
+[2026-04-16 15:08:49.896] [DEBUG] Unhandled xAI event: type=response.content_part.done keys=['type', 'event_id', 'item_id', 'response_id', 'content_index', 'output_index', 'previous_item_id']
+[2026-04-16 15:08:49.896] [ASSISTANT] Response audio completed | chunks=15 | bytes=677440 | samples=338720 | ~21170.00 ms
+[2026-04-16 15:08:49.896] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 15:08:49.897] [XAI] Response completed | tokens=1234
+[2026-04-16 15:08:50.848] [UDP] UDP audio paced send: 156 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=2
+[2026-04-16 15:08:52.784] [UDP] UDP audio paced send: 176 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=2
+[2026-04-16 15:08:54.940] [UDP] UDP audio paced send: 196 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=2
+[2026-04-16 15:08:57.095] [UDP] UDP audio paced send: 196 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=2
+[2026-04-16 15:08:59.251] [UDP] UDP audio paced send: 196 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=2
+[2026-04-16 15:09:01.408] [UDP] UDP audio paced send: 196 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=2
+[2026-04-16 15:09:03.564] [UDP] UDP audio paced send: 196 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=2
+[2026-04-16 15:09:05.720] [UDP] UDP audio paced send: 196 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=2
+[2026-04-16 15:09:08.106] [UDP] UDP audio paced send: 217 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=2
+[2026-04-16 15:09:08.151] [UDP] UDP audio paced send: 4 chunks | chunk_bytes=320 | packet_ms=11.00 | playback_id=2
+[2026-04-16 15:09:08.301] [UDP] UDP audio end marker sent to ('10.230.249.137', 9999)
+[2026-04-16 15:09:08.302] [INFO] Assistant response: Érase una vez un robotito curioso llamado WALL-E, que vivía en una Tierra llena de basura. Un día, vio una planta verde brotar entre los escombros. ¡La cuidó con todo su corazón! Juntos, volaron al espacio en busca de un nuevo hogar. Y así, el amor salvó el mundo. ¿Te gustó?
+[2026-04-16 15:09:08.302] [UDP] UDP target addr: ('10.230.249.137', 9999)
+[2026-04-16 15:09:08.302] [UDP] UDP JSON sent to ('10.230.249.137', 9999): {"type": "assistant_response", "value": "\u00c9rase una vez un robotito curioso llamado WALL-E, que viv\u00eda en una Tierra llena de basura. Un d\u00eda, vio una planta verde brotar entre los escombros. \u00a1La cuid\u00f3 con todo su coraz\u00f3n! Juntos, volaron al espacio en busca de un nuevo hogar. Y as\u00ed, el amor salv\u00f3 el mundo. \u00bfTe gust\u00f3?", "final": true, "timestamp": "2026-04-16T15:09:08"}

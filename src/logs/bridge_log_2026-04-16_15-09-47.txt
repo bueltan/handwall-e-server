@@ -1,0 +1,109 @@
+[2026-04-16 15:09:47.536] [INFO] Output WAV file: audio_out_2026-04-16_15-09-47.wav
+[2026-04-16 15:09:47.536] [INFO] Log file: bridge_log_2026-04-16_15-09-47.txt
+[2026-04-16 15:09:47.536] [CONFIG] Bridge config | input_rate=16000 | output_rate=16000 | samples_per_packet=160 | packet_audio_size=320
+[2026-04-16 15:09:48.880] [START] Connected to xAI realtime | input_rate=16000 | output_rate=16000
+[2026-04-16 15:09:48.881] [START] UDP server started
+[2026-04-16 15:09:48.881] [INFO] UDP port: 9999
+[2026-04-16 15:09:48.881] [INFO] Jitter buffer: 25 packets (~250 ms)
+[2026-04-16 15:09:48.884] [DEBUG] Unhandled xAI event: type=conversation.created keys=['type', 'event_id', 'conversation', 'previous_item_id']
+[2026-04-16 15:09:49.232] [XAI] Session updated
+[2026-04-16 15:09:52.708] [INIT] First packet received -> seq=2460
+[2026-04-16 15:09:53.116] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-16 15:09:55.554] [STAT] [STAT] seq=2760 | buf=0 | rec=300 | lost=0 (0.00%)
+[2026-04-16 15:09:56.632] [TURN] UDP COMMIT signal received from ('10.230.249.137', 9999)
+[2026-04-16 15:09:56.713] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=0
+[2026-04-16 15:09:56.714] [TURN] COMMIT sent to xAI
+[2026-04-16 15:09:57.086] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-16 15:09:57.086] [XAI] xAI confirmed commit
+[2026-04-16 15:09:57.622] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 15:09:57.623] [USER] User transcription: Dime el clima en Bariloche, Argentina.
+[2026-04-16 15:09:57.623] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-16 15:10:00.421] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 15:10:00.422] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 15:10:00.422] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-16 15:10:01.402] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-16 15:10:02.014] [UDP] UDP audio paced send: 112 chunks | chunk_bytes=160 | packet_ms=5.50 | playback_id=1
+[2026-04-16 15:10:03.423] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-16 15:10:03.423] [AUDIO] Output audio chunk #3 | bytes=12160 | samples=6080 | ~380.00 ms
+[2026-04-16 15:10:03.423] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-16 15:10:03.425] [UDP] UDP audio paced send: 112 chunks | chunk_bytes=160 | packet_ms=5.50 | playback_id=1
+[2026-04-16 15:10:03.426] [UDP] UDP audio paced send: 76 chunks | chunk_bytes=160 | packet_ms=5.50 | playback_id=1
+[2026-04-16 15:10:03.990] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-16 15:10:04.104] [UDP] UDP audio paced send: 192 chunks | chunk_bytes=160 | packet_ms=5.50 | playback_id=1
+[2026-04-16 15:10:04.380] [ASSISTANT] Assistant transcript done: En Bariloche hoy hace entre 13 y 15 grados, con cielo parcialmente nublado y posibilidad de lluvia débil. Hay vientos moderados del noroeste. ¡Abrígate un poco si sales!
+[2026-04-16 15:10:04.381] [DEBUG] Unhandled xAI event: type=response.content_part.done keys=['type', 'event_id', 'item_id', 'response_id', 'content_index', 'output_index', 'previous_item_id']
+[2026-04-16 15:10:04.381] [ASSISTANT] Response audio completed | chunks=10 | bytes=370880 | samples=185440 | ~11590.00 ms
+[2026-04-16 15:10:04.381] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 15:10:04.381] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 15:10:04.381] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-16 15:10:04.381] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-16 15:10:04.381] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 15:10:04.382] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 15:10:04.382] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 15:10:04.382] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-16 15:10:04.382] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-16 15:10:04.382] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 15:10:04.382] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 15:10:04.382] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 15:10:04.382] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-16 15:10:04.383] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-16 15:10:04.383] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 15:10:04.383] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 15:10:04.383] [XAI] Response completed | tokens=819
+[2026-04-16 15:10:05.599] [UDP] UDP audio paced send: 272 chunks | chunk_bytes=160 | packet_ms=5.50 | playback_id=1
+[2026-04-16 15:10:07.316] [UDP] UDP audio paced send: 312 chunks | chunk_bytes=160 | packet_ms=5.50 | playback_id=1
+[2026-04-16 15:10:09.252] [UDP] UDP audio paced send: 352 chunks | chunk_bytes=160 | packet_ms=5.50 | playback_id=1
+[2026-04-16 15:10:11.409] [UDP] UDP audio paced send: 392 chunks | chunk_bytes=160 | packet_ms=5.50 | playback_id=1
+[2026-04-16 15:10:14.103] [UDP] UDP audio paced send: 490 chunks | chunk_bytes=160 | packet_ms=5.50 | playback_id=1
+[2026-04-16 15:10:14.147] [UDP] UDP audio paced send: 8 chunks | chunk_bytes=160 | packet_ms=5.50 | playback_id=1
+[2026-04-16 15:10:14.298] [UDP] UDP audio end marker sent to ('10.230.249.137', 9999)
+[2026-04-16 15:10:14.299] [INFO] Assistant response: En Bariloche hoy hace entre 13 y 15 grados, con cielo parcialmente nublado y posibilidad de lluvia débil. Hay vientos moderados del noroeste. ¡Abrígate un poco si sales!
+[2026-04-16 15:10:14.299] [UDP] UDP target addr: ('10.230.249.137', 9999)
+[2026-04-16 15:10:14.299] [UDP] UDP JSON sent to ('10.230.249.137', 9999): {"type": "assistant_response", "value": "En Bariloche hoy hace entre 13 y 15 grados, con cielo parcialmente nublado y posibilidad de lluvia d\u00e9bil. Hay vientos moderados del noroeste. \u00a1Abr\u00edgate un poco si sales!", "final": true, "timestamp": "2026-04-16T15:10:14"}
+[2026-04-16 15:10:14.588] [TURN] New audio turn #1 -> initial seq=0
+[2026-04-16 15:10:16.099] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_started keys=['type', 'event_id', 'item_id', 'audio_start_ms', 'previous_item_id']
+[2026-04-16 15:10:16.779] [STAT] [STAT] seq=234 | buf=0 | rec=600 | lost=0 (0.00%)
+[2026-04-16 15:10:17.295] [LOSS] [LOSS] seq 267 lost -> filled with silence
+[2026-04-16 15:10:18.224] [TURN] UDP COMMIT signal received from ('10.230.249.137', 9999)
+[2026-04-16 15:10:18.304] [TURN] Input turn closed | flushed=0 | dropped_out_of_order=2
+[2026-04-16 15:10:18.305] [TURN] COMMIT sent to xAI
+[2026-04-16 15:10:18.670] [DEBUG] Unhandled xAI event: type=input_audio_buffer.speech_stopped keys=['type', 'event_id', 'item_id', 'audio_end_ms', 'previous_item_id']
+[2026-04-16 15:10:18.670] [XAI] xAI confirmed commit
+[2026-04-16 15:10:18.874] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 15:10:18.874] [USER] User transcription: Dime el clima en Bariloche, Argentina.
+[2026-04-16 15:10:18.876] [DEBUG] Unhandled xAI event: type=response.created keys=['type', 'event_id', 'response', 'previous_item_id']
+[2026-04-16 15:10:21.994] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 15:10:21.994] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 15:10:21.994] [DEBUG] Unhandled xAI event: type=response.content_part.added keys=['type', 'event_id', 'item_id', 'previous_item_id', 'part', 'response_id', 'content_index', 'output_index']
+[2026-04-16 15:10:22.649] [AUDIO] Output audio chunk #1 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-16 15:10:22.650] [AUDIO] Output audio chunk #2 | bytes=17920 | samples=8960 | ~560.00 ms
+[2026-04-16 15:10:22.679] [AUDIO] Output audio chunk #3 | bytes=24320 | samples=12160 | ~760.00 ms
+[2026-04-16 15:10:23.182] [AUDIO] Output audio chunk #4 | bytes=30720 | samples=15360 | ~960.00 ms
+[2026-04-16 15:10:23.261] [UDP] UDP audio paced send: 112 chunks | chunk_bytes=160 | packet_ms=5.50 | playback_id=2
+[2026-04-16 15:10:23.354] [AUDIO] Output audio chunk #5 | bytes=43520 | samples=21760 | ~1360.00 ms
+[2026-04-16 15:10:23.877] [UDP] UDP audio paced send: 112 chunks | chunk_bytes=160 | packet_ms=5.50 | playback_id=2
+[2026-04-16 15:10:24.713] [UDP] UDP audio paced send: 152 chunks | chunk_bytes=160 | packet_ms=5.50 | playback_id=2
+[2026-04-16 15:10:25.424] [ASSISTANT] Assistant transcript done: En Bariloche hoy hay unos 13 a 15 grados, parcialmente nublado con chance de lluvia débil por la tarde. Vientos del noroeste a 25-35 km/h. ¡Llevá impermeable!
+[2026-04-16 15:10:25.424] [DEBUG] Unhandled xAI event: type=response.content_part.done keys=['type', 'event_id', 'item_id', 'response_id', 'content_index', 'output_index', 'previous_item_id']
+[2026-04-16 15:10:25.424] [ASSISTANT] Response audio completed | chunks=11 | bytes=413120 | samples=206560 | ~12910.00 ms
+[2026-04-16 15:10:25.424] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 15:10:25.424] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 15:10:25.424] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-16 15:10:25.425] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-16 15:10:25.425] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 15:10:25.425] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 15:10:25.425] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 15:10:25.425] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-16 15:10:25.425] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-16 15:10:25.426] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 15:10:25.426] [DEBUG] Unhandled xAI event: type=response.output_item.added keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 15:10:25.426] [DEBUG] Unhandled xAI event: type=conversation.item.added keys=['type', 'event_id', 'item', 'previous_item_id']
+[2026-04-16 15:10:25.426] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.delta keys=['type', 'event_id', 'item_id', 'response_id', 'delta', 'call_id', 'previous_item_id']
+[2026-04-16 15:10:25.426] [DEBUG] Unhandled xAI event: type=response.function_call_arguments.done keys=['type', 'event_id', 'item_id', 'response_id', 'output_index', 'call_id', 'name', 'arguments', 'previous_item_id']
+[2026-04-16 15:10:25.426] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 15:10:25.426] [DEBUG] Unhandled xAI event: type=response.output_item.done keys=['type', 'event_id', 'item', 'response_id', 'output_index', 'previous_item_id']
+[2026-04-16 15:10:25.426] [XAI] Response completed | tokens=833
+[2026-04-16 15:10:25.769] [UDP] UDP audio paced send: 192 chunks | chunk_bytes=160 | packet_ms=5.50 | playback_id=2
+[2026-04-16 15:10:27.265] [UDP] UDP audio paced send: 272 chunks | chunk_bytes=160 | packet_ms=5.50 | playback_id=2
+[2026-04-16 15:10:28.981] [UDP] UDP audio paced send: 312 chunks | chunk_bytes=160 | packet_ms=5.50 | playback_id=2
+[2026-04-16 15:10:30.917] [UDP] UDP audio paced send: 352 chunks | chunk_bytes=160 | packet_ms=5.50 | playback_id=2
