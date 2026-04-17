@@ -1,0 +1,4 @@
+[2026-04-16 18:39:24.366] [INFO] Output WAV file: audio_out_2026-04-16_18-39-24.wav
+[2026-04-16 18:39:24.367] [INFO] Log file: bridge_log_2026-04-16_18-39-24.txt
+[2026-04-16 18:39:24.367] [CONFIG] Bridge config | input_rate=16000 | output_rate=16000 | samples_per_packet=160 | packet_audio_size=320
+[2026-04-16 18:39:24.367] [ERROR] Unexpected error in bridge run: 'UdpToXaiBridge' object has no attribute '_wait_for_udp_socket'

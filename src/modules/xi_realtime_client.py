@@ -26,7 +26,7 @@ class XaiRealtimeClient:
         udp_config: UdpConfig,
         logger: BridgeLogger,
         wav_writer: OutputWaveWriter,
-        udp_message_sender: UdpMessageSender,
+        udp_message_sender: UdpMessageSender | None,
         udp_server: UdpServer,
     ) -> None:
         self.config = config
@@ -57,6 +57,11 @@ class XaiRealtimeClient:
         self.output_sequence = 0
         self.output_started_at_ms = 0
 
+    def _require_udp_sender(self) -> UdpMessageSender:
+        if self.udp_message_sender is None:
+            raise RuntimeError("udp_message_sender is not initialized")
+        return self.udp_message_sender
+
     async def connect(self) -> None:
         await self.connect_once()
 
@@ -72,7 +77,7 @@ class XaiRealtimeClient:
         self.output_sequence = 0
         self.output_started_at_ms = 0
 
-        self.udp_message_sender.reset_audio_pacing(self.current_playback_id)
+        self._require_udp_sender().reset_audio_pacing(self.current_playback_id)
 
     def _clear_output_queue(self) -> None:
         while True:
@@ -94,7 +99,7 @@ class XaiRealtimeClient:
             self.output_audio_done_event.set()
 
         try:
-            if self.udp_server.remote_addr:
+            if self.udp_server.remote_addr and self.udp_message_sender is not None:
                 self.udp_message_sender.send_json(
                     {
                         "type": "bridge_status",
@@ -192,7 +197,7 @@ class XaiRealtimeClient:
 
         self.reconnect_attempt = 0
 
-        if self.udp_server.remote_addr:
+        if self.udp_server.remote_addr and self.udp_message_sender is not None:
             self.udp_message_sender.send_json(
                 {
                     "type": "bridge_status",
@@ -267,12 +272,14 @@ class XaiRealtimeClient:
         if not assistant_text or not self.udp_server.remote_addr:
             return
 
+        sender = self._require_udp_sender()
+
         self.logger.log(f"Assistant response: {assistant_text}")
         self.logger.log(
             f"UDP target addr: {self.udp_server.remote_addr}",
             "UDP",
         )
-        self.udp_message_sender.send_json(
+        sender.send_json(
             {
                 "type": "assistant_response",
                 "value": assistant_text,
@@ -291,7 +298,8 @@ class XaiRealtimeClient:
                 break
 
             try:
-                self.output_sequence = await self.udp_message_sender.send_audio_chunked(
+                sender = self._require_udp_sender()
+                self.output_sequence = await sender.send_audio_chunked(
                     pcm_data,
                     self.udp_server.remote_addr,
                     playback_id=self.current_playback_id,
@@ -305,9 +313,8 @@ class XaiRealtimeClient:
                 try:
                     await asyncio.sleep(0.15)
 
-                    self.udp_message_sender.send_audio_end(
-                        self.udp_server.remote_addr,
-                    )
+                    sender = self._require_udp_sender()
+                    sender.send_audio_end(self.udp_server.remote_addr)
                     await self._send_pending_assistant_text()
                 except Exception as exc:
                     self.logger.log(f"Failed to finalize output: {exc}", "WARN")
@@ -340,7 +347,6 @@ class XaiRealtimeClient:
 
                     self.output_audio_chunks += 1
                     self.output_audio_bytes += len(pcm_data)
-                    #self.wav_writer.write(pcm_data)
 
                     if (
                         self.output_audio_chunks <= 5
@@ -402,9 +408,8 @@ class XaiRealtimeClient:
                         try:
                             await asyncio.sleep(0.15)
 
-                            self.udp_message_sender.send_audio_end(
-                                self.udp_server.remote_addr,
-                            )
+                            sender = self._require_udp_sender()
+                            sender.send_audio_end(self.udp_server.remote_addr)
                             await self._send_pending_assistant_text()
                         except Exception as exc:
                             self.logger.log(

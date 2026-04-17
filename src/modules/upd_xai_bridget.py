@@ -43,7 +43,7 @@ class UdpToXaiBridge:
             self.commit_queue,
         )
 
-        self.udp_message_sender = None
+        self.udp_message_sender: UdpMessageSender | None = None
 
         self.xai_client = XaiRealtimeClient(
             self.xai_config,
@@ -55,6 +55,20 @@ class UdpToXaiBridge:
         )
 
         self.running = True
+
+    async def _wait_for_udp_socket(self, timeout_seconds: float = 5.0) -> None:
+        loop = asyncio.get_running_loop()
+        deadline = loop.time() + timeout_seconds
+
+        while self.udp_server.sock is None:
+            if loop.time() >= deadline:
+                raise RuntimeError("UDP server socket was not created in time")
+            await asyncio.sleep(0.01)
+
+        self.logger.log(
+            f"UDP server socket ready for sender: {self.udp_server.sock!r}",
+            "DEBUG",
+        )
 
     async def flush_pending_audio(self) -> None:
         while True:
@@ -75,12 +89,6 @@ class UdpToXaiBridge:
                 break
 
     async def websocket_sender(self) -> None:
-        """
-        Forward either audio chunks or commit commands to xAI.
-
-        Audio packets are appended to the input buffer.
-        Commit commands finalize the current user turn and request a response.
-        """
         while self.running:
             audio_task = asyncio.create_task(self.audio_queue.get())
             commit_task = asyncio.create_task(self.commit_queue.get())
@@ -137,7 +145,6 @@ class UdpToXaiBridge:
                     )
 
     async def run(self) -> None:
-        """Start the bridge and keep all async tasks running together."""
         xai_task = None
         websocket_sender_task = None
         udp_audio_task = None
@@ -157,12 +164,31 @@ class UdpToXaiBridge:
                 "CONFIG",
             )
 
+            # 1) Arrancar UDP primero
+            udp_server_task = asyncio.create_task(self.udp_server.run())
+            await self._wait_for_udp_socket()
+
+            # 2) Crear sender usando el MISMO socket UDP del server
+            self.udp_message_sender = UdpMessageSender(
+                self.logger,
+                self.udp_server.sock,
+            )
+
+            # 3) Inyectarlo en xAI client ANTES de arrancarlo
+            self.xai_client.udp_message_sender = self.udp_message_sender
+
+            self.logger.log(
+                f"xai_client udp_message_sender injected: {self.xai_client.udp_message_sender!r}",
+                "DEBUG",
+            )
+
+            # 4) Recién ahora arrancar xAI
             xai_task = asyncio.create_task(self.xai_client.run_forever())
             await self.xai_client.wait_until_connected()
 
+            # 5) Tareas restantes
             websocket_sender_task = asyncio.create_task(self.websocket_sender())
             udp_audio_task = asyncio.create_task(self.xai_client.udp_audio_sender())
-            udp_server_task = asyncio.create_task(self.udp_server.run())
 
             await asyncio.gather(
                 xai_task,
@@ -217,7 +243,8 @@ class UdpToXaiBridge:
                 pass
 
             try:
-                self.udp_message_sender.close()
+                if self.udp_message_sender is not None:
+                    self.udp_message_sender.close()
             except Exception:
                 pass
 

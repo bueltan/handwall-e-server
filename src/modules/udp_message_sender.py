@@ -8,8 +8,9 @@ from modules.bridget_logger import BridgeLogger
 
 
 class UdpMessageSender:
-    """Send JSON messages and paced raw audio packets to the last known UDP peer."""
+    """Send JSON messages and paced raw audio packets using the UDP server socket."""
 
+    # 320 bytes = 160 mono PCM16 samples = 10 ms @ 16 kHz
     AUDIO_CHUNK_SIZE = 320
     OUTPUT_SAMPLE_RATE = 16000
     BYTES_PER_SAMPLE = 2
@@ -17,6 +18,9 @@ class UdpMessageSender:
     YIELD_EVERY_CHUNKS = 20
 
     def __init__(self, logger: BridgeLogger, sock: socket.socket) -> None:
+        if sock is None:
+            raise ValueError("UdpMessageSender requires a valid UDP socket, got None")
+
         self.logger = logger
         self.sock = sock
 
@@ -59,6 +63,12 @@ class UdpMessageSender:
         start_sequence: int,
         start_timestamp_ms: int,
     ) -> int:
+        """
+        Send assistant audio with header:
+        [playback_id:u32][sequence:u32][timestamp_ms:u32][pcm...]
+
+        Returns the next sequence number to continue from.
+        """
         if not addr:
             self.logger.log("Cannot send UDP audio: remote address is unknown", "WARN")
             return start_sequence
@@ -82,7 +92,12 @@ class UdpMessageSender:
                     (sequence - start_sequence) * packet_ms
                 )
 
-                header = struct.pack("<III", playback_id, sequence, chunk_timestamp_ms)
+                header = struct.pack(
+                    "<III",
+                    playback_id,
+                    sequence,
+                    chunk_timestamp_ms,
+                )
                 packet = header + chunk
 
                 now = loop.time()
@@ -137,5 +152,5 @@ class UdpMessageSender:
             self.logger.log(f"Failed to send UDP audio end marker: {exc}", "ERROR")
 
     def close(self) -> None:
-        # No cerrar aquí: el socket pertenece al servidor UDP.
+        # El socket pertenece a UdpServer, así que no se cierra aquí.
         pass
